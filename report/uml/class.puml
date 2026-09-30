@@ -1,0 +1,91 @@
+@startuml
+!include common.iuml
+hide empty members
+class Farm {
+  +id : String
+  +taluk : String
+  +village : String
+  +area_ha : Number
+  +ndvi, lai, soil_moisture : Number
+  +soil_ph, organic_carbon : Number
+  +temperature_c, relative_humidity : Number
+  +rainfall_mm : Number
+  +crop_age_days : Number
+  +polygon : LatLng[]
+  +quality : String[]
+}
+class Scenario {
+  +forecastRain : Number
+  +tempAnomaly : Number
+  +rhAnomaly : Number
+  +daysSinceObs : Number
+  +method : String
+  +pumpFlow : Number
+}
+class TreeEnsemble {
+  +type : rf_regressor | rf_classifier | gbr
+  +features : String[]
+  +trees : Tree[]
+  +predict(input) : Number | Number[]
+  +predictWithSpread(input) : {mean, sd}
+}
+class ModelRegistry {
+  +models : Map<String, TreeEnsemble>
+  +assignZone(input) : Integer
+  +describeZones() : Zone[]
+}
+class AdvisoryEngine {
+  +parseScenario(query) : Scenario
+  +farmFeatures(farm, scenario) : Features
+  +predictCore(x, ctx) : CorePrediction
+  +summarize(farm, scenario) : Summary
+  +fullAdvisory(x, opts) : Advisory
+}
+class Advisory {
+  +status : today | tomorrow | later | rain_skip
+  +daysToIrrigation : Number
+  +hours, volumeM3 : Number
+  +stressProbabilities : Number[4]
+  +yieldTHa : Number
+  +lossCurve : Point[]
+  +fertigation : FertigationPlan
+  +explanation : Explanation
+  +advisory : Line[]
+}
+class FertigationPlanner {
+  +fertigationPlan(age, oc, ph, ndvi, area) : FertigationPlan
+}
+class ExplainEngine {
+  +baseline : Features
+  +explain(x) : Explanation
+}
+class PumpScheduler {
+  +schedule(summaries, windows, capacity, days) : Schedule
+  -pack(jobs, slots, lanes)
+  -evaluate(result)
+}
+class I18n {
+  +t(lang, key, vars) : String
+  +formatDate(date, lang) : String
+}
+class ChatBot {
+  +detectLanguage(text) : String
+  +detectIntents(text) : String[]
+  +reply(message, opts) : ChatReply
+}
+class InsightsBuilder {
+  +buildInsights(summaries, farms) : Insights
+}
+Farm <.. AdvisoryEngine
+Scenario <.. AdvisoryEngine
+ChatBot -down-> AdvisoryEngine
+ChatBot -right-> I18n
+AdvisoryEngine -down-> ModelRegistry : uses
+ModelRegistry "1" *-down- "7" TreeEnsemble
+AdvisoryEngine -right-> Advisory : creates
+AdvisoryEngine -down-> FertigationPlanner
+AdvisoryEngine -down-> ExplainEngine
+AdvisoryEngine -left-> I18n
+PumpScheduler -up-> Advisory : consumes summaries
+InsightsBuilder -up-> Advisory : aggregates
+@enduml

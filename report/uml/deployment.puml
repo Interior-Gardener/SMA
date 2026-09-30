@@ -1,0 +1,22 @@
+@startuml
+!include common.iuml
+node "User device\n(PC / laptop / smartphone)" as DEV {
+  artifact "Web browser\nSMA single-page app" as B
+}
+node "Application server\n(laptop or cloud VM)" as SRV {
+  node "Node.js 18+ runtime" {
+    artifact "server.js + src/*\nExpress API" as APP
+    artifact "models/*.json" as M
+    artifact "IrrigationAdvisoryDataset.csv" as D
+  }
+}
+node "Training workstation" as TW {
+  artifact "Python 3 + scikit-learn\nml/train.py" as T
+}
+cloud "Map tile services\n(Esri / OpenStreetMap)" as TILES
+cloud "Future: IMD forecast API,\nSentinel-2, IoT gateway" as FUT
+B --> APP : HTTPS / JSON (port 3000)
+B --> TILES : basemap tiles
+T --> M : exported models (git)
+APP ..> FUT : planned integration
+@enduml

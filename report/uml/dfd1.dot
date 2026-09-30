@@ -1,0 +1,33 @@
+digraph DFD1 {
+  graph [rankdir=TB, fontname="Liberation Serif", dpi=170, nodesep=0.5, ranksep=0.6, pad=0.2];
+  node [fontname="Liberation Serif", fontsize=12];
+  edge [fontname="Liberation Serif", fontsize=10, color="#333333", arrowsize=0.7];
+  SAT [shape=box, style=filled, fillcolor="#f3f5f4", label="Satellite /\nGIS data"];
+  USR [shape=box, style=filled, fillcolor="#f3f5f4", label="Farmer /\nSupervisor"];
+  WX  [shape=box, style=filled, fillcolor="#f3f5f4", label="Weather\nscenario"];
+  node [shape=circle, style=filled, fillcolor="#dcefe3", color="#1f6b49", width=1.45, fixedsize=true];
+  P1 [label="1.0\nIngest &\nclean data"];
+  P2 [label="2.0\nTrain &\nexport models"];
+  P3 [label="3.0\nPredict\n(7 models)"];
+  P4 [label="4.0\nDecision\nengine"];
+  P5 [label="5.0\nSchedule\npumps"];
+  P6 [label="6.0\nGenerate\nadvisory text"];
+  P7 [label="7.0\nRecord\nfeedback"];
+  node [shape=record, style=filled, fillcolor="#fffbe6", color="#8a7a3a", width=1.9, fixedsize=false];
+  D1 [label="D1 | Plot dataset (CSV)"];
+  D2 [label="D2 | Trained models (JSON)"];
+  D3 [label="D3 | Feedback log"];
+  SAT -> P1 [label="raw plot records"];
+  P1 -> D1 [label="clean plots"];
+  D1 -> P2; P2 -> D2 [label="trees, metrics"];
+  D1 -> P3 [label="features"]; D2 -> P3 [label="models"];
+  WX -> P3 [label="rain, anomaly"];
+  P3 -> P4 [label="predictions +\nprobabilities"];
+  P4 -> P5 [label="due plots,\ntonnes at risk"];
+  USR -> P5 [label="power windows,\ncapacity"];
+  P4 -> P6 [label="status, volume,\nfertigation"];
+  P5 -> USR [label="pump timetable"];
+  P6 -> USR [label="advisory in\nchosen language"];
+  USR -> P7 [label="accept / override"];
+  P7 -> D3; D3 -> P2 [style=dashed, label="retraining data"];
+}

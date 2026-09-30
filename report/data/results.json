@@ -1,0 +1,4959 @@
+{
+ "snapshot": {
+  "kpi": {
+   "plots": 1000,
+   "taluks": 6,
+   "villages": 10,
+   "areaHa": 736,
+   "dueToday": 0,
+   "dueTomorrow": 0,
+   "dueThisWeek": 20,
+   "rainSkips": 0,
+   "severeStress": 0,
+   "moderateOrWorse": 0,
+   "highDiseaseRisk": 0,
+   "avgWaterRequirementMm": 3.51,
+   "weeklyWaterM3": 278085,
+   "weeklyConventionalM3": 450000,
+   "weeklySavedM3": 172419,
+   "weeklySavedPct": 38.3,
+   "weeklySavedKwh": 12862,
+   "weeklySavedRs": 90020,
+   "rainSavedM3": 0,
+   "avgYieldTHa": 109.8,
+   "totalCaneT": 80735,
+   "tonnesAtRisk": 36.3
+  },
+  "stress": [
+   921,
+   79,
+   0,
+   0
+  ],
+  "risk": [
+   1000,
+   0,
+   0
+  ],
+  "calendar": [
+   {
+    "day": 0,
+    "plots": 0,
+    "volumeM3": 0
+   },
+   {
+    "day": 1,
+    "plots": 0,
+    "volumeM3": 0
+   },
+   {
+    "day": 2,
+    "plots": 0,
+    "volumeM3": 0
+   },
+   {
+    "day": 3,
+    "plots": 0,
+    "volumeM3": 0
+   },
+   {
+    "day": 4,
+    "plots": 0,
+    "volumeM3": 0
+   },
+   {
+    "day": 5,
+    "plots": 0,
+    "volumeM3": 0
+   },
+   {
+    "day": 6,
+    "plots": 0,
+    "volumeM3": 0
+   },
+   {
+    "day": 7,
+    "plots": 20,
+    "volumeM3": 21816
+   },
+   {
+    "day": 8,
+    "plots": 15,
+    "volumeM3": 16653
+   },
+   {
+    "day": 9,
+    "plots": 80,
+    "volumeM3": 84387
+   },
+   {
+    "day": 10,
+    "plots": 164,
+    "volumeM3": 174931
+   },
+   {
+    "day": 11,
+    "plots": 282,
+    "volumeM3": 306759
+   },
+   {
+    "day": 12,
+    "plots": 257,
+    "volumeM3": 275016
+   },
+   {
+    "day": 13,
+    "plots": 83,
+    "volumeM3": 88627
+   },
+   {
+    "day": 14,
+    "plots": 0,
+    "volumeM3": 0
+   }
+  ],
+  "byTaluk": [
+   {
+    "name": "Krishnarajpet",
+    "plots": 207,
+    "avgNdvi": 0.593,
+    "avgSoilMoisture": 0.2347,
+    "avgWaterRequirement": 3.36,
+    "dueIn2Days": 0,
+    "stressedPct": 0,
+    "weeklyWaterM3": 55036,
+    "weeklySavedM3": 38226,
+    "avgYield": 112,
+    "tonnesAtRisk": 2.4
+   },
+   {
+    "name": "Maddur",
+    "plots": 102,
+    "avgNdvi": 0.556,
+    "avgSoilMoisture": 0.2198,
+    "avgWaterRequirement": 3.66,
+    "dueIn2Days": 0,
+    "stressedPct": 0,
+    "weeklyWaterM3": 29535,
+    "weeklySavedM3": 16408,
+    "avgYield": 109.2,
+    "tonnesAtRisk": 5.4
+   },
+   {
+    "name": "Malavalli",
+    "plots": 204,
+    "avgNdvi": 0.571,
+    "avgSoilMoisture": 0.2225,
+    "avgWaterRequirement": 3.59,
+    "dueIn2Days": 0,
+    "stressedPct": 0,
+    "weeklyWaterM3": 57954,
+    "weeklySavedM3": 33953,
+    "avgYield": 108.1,
+    "tonnesAtRisk": 10
+   },
+   {
+    "name": "Mandya",
+    "plots": 189,
+    "avgNdvi": 0.569,
+    "avgSoilMoisture": 0.2188,
+    "avgWaterRequirement": 3.51,
+    "dueIn2Days": 0,
+    "stressedPct": 0,
+    "weeklyWaterM3": 52508,
+    "weeklySavedM3": 32637,
+    "avgYield": 107.8,
+    "tonnesAtRisk": 2.8
+   },
+   {
+    "name": "Pandavpura",
+    "plots": 205,
+    "avgNdvi": 0.578,
+    "avgSoilMoisture": 0.2177,
+    "avgWaterRequirement": 3.53,
+    "dueIn2Days": 0,
+    "stressedPct": 0,
+    "weeklyWaterM3": 57384,
+    "weeklySavedM3": 34967,
+    "avgYield": 109.5,
+    "tonnesAtRisk": 13.9
+   },
+   {
+    "name": "Shrirangapattana",
+    "plots": 93,
+    "avgNdvi": 0.622,
+    "avgSoilMoisture": 0.2204,
+    "avgWaterRequirement": 3.48,
+    "dueIn2Days": 0,
+    "stressedPct": 0,
+    "weeklyWaterM3": 25668,
+    "weeklySavedM3": 16228,
+    "avgYield": 113.7,
+    "tonnesAtRisk": 1.8
+   }
+  ]
+ },
+ "dry": {
+  "kpi": {
+   "plots": 1000,
+   "taluks": 6,
+   "villages": 10,
+   "areaHa": 736,
+   "dueToday": 637,
+   "dueTomorrow": 212,
+   "dueThisWeek": 955,
+   "rainSkips": 0,
+   "severeStress": 2,
+   "moderateOrWorse": 204,
+   "highDiseaseRisk": 0,
+   "avgWaterRequirementMm": 4.89,
+   "weeklyWaterM3": 387174,
+   "weeklyConventionalM3": 450000,
+   "weeklySavedM3": 64322,
+   "weeklySavedPct": 14.3,
+   "weeklySavedKwh": 4798,
+   "weeklySavedRs": 33586,
+   "rainSavedM3": 0,
+   "avgYieldTHa": 105,
+   "totalCaneT": 77201,
+   "tonnesAtRisk": 789.6
+  },
+  "stress": [
+   88,
+   708,
+   202,
+   2
+  ],
+  "risk": [
+   1000,
+   0,
+   0
+  ],
+  "calendar": [
+   {
+    "day": 0,
+    "plots": 637,
+    "volumeM3": 690147
+   },
+   {
+    "day": 1,
+    "plots": 212,
+    "volumeM3": 219051
+   },
+   {
+    "day": 2,
+    "plots": 45,
+    "volumeM3": 47615
+   },
+   {
+    "day": 3,
+    "plots": 8,
+    "volumeM3": 7633
+   },
+   {
+    "day": 4,
+    "plots": 8,
+    "volumeM3": 7319
+   },
+   {
+    "day": 5,
+    "plots": 9,
+    "volumeM3": 8986
+   },
+   {
+    "day": 6,
+    "plots": 12,
+    "volumeM3": 12765
+   },
+   {
+    "day": 7,
+    "plots": 24,
+    "volumeM3": 26028
+   },
+   {
+    "day": 8,
+    "plots": 21,
+    "volumeM3": 21946
+   },
+   {
+    "day": 9,
+    "plots": 11,
+    "volumeM3": 12199
+   },
+   {
+    "day": 10,
+    "plots": 10,
+    "volumeM3": 11187
+   },
+   {
+    "day": 11,
+    "plots": 2,
+    "volumeM3": 2243
+   },
+   {
+    "day": 12,
+    "plots": 1,
+    "volumeM3": 1118
+   },
+   {
+    "day": 13,
+    "plots": 0,
+    "volumeM3": 0
+   },
+   {
+    "day": 14,
+    "plots": 0,
+    "volumeM3": 0
+   }
+  ],
+  "byTaluk": [
+   {
+    "name": "Krishnarajpet",
+    "plots": 207,
+    "avgNdvi": 0.593,
+    "avgSoilMoisture": 0.2347,
+    "avgWaterRequirement": 4.73,
+    "dueIn2Days": 108,
+    "stressedPct": 10.1,
+    "weeklyWaterM3": 77615,
+    "weeklySavedM3": 15639,
+    "avgYield": 108.7,
+    "tonnesAtRisk": 101.5
+   },
+   {
+    "name": "Maddur",
+    "plots": 102,
+    "avgNdvi": 0.556,
+    "avgSoilMoisture": 0.2198,
+    "avgWaterRequirement": 5.11,
+    "dueIn2Days": 101,
+    "stressedPct": 27.5,
+    "weeklyWaterM3": 41274,
+    "weeklySavedM3": 5042,
+    "avgYield": 103.7,
+    "tonnesAtRisk": 89.7
+   },
+   {
+    "name": "Malavalli",
+    "plots": 204,
+    "avgNdvi": 0.571,
+    "avgSoilMoisture": 0.2225,
+    "avgWaterRequirement": 4.98,
+    "dueIn2Days": 199,
+    "stressedPct": 13.7,
+    "weeklyWaterM3": 80537,
+    "weeklySavedM3": 11763,
+    "avgYield": 103.7,
+    "tonnesAtRisk": 158.2
+   },
+   {
+    "name": "Mandya",
+    "plots": 189,
+    "avgNdvi": 0.569,
+    "avgSoilMoisture": 0.2188,
+    "avgWaterRequirement": 4.83,
+    "dueIn2Days": 188,
+    "stressedPct": 20.1,
+    "weeklyWaterM3": 72242,
+    "weeklySavedM3": 12952,
+    "avgYield": 102.8,
+    "tonnesAtRisk": 155.7
+   },
+   {
+    "name": "Pandavpura",
+    "plots": 205,
+    "avgNdvi": 0.578,
+    "avgSoilMoisture": 0.2177,
+    "avgWaterRequirement": 4.9,
+    "dueIn2Days": 205,
+    "stressedPct": 36.6,
+    "weeklyWaterM3": 79530,
+    "weeklySavedM3": 12926,
+    "avgYield": 103.9,
+    "tonnesAtRisk": 201
+   },
+   {
+    "name": "Shrirangapattana",
+    "plots": 93,
+    "avgNdvi": 0.622,
+    "avgSoilMoisture": 0.2204,
+    "avgWaterRequirement": 4.88,
+    "dueIn2Days": 93,
+    "stressedPct": 15.1,
+    "weeklyWaterM3": 35976,
+    "weeklySavedM3": 6000,
+    "avgYield": 107.5,
+    "tonnesAtRisk": 83.5
+   }
+  ]
+ },
+ "rain": {
+  "kpi": {
+   "plots": 1000,
+   "taluks": 6,
+   "villages": 10,
+   "areaHa": 736,
+   "dueToday": 0,
+   "dueTomorrow": 0,
+   "dueThisWeek": 1,
+   "rainSkips": 894,
+   "severeStress": 1,
+   "moderateOrWorse": 173,
+   "highDiseaseRisk": 0,
+   "avgWaterRequirementMm": 4.89,
+   "weeklyWaterM3": 61782,
+   "weeklyConventionalM3": 450000,
+   "weeklySavedM3": 388591,
+   "weeklySavedPct": 86.4,
+   "weeklySavedKwh": 28994,
+   "weeklySavedRs": 202928,
+   "rainSavedM3": 218000,
+   "avgYieldTHa": 105,
+   "totalCaneT": 77215,
+   "tonnesAtRisk": 299
+  },
+  "stress": [
+   90,
+   737,
+   172,
+   1
+  ],
+  "risk": [
+   1000,
+   0,
+   0
+  ],
+  "calendar": [
+   {
+    "day": 0,
+    "plots": 0,
+    "volumeM3": 0
+   },
+   {
+    "day": 1,
+    "plots": 0,
+    "volumeM3": 0
+   },
+   {
+    "day": 2,
+    "plots": 0,
+    "volumeM3": 0
+   },
+   {
+    "day": 3,
+    "plots": 9,
+    "volumeM3": 10024
+   },
+   {
+    "day": 4,
+    "plots": 474,
+    "volumeM3": 529064
+   },
+   {
+    "day": 5,
+    "plots": 173,
+    "volumeM3": 187686
+   },
+   {
+    "day": 6,
+    "plots": 161,
+    "volumeM3": 146772
+   },
+   {
+    "day": 7,
+    "plots": 31,
+    "volumeM3": 31683
+   },
+   {
+    "day": 8,
+    "plots": 28,
+    "volumeM3": 29174
+   },
+   {
+    "day": 9,
+    "plots": 17,
+    "volumeM3": 17598
+   },
+   {
+    "day": 10,
+    "plots": 12,
+    "volumeM3": 13294
+   },
+   {
+    "day": 11,
+    "plots": 5,
+    "volumeM3": 5012
+   },
+   {
+    "day": 12,
+    "plots": 18,
+    "volumeM3": 19048
+   },
+   {
+    "day": 13,
+    "plots": 37,
+    "volumeM3": 40247
+   },
+   {
+    "day": 14,
+    "plots": 35,
+    "volumeM3": 37203
+   }
+  ],
+  "byTaluk": [
+   {
+    "name": "Krishnarajpet",
+    "plots": 207,
+    "avgNdvi": 0.593,
+    "avgSoilMoisture": 0.2347,
+    "avgWaterRequirement": 4.74,
+    "dueIn2Days": 0,
+    "stressedPct": 7.7,
+    "weeklyWaterM3": 10398,
+    "weeklySavedM3": 82823,
+    "avgYield": 108.7,
+    "tonnesAtRisk": 35.6
+   },
+   {
+    "name": "Maddur",
+    "plots": 102,
+    "avgNdvi": 0.556,
+    "avgSoilMoisture": 0.2198,
+    "avgWaterRequirement": 5.11,
+    "dueIn2Days": 0,
+    "stressedPct": 21.6,
+    "weeklyWaterM3": 7855,
+    "weeklySavedM3": 38088,
+    "avgYield": 103.7,
+    "tonnesAtRisk": 34.4
+   },
+   {
+    "name": "Malavalli",
+    "plots": 204,
+    "avgNdvi": 0.571,
+    "avgSoilMoisture": 0.2225,
+    "avgWaterRequirement": 4.98,
+    "dueIn2Days": 0,
+    "stressedPct": 13.7,
+    "weeklyWaterM3": 14075,
+    "weeklySavedM3": 77806,
+    "avgYield": 103.8,
+    "tonnesAtRisk": 58.5
+   },
+   {
+    "name": "Mandya",
+    "plots": 189,
+    "avgNdvi": 0.569,
+    "avgSoilMoisture": 0.2188,
+    "avgWaterRequirement": 4.82,
+    "dueIn2Days": 0,
+    "stressedPct": 16.9,
+    "weeklyWaterM3": 11027,
+    "weeklySavedM3": 74097,
+    "avgYield": 102.8,
+    "tonnesAtRisk": 58
+   },
+   {
+    "name": "Pandavpura",
+    "plots": 205,
+    "avgNdvi": 0.578,
+    "avgSoilMoisture": 0.2177,
+    "avgWaterRequirement": 4.9,
+    "dueIn2Days": 0,
+    "stressedPct": 31.2,
+    "weeklyWaterM3": 12567,
+    "weeklySavedM3": 79752,
+    "avgYield": 103.9,
+    "tonnesAtRisk": 79.9
+   },
+   {
+    "name": "Shrirangapattana",
+    "plots": 93,
+    "avgNdvi": 0.622,
+    "avgSoilMoisture": 0.2204,
+    "avgWaterRequirement": 4.88,
+    "dueIn2Days": 0,
+    "stressedPct": 11.8,
+    "weeklyWaterM3": 5860,
+    "weeklySavedM3": 36025,
+    "avgYield": 107.5,
+    "tonnesAtRisk": 32.6
+   }
+  ]
+ },
+ "humid": {
+  "kpi": {
+   "plots": 1000,
+   "taluks": 6,
+   "villages": 10,
+   "areaHa": 736,
+   "dueToday": 0,
+   "dueTomorrow": 0,
+   "dueThisWeek": 0,
+   "rainSkips": 0,
+   "severeStress": 0,
+   "moderateOrWorse": 0,
+   "highDiseaseRisk": 0,
+   "avgWaterRequirementMm": 3.53,
+   "weeklyWaterM3": 125898,
+   "weeklyConventionalM3": 450000,
+   "weeklySavedM3": 324614,
+   "weeklySavedPct": 72.1,
+   "weeklySavedKwh": 24215,
+   "weeklySavedRs": 169521,
+   "rainSavedM3": 100000,
+   "avgYieldTHa": 109.8,
+   "totalCaneT": 80737,
+   "tonnesAtRisk": 10.2
+  },
+  "stress": [
+   926,
+   74,
+   0,
+   0
+  ],
+  "risk": [
+   562,
+   438,
+   0
+  ],
+  "calendar": [
+   {
+    "day": 0,
+    "plots": 0,
+    "volumeM3": 0
+   },
+   {
+    "day": 1,
+    "plots": 0,
+    "volumeM3": 0
+   },
+   {
+    "day": 2,
+    "plots": 0,
+    "volumeM3": 0
+   },
+   {
+    "day": 3,
+    "plots": 0,
+    "volumeM3": 0
+   },
+   {
+    "day": 4,
+    "plots": 0,
+    "volumeM3": 0
+   },
+   {
+    "day": 5,
+    "plots": 0,
+    "volumeM3": 0
+   },
+   {
+    "day": 6,
+    "plots": 0,
+    "volumeM3": 0
+   },
+   {
+    "day": 7,
+    "plots": 0,
+    "volumeM3": 0
+   },
+   {
+    "day": 8,
+    "plots": 0,
+    "volumeM3": 0
+   },
+   {
+    "day": 9,
+    "plots": 8,
+    "volumeM3": 8549
+   },
+   {
+    "day": 10,
+    "plots": 36,
+    "volumeM3": 39810
+   },
+   {
+    "day": 11,
+    "plots": 118,
+    "volumeM3": 124824
+   },
+   {
+    "day": 12,
+    "plots": 200,
+    "volumeM3": 216025
+   },
+   {
+    "day": 13,
+    "plots": 441,
+    "volumeM3": 473441
+   },
+   {
+    "day": 14,
+    "plots": 98,
+    "volumeM3": 105088
+   }
+  ],
+  "byTaluk": [
+   {
+    "name": "Krishnarajpet",
+    "plots": 207,
+    "avgNdvi": 0.593,
+    "avgSoilMoisture": 0.2347,
+    "avgWaterRequirement": 3.38,
+    "dueIn2Days": 0,
+    "stressedPct": 0,
+    "weeklyWaterM3": 23604,
+    "weeklySavedM3": 69658,
+    "avgYield": 112,
+    "tonnesAtRisk": 2.7
+   },
+   {
+    "name": "Maddur",
+    "plots": 102,
+    "avgNdvi": 0.556,
+    "avgSoilMoisture": 0.2198,
+    "avgWaterRequirement": 3.7,
+    "dueIn2Days": 0,
+    "stressedPct": 0,
+    "weeklyWaterM3": 14226,
+    "weeklySavedM3": 31723,
+    "avgYield": 109.2,
+    "tonnesAtRisk": 0.3
+   },
+   {
+    "name": "Malavalli",
+    "plots": 204,
+    "avgNdvi": 0.571,
+    "avgSoilMoisture": 0.2225,
+    "avgWaterRequirement": 3.6,
+    "dueIn2Days": 0,
+    "stressedPct": 0,
+    "weeklyWaterM3": 26803,
+    "weeklySavedM3": 65105,
+    "avgYield": 108.1,
+    "tonnesAtRisk": 1.4
+   },
+   {
+    "name": "Mandya",
+    "plots": 189,
+    "avgNdvi": 0.569,
+    "avgSoilMoisture": 0.2188,
+    "avgWaterRequirement": 3.53,
+    "dueIn2Days": 0,
+    "stressedPct": 0,
+    "weeklyWaterM3": 23712,
+    "weeklySavedM3": 61431,
+    "avgYield": 107.8,
+    "tonnesAtRisk": 0.6
+   },
+   {
+    "name": "Pandavpura",
+    "plots": 205,
+    "avgNdvi": 0.578,
+    "avgSoilMoisture": 0.2177,
+    "avgWaterRequirement": 3.54,
+    "dueIn2Days": 0,
+    "stressedPct": 0,
+    "weeklyWaterM3": 25869,
+    "weeklySavedM3": 66485,
+    "avgYield": 109.5,
+    "tonnesAtRisk": 5.1
+   },
+   {
+    "name": "Shrirangapattana",
+    "plots": 93,
+    "avgNdvi": 0.622,
+    "avgSoilMoisture": 0.2204,
+    "avgWaterRequirement": 3.53,
+    "dueIn2Days": 0,
+    "stressedPct": 0,
+    "weeklyWaterM3": 11684,
+    "weeklySavedM3": 30212,
+    "avgYield": 113.7,
+    "tonnesAtRisk": 0.1
+   }
+  ]
+ },
+ "method_flood": {
+  "plots": 1000,
+  "taluks": 6,
+  "villages": 10,
+  "areaHa": 736,
+  "dueToday": 0,
+  "dueTomorrow": 0,
+  "dueThisWeek": 20,
+  "rainSkips": 0,
+  "severeStress": 0,
+  "moderateOrWorse": 0,
+  "highDiseaseRisk": 0,
+  "avgWaterRequirementMm": 3.51,
+  "weeklyWaterM3": 328661,
+  "weeklyConventionalM3": 450000,
+  "weeklySavedM3": 121841,
+  "weeklySavedPct": 27.1,
+  "weeklySavedKwh": 9089,
+  "weeklySavedRs": 63628,
+  "rainSavedM3": 0,
+  "avgYieldTHa": 109.8,
+  "totalCaneT": 80735,
+  "tonnesAtRisk": 36.3
+ },
+ "method_furrow": {
+  "plots": 1000,
+  "taluks": 6,
+  "villages": 10,
+  "areaHa": 736,
+  "dueToday": 0,
+  "dueTomorrow": 0,
+  "dueThisWeek": 20,
+  "rainSkips": 0,
+  "severeStress": 0,
+  "moderateOrWorse": 0,
+  "highDiseaseRisk": 0,
+  "avgWaterRequirementMm": 3.51,
+  "weeklyWaterM3": 278085,
+  "weeklyConventionalM3": 450000,
+  "weeklySavedM3": 172419,
+  "weeklySavedPct": 38.3,
+  "weeklySavedKwh": 12862,
+  "weeklySavedRs": 90020,
+  "rainSavedM3": 0,
+  "avgYieldTHa": 109.8,
+  "totalCaneT": 80735,
+  "tonnesAtRisk": 36.3
+ },
+ "method_sprinkler": {
+  "plots": 1000,
+  "taluks": 6,
+  "villages": 10,
+  "areaHa": 736,
+  "dueToday": 0,
+  "dueTomorrow": 0,
+  "dueThisWeek": 20,
+  "rainSkips": 0,
+  "severeStress": 0,
+  "moderateOrWorse": 0,
+  "highDiseaseRisk": 0,
+  "avgWaterRequirementMm": 3.51,
+  "weeklyWaterM3": 241030,
+  "weeklyConventionalM3": 450000,
+  "weeklySavedM3": 209483,
+  "weeklySavedPct": 46.6,
+  "weeklySavedKwh": 15626,
+  "weeklySavedRs": 109409,
+  "rainSavedM3": 0,
+  "avgYieldTHa": 109.8,
+  "totalCaneT": 80735,
+  "tonnesAtRisk": 36.3
+ },
+ "method_drip": {
+  "plots": 1000,
+  "taluks": 6,
+  "villages": 10,
+  "areaHa": 736,
+  "dueToday": 0,
+  "dueTomorrow": 0,
+  "dueThisWeek": 20,
+  "rainSkips": 0,
+  "severeStress": 0,
+  "moderateOrWorse": 0,
+  "highDiseaseRisk": 0,
+  "avgWaterRequirementMm": 3.51,
+  "weeklyWaterM3": 200866,
+  "weeklyConventionalM3": 450000,
+  "weeklySavedM3": 249643,
+  "weeklySavedPct": 55.5,
+  "weeklySavedKwh": 18622,
+  "weeklySavedRs": 130382,
+  "rainSavedM3": 0,
+  "avgYieldTHa": 109.8,
+  "totalCaneT": 80735,
+  "tonnesAtRisk": 36.3
+ },
+ "correlation": {
+  "labels": [
+   "NDVI",
+   "LAI",
+   "Soil moist.",
+   "Soil pH",
+   "Org. C",
+   "Rainfall",
+   "Temp.",
+   "Humidity"
+  ],
+  "matrix": [
+   [
+    1,
+    -0.03,
+    -0.03,
+    0.08,
+    0.14,
+    0.09,
+    -0.12,
+    0.1
+   ],
+   [
+    -0.03,
+    1,
+    0.01,
+    0.13,
+    -0.18,
+    -0.12,
+    0.18,
+    -0.19
+   ],
+   [
+    -0.03,
+    0.01,
+    1,
+    0.2,
+    -0.13,
+    0.21,
+    -0.33,
+    0.56
+   ],
+   [
+    0.08,
+    0.13,
+    0.2,
+    1,
+    0.17,
+    -0.28,
+    0.33,
+    -0.23
+   ],
+   [
+    0.14,
+    -0.18,
+    -0.13,
+    0.17,
+    1,
+    0.02,
+    0.01,
+    -0.03
+   ],
+   [
+    0.09,
+    -0.12,
+    0.21,
+    -0.28,
+    0.02,
+    1,
+    -0.85,
+    0.85
+   ],
+   [
+    -0.12,
+    0.18,
+    -0.33,
+    0.33,
+    0.01,
+    -0.85,
+    1,
+    -0.94
+   ],
+   [
+    0.1,
+    -0.19,
+    0.56,
+    -0.23,
+    -0.03,
+    0.85,
+    -0.94,
+    1
+   ]
+  ]
+ },
+ "zones": [
+  {
+   "id": 0,
+   "name": "Zone A",
+   "description": "High vigour, drier soil, rich in organic carbon",
+   "size": 74,
+   "centroid": {
+    "ndvi": 0.6192953365891869,
+    "lai": 0.5504791049635307,
+    "soil_moisture": 0.21850776487866916,
+    "soil_ph": 6.4740827887000965,
+    "organic_carbon": 16.506307593423703,
+    "rainfall_mm": 622.5539434802182,
+    "temperature_c": 23.321435794404703,
+    "relative_humidity": 78.51106909804619
+   },
+   "currentCount": 74
+  },
+  {
+   "id": 1,
+   "name": "Zone B",
+   "description": "Low vigour, moist soil, high rainfall belt",
+   "size": 99,
+   "centroid": {
+    "ndvi": 0.5712961787092544,
+    "lai": 0.5921157596007935,
+    "soil_moisture": 0.25275186553545076,
+    "soil_ph": 6.4511412096094904,
+    "organic_carbon": 10.006258052061959,
+    "rainfall_mm": 711.2964332103729,
+    "temperature_c": 22.48683727987455,
+    "relative_humidity": 82.6740902162167
+   },
+   "currentCount": 99
+  },
+  {
+   "id": 2,
+   "name": "Zone C",
+   "description": "High vigour, drier soil, high rainfall belt",
+   "size": 549,
+   "centroid": {
+    "ndvi": 0.584827321450999,
+    "lai": 0.6034981237164381,
+    "soil_moisture": 0.21861250367362534,
+    "soil_ph": 6.261863747109472,
+    "organic_carbon": 10.053904303960586,
+    "rainfall_mm": 669.2164163871818,
+    "temperature_c": 23.025580950155035,
+    "relative_humidity": 79.38553083132409
+   },
+   "currentCount": 549
+  },
+  {
+   "id": 3,
+   "name": "Zone D",
+   "description": "Low vigour, drier soil, low rainfall belt",
+   "size": 278,
+   "centroid": {
+    "ndvi": 0.5625661938497674,
+    "lai": 0.6162382693142078,
+    "soil_moisture": 0.22181635287356136,
+    "soil_ph": 6.536700677825903,
+    "organic_carbon": 10.111902184677582,
+    "rainfall_mm": 524.166342939056,
+    "temperature_c": 23.955117745116326,
+    "relative_humidity": 76.61621245766415
+   },
+   "currentCount": 278
+  }
+ ],
+ "quality": {
+  "rows": 1000,
+  "missingNdvi": 6,
+  "outlierCounts": {
+   "ndvi": 5,
+   "lai": 78,
+   "soil_moisture": 7,
+   "soil_ph": 48,
+   "organic_carbon": 20
+  },
+  "constantColumns": [
+   "Farm_Area_ha"
+  ],
+  "singleValueColumns": [
+   "District",
+   "Sampling_Method"
+  ]
+ },
+ "stages": {
+  "Grand growth": 486,
+  "Maturity": 193,
+  "Tillering": 254,
+  "Germination": 67
+ },
+ "hist": {
+  "ndvi": [
+   {
+    "from": 0.25,
+    "to": 0.2958,
+    "count": 3
+   },
+   {
+    "from": 0.2958,
+    "to": 0.3417,
+    "count": 11
+   },
+   {
+    "from": 0.3417,
+    "to": 0.3875,
+    "count": 12
+   },
+   {
+    "from": 0.3875,
+    "to": 0.4333,
+    "count": 37
+   },
+   {
+    "from": 0.4333,
+    "to": 0.4792,
+    "count": 70
+   },
+   {
+    "from": 0.4792,
+    "to": 0.525,
+    "count": 102
+   },
+   {
+    "from": 0.525,
+    "to": 0.5708,
+    "count": 197
+   },
+   {
+    "from": 0.5708,
+    "to": 0.6167,
+    "count": 211
+   },
+   {
+    "from": 0.6167,
+    "to": 0.6625,
+    "count": 157
+   },
+   {
+    "from": 0.6625,
+    "to": 0.7083,
+    "count": 152
+   },
+   {
+    "from": 0.7083,
+    "to": 0.7542,
+    "count": 43
+   },
+   {
+    "from": 0.7542,
+    "to": 0.8,
+    "count": 5
+   }
+  ],
+  "daysToIrrigation": [
+   {
+    "from": 0,
+    "to": 1,
+    "count": 0
+   },
+   {
+    "from": 1,
+    "to": 2,
+    "count": 0
+   },
+   {
+    "from": 2,
+    "to": 3,
+    "count": 0
+   },
+   {
+    "from": 3,
+    "to": 4,
+    "count": 0
+   },
+   {
+    "from": 4,
+    "to": 5,
+    "count": 0
+   },
+   {
+    "from": 5,
+    "to": 6,
+    "count": 0
+   },
+   {
+    "from": 6,
+    "to": 7,
+    "count": 8
+   },
+   {
+    "from": 7,
+    "to": 8,
+    "count": 21
+   },
+   {
+    "from": 8,
+    "to": 9,
+    "count": 24
+   },
+   {
+    "from": 9,
+    "to": 10,
+    "count": 120
+   },
+   {
+    "from": 10,
+    "to": 11,
+    "count": 251
+   },
+   {
+    "from": 11,
+    "to": 12,
+    "count": 269
+   },
+   {
+    "from": 12,
+    "to": 13,
+    "count": 182
+   },
+   {
+    "from": 13,
+    "to": 14,
+    "count": 26
+   },
+   {
+    "from": 14,
+    "to": 15,
+    "count": 99
+   }
+  ]
+ },
+ "schedule": {
+  "scenario": {
+   "forecastRain": 0,
+   "tempAnomaly": 8,
+   "method": "furrow",
+   "pumpFlow": 50,
+   "daysSinceObs": 7,
+   "rhAnomaly": 0
+  },
+  "lanes": 20,
+  "days": 3,
+  "slots": [
+   [
+    360,
+    600
+   ],
+   [
+    1020,
+    1200
+   ],
+   [
+    1800,
+    2040
+   ],
+   [
+    2460,
+    2640
+   ],
+   [
+    3240,
+    3480
+   ],
+   [
+    3900,
+    4080
+   ]
+  ],
+  "powerMinutesPerDay": 420,
+  "demandPumpHours": 1955.1,
+  "capacityPumpHoursPerDay": 140,
+  "jobs": 93,
+  "optimised": {
+   "segments": [
+    {
+     "lane": 0,
+     "id": "MM-MD-0581",
+     "start": 360,
+     "end": 600,
+     "stressClass": 2
+    },
+    {
+     "lane": 0,
+     "id": "MM-MD-0581",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 2
+    },
+    {
+     "lane": 0,
+     "id": "MM-MD-0581",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 2
+    },
+    {
+     "lane": 0,
+     "id": "MM-MD-0581",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 2
+    },
+    {
+     "lane": 0,
+     "id": "MM-MD-0581",
+     "start": 3240,
+     "end": 3246,
+     "stressClass": 2
+    },
+    {
+     "lane": 1,
+     "id": "MM-MD-0355",
+     "start": 360,
+     "end": 600,
+     "stressClass": 2
+    },
+    {
+     "lane": 1,
+     "id": "MM-MD-0355",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 2
+    },
+    {
+     "lane": 1,
+     "id": "MM-MD-0355",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 2
+    },
+    {
+     "lane": 1,
+     "id": "MM-MD-0355",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 2
+    },
+    {
+     "lane": 1,
+     "id": "MM-MD-0355",
+     "start": 3240,
+     "end": 3282,
+     "stressClass": 2
+    },
+    {
+     "lane": 2,
+     "id": "MM-MD-0188",
+     "start": 360,
+     "end": 600,
+     "stressClass": 2
+    },
+    {
+     "lane": 2,
+     "id": "MM-MD-0188",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 2
+    },
+    {
+     "lane": 2,
+     "id": "MM-MD-0188",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 2
+    },
+    {
+     "lane": 2,
+     "id": "MM-MD-0188",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 2
+    },
+    {
+     "lane": 2,
+     "id": "MM-MD-0188",
+     "start": 3240,
+     "end": 3306,
+     "stressClass": 2
+    },
+    {
+     "lane": 3,
+     "id": "MM-MD-0436",
+     "start": 360,
+     "end": 600,
+     "stressClass": 2
+    },
+    {
+     "lane": 3,
+     "id": "MM-MD-0436",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 2
+    },
+    {
+     "lane": 3,
+     "id": "MM-MD-0436",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 2
+    },
+    {
+     "lane": 3,
+     "id": "MM-MD-0436",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 2
+    },
+    {
+     "lane": 3,
+     "id": "MM-MD-0436",
+     "start": 3240,
+     "end": 3366,
+     "stressClass": 2
+    },
+    {
+     "lane": 4,
+     "id": "MM-MD-0200",
+     "start": 360,
+     "end": 600,
+     "stressClass": 2
+    },
+    {
+     "lane": 4,
+     "id": "MM-MD-0200",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 2
+    },
+    {
+     "lane": 4,
+     "id": "MM-MD-0200",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 2
+    },
+    {
+     "lane": 4,
+     "id": "MM-MD-0200",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 2
+    },
+    {
+     "lane": 4,
+     "id": "MM-MD-0200",
+     "start": 3240,
+     "end": 3384,
+     "stressClass": 2
+    },
+    {
+     "lane": 5,
+     "id": "MM-MD-0631",
+     "start": 360,
+     "end": 600,
+     "stressClass": 2
+    },
+    {
+     "lane": 5,
+     "id": "MM-MD-0631",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 2
+    },
+    {
+     "lane": 5,
+     "id": "MM-MD-0631",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 2
+    },
+    {
+     "lane": 5,
+     "id": "MM-MD-0631",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 2
+    },
+    {
+     "lane": 5,
+     "id": "MM-MD-0631",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 2
+    },
+    {
+     "lane": 5,
+     "id": "MM-MD-0631",
+     "start": 3900,
+     "end": 3912,
+     "stressClass": 2
+    },
+    {
+     "lane": 6,
+     "id": "MM-MD-0176",
+     "start": 360,
+     "end": 600,
+     "stressClass": 2
+    },
+    {
+     "lane": 6,
+     "id": "MM-MD-0176",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 2
+    },
+    {
+     "lane": 6,
+     "id": "MM-MD-0176",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 2
+    },
+    {
+     "lane": 6,
+     "id": "MM-MD-0176",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 2
+    },
+    {
+     "lane": 6,
+     "id": "MM-MD-0176",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 2
+    },
+    {
+     "lane": 6,
+     "id": "MM-MD-0176",
+     "start": 3900,
+     "end": 3918,
+     "stressClass": 2
+    },
+    {
+     "lane": 7,
+     "id": "MM-MD-0900",
+     "start": 360,
+     "end": 600,
+     "stressClass": 1
+    },
+    {
+     "lane": 7,
+     "id": "MM-MD-0900",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 1
+    },
+    {
+     "lane": 7,
+     "id": "MM-MD-0900",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 1
+    },
+    {
+     "lane": 7,
+     "id": "MM-MD-0900",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 1
+    },
+    {
+     "lane": 7,
+     "id": "MM-MD-0900",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 7,
+     "id": "MM-MD-0900",
+     "start": 3900,
+     "end": 3978,
+     "stressClass": 1
+    },
+    {
+     "lane": 8,
+     "id": "MM-MD-0079",
+     "start": 360,
+     "end": 600,
+     "stressClass": 2
+    },
+    {
+     "lane": 8,
+     "id": "MM-MD-0079",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 2
+    },
+    {
+     "lane": 8,
+     "id": "MM-MD-0079",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 2
+    },
+    {
+     "lane": 8,
+     "id": "MM-MD-0079",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 2
+    },
+    {
+     "lane": 8,
+     "id": "MM-MD-0079",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 2
+    },
+    {
+     "lane": 8,
+     "id": "MM-MD-0079",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 2
+    },
+    {
+     "lane": 9,
+     "id": "MM-MD-0147",
+     "start": 360,
+     "end": 600,
+     "stressClass": 1
+    },
+    {
+     "lane": 9,
+     "id": "MM-MD-0147",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 1
+    },
+    {
+     "lane": 9,
+     "id": "MM-MD-0147",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 1
+    },
+    {
+     "lane": 9,
+     "id": "MM-MD-0147",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 1
+    },
+    {
+     "lane": 9,
+     "id": "MM-MD-0147",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 9,
+     "id": "MM-MD-0147",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 10,
+     "id": "MM-MD-0082",
+     "start": 360,
+     "end": 600,
+     "stressClass": 1
+    },
+    {
+     "lane": 10,
+     "id": "MM-MD-0082",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 1
+    },
+    {
+     "lane": 10,
+     "id": "MM-MD-0082",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 1
+    },
+    {
+     "lane": 10,
+     "id": "MM-MD-0082",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 1
+    },
+    {
+     "lane": 10,
+     "id": "MM-MD-0082",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 10,
+     "id": "MM-MD-0082",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 11,
+     "id": "MM-MD-0998",
+     "start": 360,
+     "end": 600,
+     "stressClass": 1
+    },
+    {
+     "lane": 11,
+     "id": "MM-MD-0998",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 1
+    },
+    {
+     "lane": 11,
+     "id": "MM-MD-0998",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 1
+    },
+    {
+     "lane": 11,
+     "id": "MM-MD-0998",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 1
+    },
+    {
+     "lane": 11,
+     "id": "MM-MD-0998",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 11,
+     "id": "MM-MD-0998",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 12,
+     "id": "MM-MD-0801",
+     "start": 360,
+     "end": 600,
+     "stressClass": 1
+    },
+    {
+     "lane": 12,
+     "id": "MM-MD-0801",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 1
+    },
+    {
+     "lane": 12,
+     "id": "MM-MD-0801",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 1
+    },
+    {
+     "lane": 12,
+     "id": "MM-MD-0801",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 1
+    },
+    {
+     "lane": 12,
+     "id": "MM-MD-0801",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 12,
+     "id": "MM-MD-0801",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 13,
+     "id": "MM-MD-0562",
+     "start": 360,
+     "end": 600,
+     "stressClass": 1
+    },
+    {
+     "lane": 13,
+     "id": "MM-MD-0562",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 1
+    },
+    {
+     "lane": 13,
+     "id": "MM-MD-0562",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 1
+    },
+    {
+     "lane": 13,
+     "id": "MM-MD-0562",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 1
+    },
+    {
+     "lane": 13,
+     "id": "MM-MD-0562",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 13,
+     "id": "MM-MD-0562",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 14,
+     "id": "MM-MD-0375",
+     "start": 360,
+     "end": 600,
+     "stressClass": 2
+    },
+    {
+     "lane": 14,
+     "id": "MM-MD-0375",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 2
+    },
+    {
+     "lane": 14,
+     "id": "MM-MD-0375",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 2
+    },
+    {
+     "lane": 14,
+     "id": "MM-MD-0375",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 2
+    },
+    {
+     "lane": 14,
+     "id": "MM-MD-0375",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 2
+    },
+    {
+     "lane": 14,
+     "id": "MM-MD-0375",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 2
+    },
+    {
+     "lane": 15,
+     "id": "MM-MD-0327",
+     "start": 360,
+     "end": 600,
+     "stressClass": 2
+    },
+    {
+     "lane": 15,
+     "id": "MM-MD-0327",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 2
+    },
+    {
+     "lane": 15,
+     "id": "MM-MD-0327",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 2
+    },
+    {
+     "lane": 15,
+     "id": "MM-MD-0327",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 2
+    },
+    {
+     "lane": 15,
+     "id": "MM-MD-0327",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 2
+    },
+    {
+     "lane": 15,
+     "id": "MM-MD-0327",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 2
+    },
+    {
+     "lane": 16,
+     "id": "MM-MD-0021",
+     "start": 360,
+     "end": 600,
+     "stressClass": 2
+    },
+    {
+     "lane": 16,
+     "id": "MM-MD-0021",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 2
+    },
+    {
+     "lane": 16,
+     "id": "MM-MD-0021",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 2
+    },
+    {
+     "lane": 16,
+     "id": "MM-MD-0021",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 2
+    },
+    {
+     "lane": 16,
+     "id": "MM-MD-0021",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 2
+    },
+    {
+     "lane": 16,
+     "id": "MM-MD-0021",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 2
+    },
+    {
+     "lane": 17,
+     "id": "MM-MD-0086",
+     "start": 360,
+     "end": 600,
+     "stressClass": 1
+    },
+    {
+     "lane": 17,
+     "id": "MM-MD-0086",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 1
+    },
+    {
+     "lane": 17,
+     "id": "MM-MD-0086",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 1
+    },
+    {
+     "lane": 17,
+     "id": "MM-MD-0086",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 1
+    },
+    {
+     "lane": 17,
+     "id": "MM-MD-0086",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 17,
+     "id": "MM-MD-0086",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 18,
+     "id": "MM-MD-0385",
+     "start": 360,
+     "end": 600,
+     "stressClass": 1
+    },
+    {
+     "lane": 18,
+     "id": "MM-MD-0385",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 1
+    },
+    {
+     "lane": 18,
+     "id": "MM-MD-0385",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 1
+    },
+    {
+     "lane": 18,
+     "id": "MM-MD-0385",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 1
+    },
+    {
+     "lane": 18,
+     "id": "MM-MD-0385",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 18,
+     "id": "MM-MD-0385",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 19,
+     "id": "MM-MD-0857",
+     "start": 360,
+     "end": 600,
+     "stressClass": 1
+    },
+    {
+     "lane": 19,
+     "id": "MM-MD-0857",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 1
+    },
+    {
+     "lane": 19,
+     "id": "MM-MD-0857",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 1
+    },
+    {
+     "lane": 19,
+     "id": "MM-MD-0857",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 1
+    },
+    {
+     "lane": 19,
+     "id": "MM-MD-0857",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 19,
+     "id": "MM-MD-0857",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 0,
+     "id": "MM-MD-0161",
+     "start": 3246,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 0,
+     "id": "MM-MD-0161",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 1,
+     "id": "MM-MD-0270",
+     "start": 3282,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 1,
+     "id": "MM-MD-0270",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 2,
+     "id": "MM-MD-0052",
+     "start": 3306,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 2,
+     "id": "MM-MD-0052",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 3,
+     "id": "MM-MD-0634",
+     "start": 3366,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 3,
+     "id": "MM-MD-0634",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 4,
+     "id": "MM-MD-0793",
+     "start": 3384,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 4,
+     "id": "MM-MD-0793",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 5,
+     "id": "MM-MD-0813",
+     "start": 3912,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 6,
+     "id": "MM-MD-0294",
+     "start": 3918,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 7,
+     "id": "MM-MD-0252",
+     "start": 3978,
+     "end": 4080,
+     "stressClass": 1
+    }
+   ],
+   "results": [
+    {
+     "id": "MM-MD-0581",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 2,
+     "tonnesAtRisk": 1.58,
+     "hours": 14.1,
+     "minutes": 846,
+     "weight": 3.841,
+     "start": 360,
+     "end": 3246,
+     "complete": true,
+     "remainingMinutes": 0
+    },
+    {
+     "id": "MM-MD-0355",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 2,
+     "tonnesAtRisk": 1.56,
+     "hours": 14.7,
+     "minutes": 882,
+     "weight": 3.848,
+     "start": 360,
+     "end": 3282,
+     "complete": true,
+     "remainingMinutes": 0
+    },
+    {
+     "id": "MM-MD-0188",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 2,
+     "tonnesAtRisk": 1.38,
+     "hours": 15.1,
+     "minutes": 906,
+     "weight": 3.334,
+     "start": 360,
+     "end": 3306,
+     "complete": true,
+     "remainingMinutes": 0
+    },
+    {
+     "id": "MM-MD-0436",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 2,
+     "tonnesAtRisk": 1.32,
+     "hours": 16.1,
+     "minutes": 966,
+     "weight": 3.326,
+     "start": 360,
+     "end": 3366,
+     "complete": true,
+     "remainingMinutes": 0
+    },
+    {
+     "id": "MM-MD-0200",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 2,
+     "tonnesAtRisk": 1.41,
+     "hours": 16.4,
+     "minutes": 984,
+     "weight": 3.384,
+     "start": 360,
+     "end": 3384,
+     "complete": true,
+     "remainingMinutes": 0
+    },
+    {
+     "id": "MM-MD-0631",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 2,
+     "tonnesAtRisk": 1.25,
+     "hours": 18.2,
+     "minutes": 1092,
+     "weight": 3.092,
+     "start": 360,
+     "end": 3912,
+     "complete": true,
+     "remainingMinutes": 0
+    },
+    {
+     "id": "MM-MD-0176",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 2,
+     "tonnesAtRisk": 1.23,
+     "hours": 18.3,
+     "minutes": 1098,
+     "weight": 3.041,
+     "start": 360,
+     "end": 3918,
+     "complete": true,
+     "remainingMinutes": 0
+    },
+    {
+     "id": "MM-MD-0900",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.15,
+     "hours": 19.3,
+     "minutes": 1158,
+     "weight": 2.795,
+     "start": 360,
+     "end": 3978,
+     "complete": true,
+     "remainingMinutes": 0
+    },
+    {
+     "id": "MM-MD-0079",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 2,
+     "tonnesAtRisk": 1.28,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 3.234,
+     "start": 360,
+     "end": 4080,
+     "complete": false,
+     "remainingMinutes": 84
+    },
+    {
+     "id": "MM-MD-0147",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.26,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.97,
+     "start": 360,
+     "end": 4080,
+     "complete": false,
+     "remainingMinutes": 84
+    },
+    {
+     "id": "MM-MD-0082",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.28,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.947,
+     "start": 360,
+     "end": 4080,
+     "complete": false,
+     "remainingMinutes": 84
+    },
+    {
+     "id": "MM-MD-0998",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.26,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.912,
+     "start": 360,
+     "end": 4080,
+     "complete": false,
+     "remainingMinutes": 84
+    },
+    {
+     "id": "MM-MD-0801",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.26,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.876,
+     "start": 360,
+     "end": 4080,
+     "complete": false,
+     "remainingMinutes": 84
+    },
+    {
+     "id": "MM-MD-0562",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.2,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.819,
+     "start": 360,
+     "end": 4080,
+     "complete": false,
+     "remainingMinutes": 84
+    },
+    {
+     "id": "MM-MD-0375",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 2,
+     "tonnesAtRisk": 1.06,
+     "hours": 22.3,
+     "minutes": 1338,
+     "weight": 2.795,
+     "start": 360,
+     "end": 4080,
+     "complete": false,
+     "remainingMinutes": 78
+    },
+    {
+     "id": "MM-MD-0327",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 2,
+     "tonnesAtRisk": 1.07,
+     "hours": 22.3,
+     "minutes": 1338,
+     "weight": 2.722,
+     "start": 360,
+     "end": 4080,
+     "complete": false,
+     "remainingMinutes": 78
+    },
+    {
+     "id": "MM-MD-0021",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 2,
+     "tonnesAtRisk": 1.05,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.661,
+     "start": 360,
+     "end": 4080,
+     "complete": false,
+     "remainingMinutes": 84
+    },
+    {
+     "id": "MM-MD-0086",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.06,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.502,
+     "start": 360,
+     "end": 4080,
+     "complete": false,
+     "remainingMinutes": 84
+    },
+    {
+     "id": "MM-MD-0385",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.06,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.5,
+     "start": 360,
+     "end": 4080,
+     "complete": false,
+     "remainingMinutes": 84
+    },
+    {
+     "id": "MM-MD-0857",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.04,
+     "hours": 22.3,
+     "minutes": 1338,
+     "weight": 2.476,
+     "start": 360,
+     "end": 4080,
+     "complete": false,
+     "remainingMinutes": 78
+    },
+    {
+     "id": "MM-MD-0161",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.07,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.483,
+     "start": 3246,
+     "end": 4080,
+     "complete": false,
+     "remainingMinutes": 930
+    },
+    {
+     "id": "MM-MD-0270",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.05,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.479,
+     "start": 3282,
+     "end": 4080,
+     "complete": false,
+     "remainingMinutes": 966
+    },
+    {
+     "id": "MM-MD-0052",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.06,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.462,
+     "start": 3306,
+     "end": 4080,
+     "complete": false,
+     "remainingMinutes": 990
+    },
+    {
+     "id": "MM-MD-0634",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.05,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.434,
+     "start": 3366,
+     "end": 4080,
+     "complete": false,
+     "remainingMinutes": 1050
+    },
+    {
+     "id": "MM-MD-0793",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.05,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.421,
+     "start": 3384,
+     "end": 4080,
+     "complete": false,
+     "remainingMinutes": 1068
+    },
+    {
+     "id": "MM-MD-0813",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.05,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.417,
+     "start": 3912,
+     "end": 4080,
+     "complete": false,
+     "remainingMinutes": 1176
+    },
+    {
+     "id": "MM-MD-0294",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.05,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.411,
+     "start": 3918,
+     "end": 4080,
+     "complete": false,
+     "remainingMinutes": 1182
+    },
+    {
+     "id": "MM-MD-0252",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.04,
+     "hours": 22.3,
+     "minutes": 1338,
+     "weight": 2.355,
+     "start": 3978,
+     "end": 4080,
+     "complete": false,
+     "remainingMinutes": 1236
+    },
+    {
+     "id": "MM-MD-0091",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.92,
+     "hours": 22,
+     "minutes": 1320,
+     "weight": 2.321,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1320
+    },
+    {
+     "id": "MM-MD-0157",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.05,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.346,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0315",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.03,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.342,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0884",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.03,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.336,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0925",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.02,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.322,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0873",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.02,
+     "hours": 22.3,
+     "minutes": 1338,
+     "weight": 2.301,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1338
+    },
+    {
+     "id": "MM-MD-0541",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.01,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.31,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0965",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.04,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.308,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0034",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.95,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.297,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0288",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.01,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.292,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0561",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 1,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.288,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0407",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.01,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.273,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0891",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.97,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.241,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0912",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.99,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.226,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0365",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.99,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.219,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0951",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.98,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.207,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0735",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.99,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.201,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0915",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.95,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.19,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0896",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.99,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.189,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0232",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.95,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.131,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0117",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.9,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.111,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0914",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.93,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.083,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0244",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.94,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.036,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0308",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.94,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 2.026,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0006",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.93,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 1.978,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0978",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.89,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 1.921,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0284",
+     "village": "Hosur",
+     "dueInDays": 1,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.97,
+     "hours": 14.3,
+     "minutes": 858,
+     "weight": 1.216,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 858
+    },
+    {
+     "id": "MM-MD-0537",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.88,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 1.887,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0182",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.85,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 1.853,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0467",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.79,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 1.687,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0736",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.79,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 1.677,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0025",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.68,
+     "hours": 22.2,
+     "minutes": 1332,
+     "weight": 1.644,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1332
+    },
+    {
+     "id": "MM-MD-0958",
+     "village": "Hosur",
+     "dueInDays": 1,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.98,
+     "hours": 16.3,
+     "minutes": 978,
+     "weight": 1.2,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 978
+    },
+    {
+     "id": "MM-MD-0068",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.67,
+     "hours": 22.2,
+     "minutes": 1332,
+     "weight": 1.591,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1332
+    },
+    {
+     "id": "MM-MD-0781",
+     "village": "Hosur",
+     "dueInDays": 1,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.03,
+     "hours": 17.3,
+     "minutes": 1038,
+     "weight": 1.236,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1038
+    },
+    {
+     "id": "MM-MD-0567",
+     "village": "Hosur",
+     "dueInDays": 1,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.12,
+     "hours": 19.3,
+     "minutes": 1158,
+     "weight": 1.364,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1158
+    },
+    {
+     "id": "MM-MD-0012",
+     "village": "Hosur",
+     "dueInDays": 1,
+     "stressClass": 2,
+     "tonnesAtRisk": 1.09,
+     "hours": 19.5,
+     "minutes": 1170,
+     "weight": 1.367,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1170
+    },
+    {
+     "id": "MM-MD-0643",
+     "village": "Hosur",
+     "dueInDays": 1,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.97,
+     "hours": 16.9,
+     "minutes": 1014,
+     "weight": 1.178,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1014
+    },
+    {
+     "id": "MM-MD-0060",
+     "village": "Hosur",
+     "dueInDays": 1,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.93,
+     "hours": 16.6,
+     "minutes": 996,
+     "weight": 1.133,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 996
+    },
+    {
+     "id": "MM-MD-0064",
+     "village": "Hosur",
+     "dueInDays": 1,
+     "stressClass": 2,
+     "tonnesAtRisk": 1.05,
+     "hours": 19.8,
+     "minutes": 1188,
+     "weight": 1.314,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1188
+    },
+    {
+     "id": "MM-MD-0332",
+     "village": "Hosur",
+     "dueInDays": 1,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.8,
+     "hours": 15.3,
+     "minutes": 918,
+     "weight": 1.002,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 918
+    },
+    {
+     "id": "MM-MD-0394",
+     "village": "Hosur",
+     "dueInDays": 1,
+     "stressClass": 1,
+     "tonnesAtRisk": 1.04,
+     "hours": 19.8,
+     "minutes": 1188,
+     "weight": 1.292,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1188
+    },
+    {
+     "id": "MM-MD-0031",
+     "village": "Hosur",
+     "dueInDays": 1,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.99,
+     "hours": 18.5,
+     "minutes": 1110,
+     "weight": 1.192,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1110
+    },
+    {
+     "id": "MM-MD-0505",
+     "village": "Hosur",
+     "dueInDays": 1,
+     "stressClass": 2,
+     "tonnesAtRisk": 1.04,
+     "hours": 20.5,
+     "minutes": 1230,
+     "weight": 1.309,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1230
+    },
+    {
+     "id": "MM-MD-0363",
+     "village": "Hosur",
+     "dueInDays": 1,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.97,
+     "hours": 19.3,
+     "minutes": 1158,
+     "weight": 1.171,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1158
+    },
+    {
+     "id": "MM-MD-0466",
+     "village": "Hosur",
+     "dueInDays": 1,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.99,
+     "hours": 20.4,
+     "minutes": 1224,
+     "weight": 1.237,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1224
+    },
+    {
+     "id": "MM-MD-0610",
+     "village": "Hosur",
+     "dueInDays": 1,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.83,
+     "hours": 16.9,
+     "minutes": 1014,
+     "weight": 0.976,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1014
+    },
+    {
+     "id": "MM-MD-0041",
+     "village": "Hosur",
+     "dueInDays": 1,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.68,
+     "hours": 16.1,
+     "minutes": 966,
+     "weight": 0.832,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 966
+    },
+    {
+     "id": "MM-MD-0670",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.37,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 1.083,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0104",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.34,
+     "hours": 22.3,
+     "minutes": 1338,
+     "weight": 0.948,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1338
+    },
+    {
+     "id": "MM-MD-0349",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.32,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 0.859,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0691",
+     "village": "Hosur",
+     "dueInDays": 2,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.44,
+     "hours": 14.4,
+     "minutes": 864,
+     "weight": 0.542,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 864
+    },
+    {
+     "id": "MM-MD-0916",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.3,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 0.766,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0834",
+     "village": "Hosur",
+     "dueInDays": 1,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.69,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 0.748,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0258",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.26,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 0.634,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0273",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.24,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 0.588,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0979",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.24,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 0.587,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0469",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.22,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 0.562,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0446",
+     "village": "Hosur",
+     "dueInDays": 0,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.22,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 0.545,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0779",
+     "village": "Hosur",
+     "dueInDays": 1,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.33,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 0.43,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0145",
+     "village": "Hosur",
+     "dueInDays": 1,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.26,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 0.319,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0131",
+     "village": "Hosur",
+     "dueInDays": 1,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.22,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 0.314,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0088",
+     "village": "Hosur",
+     "dueInDays": 2,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.1,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 0.185,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    },
+    {
+     "id": "MM-MD-0619",
+     "village": "Hosur",
+     "dueInDays": 2,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.09,
+     "hours": 22.3,
+     "minutes": 1338,
+     "weight": 0.163,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1338
+    },
+    {
+     "id": "MM-MD-0860",
+     "village": "Hosur",
+     "dueInDays": 1,
+     "stressClass": 1,
+     "tonnesAtRisk": 0.1,
+     "hours": 22.4,
+     "minutes": 1344,
+     "weight": 0.156,
+     "start": null,
+     "end": null,
+     "complete": false,
+     "remainingMinutes": 1344
+    }
+   ],
+   "kpi": {
+    "plotsCompleted": 8,
+    "plotsPending": 85,
+    "tonnesAtRiskPending": 72.61,
+    "estimatedLossT": 80.23,
+    "avgHighStressCompletionHours": 81,
+    "highStressPlots": 14,
+    "highStressServed": 7,
+    "pumpHours": 420,
+    "energyKwh": 1567
+   }
+  },
+  "fcfs": {
+   "kpi": {
+    "plotsCompleted": 5,
+    "plotsPending": 88,
+    "tonnesAtRiskPending": 78.75,
+    "estimatedLossT": 85.6,
+    "avgHighStressCompletionHours": 115.1,
+    "highStressPlots": 14,
+    "highStressServed": 2,
+    "pumpHours": 420,
+    "energyKwh": 1567
+   },
+   "segments": [
+    {
+     "lane": 0,
+     "id": "MM-MD-0006",
+     "start": 360,
+     "end": 600,
+     "stressClass": 1
+    },
+    {
+     "lane": 0,
+     "id": "MM-MD-0006",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 1
+    },
+    {
+     "lane": 0,
+     "id": "MM-MD-0006",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 1
+    },
+    {
+     "lane": 0,
+     "id": "MM-MD-0006",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 1
+    },
+    {
+     "lane": 0,
+     "id": "MM-MD-0006",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 0,
+     "id": "MM-MD-0006",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 1,
+     "id": "MM-MD-0012",
+     "start": 360,
+     "end": 600,
+     "stressClass": 2
+    },
+    {
+     "lane": 1,
+     "id": "MM-MD-0012",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 2
+    },
+    {
+     "lane": 1,
+     "id": "MM-MD-0012",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 2
+    },
+    {
+     "lane": 1,
+     "id": "MM-MD-0012",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 2
+    },
+    {
+     "lane": 1,
+     "id": "MM-MD-0012",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 2
+    },
+    {
+     "lane": 1,
+     "id": "MM-MD-0012",
+     "start": 3900,
+     "end": 3990,
+     "stressClass": 2
+    },
+    {
+     "lane": 2,
+     "id": "MM-MD-0021",
+     "start": 360,
+     "end": 600,
+     "stressClass": 2
+    },
+    {
+     "lane": 2,
+     "id": "MM-MD-0021",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 2
+    },
+    {
+     "lane": 2,
+     "id": "MM-MD-0021",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 2
+    },
+    {
+     "lane": 2,
+     "id": "MM-MD-0021",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 2
+    },
+    {
+     "lane": 2,
+     "id": "MM-MD-0021",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 2
+    },
+    {
+     "lane": 2,
+     "id": "MM-MD-0021",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 2
+    },
+    {
+     "lane": 3,
+     "id": "MM-MD-0025",
+     "start": 360,
+     "end": 600,
+     "stressClass": 1
+    },
+    {
+     "lane": 3,
+     "id": "MM-MD-0025",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 1
+    },
+    {
+     "lane": 3,
+     "id": "MM-MD-0025",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 1
+    },
+    {
+     "lane": 3,
+     "id": "MM-MD-0025",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 1
+    },
+    {
+     "lane": 3,
+     "id": "MM-MD-0025",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 3,
+     "id": "MM-MD-0025",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 4,
+     "id": "MM-MD-0031",
+     "start": 360,
+     "end": 600,
+     "stressClass": 1
+    },
+    {
+     "lane": 4,
+     "id": "MM-MD-0031",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 1
+    },
+    {
+     "lane": 4,
+     "id": "MM-MD-0031",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 1
+    },
+    {
+     "lane": 4,
+     "id": "MM-MD-0031",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 1
+    },
+    {
+     "lane": 4,
+     "id": "MM-MD-0031",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 4,
+     "id": "MM-MD-0031",
+     "start": 3900,
+     "end": 3930,
+     "stressClass": 1
+    },
+    {
+     "lane": 5,
+     "id": "MM-MD-0034",
+     "start": 360,
+     "end": 600,
+     "stressClass": 1
+    },
+    {
+     "lane": 5,
+     "id": "MM-MD-0034",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 1
+    },
+    {
+     "lane": 5,
+     "id": "MM-MD-0034",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 1
+    },
+    {
+     "lane": 5,
+     "id": "MM-MD-0034",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 1
+    },
+    {
+     "lane": 5,
+     "id": "MM-MD-0034",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 5,
+     "id": "MM-MD-0034",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 6,
+     "id": "MM-MD-0041",
+     "start": 360,
+     "end": 600,
+     "stressClass": 1
+    },
+    {
+     "lane": 6,
+     "id": "MM-MD-0041",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 1
+    },
+    {
+     "lane": 6,
+     "id": "MM-MD-0041",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 1
+    },
+    {
+     "lane": 6,
+     "id": "MM-MD-0041",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 1
+    },
+    {
+     "lane": 6,
+     "id": "MM-MD-0041",
+     "start": 3240,
+     "end": 3366,
+     "stressClass": 1
+    },
+    {
+     "lane": 7,
+     "id": "MM-MD-0052",
+     "start": 360,
+     "end": 600,
+     "stressClass": 1
+    },
+    {
+     "lane": 7,
+     "id": "MM-MD-0052",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 1
+    },
+    {
+     "lane": 7,
+     "id": "MM-MD-0052",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 1
+    },
+    {
+     "lane": 7,
+     "id": "MM-MD-0052",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 1
+    },
+    {
+     "lane": 7,
+     "id": "MM-MD-0052",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 7,
+     "id": "MM-MD-0052",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 8,
+     "id": "MM-MD-0060",
+     "start": 360,
+     "end": 600,
+     "stressClass": 1
+    },
+    {
+     "lane": 8,
+     "id": "MM-MD-0060",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 1
+    },
+    {
+     "lane": 8,
+     "id": "MM-MD-0060",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 1
+    },
+    {
+     "lane": 8,
+     "id": "MM-MD-0060",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 1
+    },
+    {
+     "lane": 8,
+     "id": "MM-MD-0060",
+     "start": 3240,
+     "end": 3396,
+     "stressClass": 1
+    },
+    {
+     "lane": 9,
+     "id": "MM-MD-0064",
+     "start": 360,
+     "end": 600,
+     "stressClass": 2
+    },
+    {
+     "lane": 9,
+     "id": "MM-MD-0064",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 2
+    },
+    {
+     "lane": 9,
+     "id": "MM-MD-0064",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 2
+    },
+    {
+     "lane": 9,
+     "id": "MM-MD-0064",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 2
+    },
+    {
+     "lane": 9,
+     "id": "MM-MD-0064",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 2
+    },
+    {
+     "lane": 9,
+     "id": "MM-MD-0064",
+     "start": 3900,
+     "end": 4008,
+     "stressClass": 2
+    },
+    {
+     "lane": 10,
+     "id": "MM-MD-0068",
+     "start": 360,
+     "end": 600,
+     "stressClass": 1
+    },
+    {
+     "lane": 10,
+     "id": "MM-MD-0068",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 1
+    },
+    {
+     "lane": 10,
+     "id": "MM-MD-0068",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 1
+    },
+    {
+     "lane": 10,
+     "id": "MM-MD-0068",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 1
+    },
+    {
+     "lane": 10,
+     "id": "MM-MD-0068",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 10,
+     "id": "MM-MD-0068",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 11,
+     "id": "MM-MD-0079",
+     "start": 360,
+     "end": 600,
+     "stressClass": 2
+    },
+    {
+     "lane": 11,
+     "id": "MM-MD-0079",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 2
+    },
+    {
+     "lane": 11,
+     "id": "MM-MD-0079",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 2
+    },
+    {
+     "lane": 11,
+     "id": "MM-MD-0079",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 2
+    },
+    {
+     "lane": 11,
+     "id": "MM-MD-0079",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 2
+    },
+    {
+     "lane": 11,
+     "id": "MM-MD-0079",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 2
+    },
+    {
+     "lane": 12,
+     "id": "MM-MD-0082",
+     "start": 360,
+     "end": 600,
+     "stressClass": 1
+    },
+    {
+     "lane": 12,
+     "id": "MM-MD-0082",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 1
+    },
+    {
+     "lane": 12,
+     "id": "MM-MD-0082",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 1
+    },
+    {
+     "lane": 12,
+     "id": "MM-MD-0082",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 1
+    },
+    {
+     "lane": 12,
+     "id": "MM-MD-0082",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 12,
+     "id": "MM-MD-0082",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 13,
+     "id": "MM-MD-0086",
+     "start": 360,
+     "end": 600,
+     "stressClass": 1
+    },
+    {
+     "lane": 13,
+     "id": "MM-MD-0086",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 1
+    },
+    {
+     "lane": 13,
+     "id": "MM-MD-0086",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 1
+    },
+    {
+     "lane": 13,
+     "id": "MM-MD-0086",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 1
+    },
+    {
+     "lane": 13,
+     "id": "MM-MD-0086",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 13,
+     "id": "MM-MD-0086",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 14,
+     "id": "MM-MD-0088",
+     "start": 360,
+     "end": 600,
+     "stressClass": 1
+    },
+    {
+     "lane": 14,
+     "id": "MM-MD-0088",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 1
+    },
+    {
+     "lane": 14,
+     "id": "MM-MD-0088",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 1
+    },
+    {
+     "lane": 14,
+     "id": "MM-MD-0088",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 1
+    },
+    {
+     "lane": 14,
+     "id": "MM-MD-0088",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 14,
+     "id": "MM-MD-0088",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 15,
+     "id": "MM-MD-0091",
+     "start": 360,
+     "end": 600,
+     "stressClass": 1
+    },
+    {
+     "lane": 15,
+     "id": "MM-MD-0091",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 1
+    },
+    {
+     "lane": 15,
+     "id": "MM-MD-0091",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 1
+    },
+    {
+     "lane": 15,
+     "id": "MM-MD-0091",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 1
+    },
+    {
+     "lane": 15,
+     "id": "MM-MD-0091",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 15,
+     "id": "MM-MD-0091",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 16,
+     "id": "MM-MD-0104",
+     "start": 360,
+     "end": 600,
+     "stressClass": 1
+    },
+    {
+     "lane": 16,
+     "id": "MM-MD-0104",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 1
+    },
+    {
+     "lane": 16,
+     "id": "MM-MD-0104",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 1
+    },
+    {
+     "lane": 16,
+     "id": "MM-MD-0104",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 1
+    },
+    {
+     "lane": 16,
+     "id": "MM-MD-0104",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 16,
+     "id": "MM-MD-0104",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 17,
+     "id": "MM-MD-0117",
+     "start": 360,
+     "end": 600,
+     "stressClass": 1
+    },
+    {
+     "lane": 17,
+     "id": "MM-MD-0117",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 1
+    },
+    {
+     "lane": 17,
+     "id": "MM-MD-0117",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 1
+    },
+    {
+     "lane": 17,
+     "id": "MM-MD-0117",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 1
+    },
+    {
+     "lane": 17,
+     "id": "MM-MD-0117",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 17,
+     "id": "MM-MD-0117",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 18,
+     "id": "MM-MD-0131",
+     "start": 360,
+     "end": 600,
+     "stressClass": 1
+    },
+    {
+     "lane": 18,
+     "id": "MM-MD-0131",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 1
+    },
+    {
+     "lane": 18,
+     "id": "MM-MD-0131",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 1
+    },
+    {
+     "lane": 18,
+     "id": "MM-MD-0131",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 1
+    },
+    {
+     "lane": 18,
+     "id": "MM-MD-0131",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 18,
+     "id": "MM-MD-0131",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 19,
+     "id": "MM-MD-0145",
+     "start": 360,
+     "end": 600,
+     "stressClass": 1
+    },
+    {
+     "lane": 19,
+     "id": "MM-MD-0145",
+     "start": 1020,
+     "end": 1200,
+     "stressClass": 1
+    },
+    {
+     "lane": 19,
+     "id": "MM-MD-0145",
+     "start": 1800,
+     "end": 2040,
+     "stressClass": 1
+    },
+    {
+     "lane": 19,
+     "id": "MM-MD-0145",
+     "start": 2460,
+     "end": 2640,
+     "stressClass": 1
+    },
+    {
+     "lane": 19,
+     "id": "MM-MD-0145",
+     "start": 3240,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 19,
+     "id": "MM-MD-0145",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 6,
+     "id": "MM-MD-0147",
+     "start": 3366,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 6,
+     "id": "MM-MD-0147",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 8,
+     "id": "MM-MD-0157",
+     "start": 3396,
+     "end": 3480,
+     "stressClass": 1
+    },
+    {
+     "lane": 8,
+     "id": "MM-MD-0157",
+     "start": 3900,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 4,
+     "id": "MM-MD-0161",
+     "start": 3930,
+     "end": 4080,
+     "stressClass": 1
+    },
+    {
+     "lane": 1,
+     "id": "MM-MD-0176",
+     "start": 3990,
+     "end": 4080,
+     "stressClass": 2
+    },
+    {
+     "lane": 9,
+     "id": "MM-MD-0182",
+     "start": 4008,
+     "end": 4080,
+     "stressClass": 1
+    }
+   ]
+  },
+  "windows": [
+   {
+    "start": "06:00",
+    "end": "10:00"
+   },
+   {
+    "start": "17:00",
+    "end": "20:00"
+   }
+  ]
+ },
+ "schedule_cap": {
+  "5": {
+   "opt": {
+    "plotsCompleted": 5,
+    "plotsPending": 88,
+    "tonnesAtRiskPending": 76.24,
+    "estimatedLossT": 90.75,
+    "avgHighStressCompletionHours": 107.1,
+    "highStressPlots": 14,
+    "highStressServed": 5,
+    "pumpHours": 105,
+    "energyKwh": 392
+   },
+   "fcfs": {
+    "plotsCompleted": 2,
+    "plotsPending": 91,
+    "tonnesAtRiskPending": 81.41,
+    "estimatedLossT": 93,
+    "avgHighStressCompletionHours": 125.9,
+    "highStressPlots": 14,
+    "highStressServed": 1,
+    "pumpHours": 105,
+    "energyKwh": 392
+   }
+  },
+  "10": {
+   "opt": {
+    "plotsCompleted": 8,
+    "plotsPending": 85,
+    "tonnesAtRiskPending": 72.61,
+    "estimatedLossT": 86.89,
+    "avgHighStressCompletionHours": 94,
+    "highStressPlots": 14,
+    "highStressServed": 7,
+    "pumpHours": 210,
+    "energyKwh": 783
+   },
+   "fcfs": {
+    "plotsCompleted": 5,
+    "plotsPending": 88,
+    "tonnesAtRiskPending": 78.75,
+    "estimatedLossT": 89.89,
+    "avgHighStressCompletionHours": 119.6,
+    "highStressPlots": 14,
+    "highStressServed": 2,
+    "pumpHours": 210,
+    "energyKwh": 783
+   }
+  },
+  "20": {
+   "opt": {
+    "plotsCompleted": 8,
+    "plotsPending": 85,
+    "tonnesAtRiskPending": 72.61,
+    "estimatedLossT": 80.23,
+    "avgHighStressCompletionHours": 81,
+    "highStressPlots": 14,
+    "highStressServed": 7,
+    "pumpHours": 420,
+    "energyKwh": 1567
+   },
+   "fcfs": {
+    "plotsCompleted": 5,
+    "plotsPending": 88,
+    "tonnesAtRiskPending": 78.75,
+    "estimatedLossT": 85.6,
+    "avgHighStressCompletionHours": 115.1,
+    "highStressPlots": 14,
+    "highStressServed": 2,
+    "pumpHours": 420,
+    "energyKwh": 1567
+   }
+  },
+  "40": {
+   "opt": {
+    "plotsCompleted": 8,
+    "plotsPending": 85,
+    "tonnesAtRiskPending": 72.61,
+    "estimatedLossT": 68,
+    "avgHighStressCompletionHours": 81,
+    "highStressPlots": 14,
+    "highStressServed": 7,
+    "pumpHours": 840,
+    "energyKwh": 3133
+   },
+   "fcfs": {
+    "plotsCompleted": 10,
+    "plotsPending": 83,
+    "tonnesAtRiskPending": 72.96,
+    "estimatedLossT": 73.32,
+    "avgHighStressCompletionHours": 92.4,
+    "highStressPlots": 14,
+    "highStressServed": 5,
+    "pumpHours": 840,
+    "energyKwh": 3133
+   }
+  }
+ },
+ "farm": {
+  "id": "MM-MD-0110",
+  "district": "Mandya",
+  "taluk": "Malavalli",
+  "village": "Bheemanahalli",
+  "polygon": [
+   [
+    12.436926,
+    76.959359
+   ],
+   [
+    12.436839,
+    76.959086
+   ],
+   [
+    12.43661,
+    76.958919
+   ],
+   [
+    12.436329,
+    76.958924
+   ],
+   [
+    12.436105,
+    76.959098
+   ],
+   [
+    12.436027,
+    76.959375
+   ],
+   [
+    12.436124,
+    76.959645
+   ],
+   [
+    12.436358,
+    76.959803
+   ],
+   [
+    12.436639,
+    76.959789
+   ],
+   [
+    12.436856,
+    76.959606
+   ],
+   [
+    12.436926,
+    76.959359
+   ]
+  ],
+  "centroid": [
+   12.4364813,
+   76.9593604
+  ],
+  "quality": [],
+  "cropAgeDays": 160,
+  "inputs": {
+   "ndvi": 0.5786293836818991,
+   "lai": 0.55,
+   "soil_moisture": 0.18681603635349503,
+   "soil_ph": 6.3,
+   "organic_carbon": 15,
+   "temperature_c": 31.69476690354693,
+   "relative_humidity": 57.08545684631996,
+   "rainfall_mm": 511.23469845205545,
+   "crop_age_days": 160,
+   "forecast_rain_mm": 0
+  },
+  "areaHa": 0.7355073748659654,
+  "method": "furrow",
+  "methodLabel": "Furrow",
+  "pumpFlow": 50,
+  "stage": "Grand growth",
+  "expectedNdvi": 0.68,
+  "irrigationDate": "2026-09-30",
+  "daysToIrrigation": 0.13,
+  "daysUncertainty": 0.12,
+  "dueInDays": 0,
+  "dueInDaysWithoutRain": 0,
+  "status": "today",
+  "waterRequirementMm": 5.47,
+  "netDepthMm": 99,
+  "grossDepthMm": 152.2,
+  "volumeM3": 1120,
+  "hours": 22.4,
+  "dripDailyVolumeM3": 61.9,
+  "dripDailyHours": 1.24,
+  "stressProbabilities": [
+   0.034,
+   0.448,
+   0.406,
+   0.112
+  ],
+  "stressClass": 2,
+  "stressProbability": 0.518,
+  "yieldTHa": 100.2,
+  "yieldTotalT": 73.7,
+  "yieldLoss5DaysPct": 1.55,
+  "tonnesAtRisk": 1.14,
+  "riskProbabilities": [
+   0.998,
+   0.002,
+   0
+  ],
+  "riskClass": 0,
+  "riskType": "none",
+  "weekly": {
+   "recommendedM3": 433,
+   "conventionalM3": 450,
+   "savedM3": 17,
+   "savedKwh": 1.3,
+   "savedRs": 9,
+   "rainSavedM3": 0
+  },
+  "alerts": [
+   {
+    "level": "serious",
+    "text": "Moderate water stress"
+   },
+   {
+    "level": "warning",
+    "text": "Irrigation due today"
+   }
+  ],
+  "lossCurve": [
+   {
+    "delay": 0,
+    "lossPct": 0.84
+   },
+   {
+    "delay": 1,
+    "lossPct": 0.84
+   },
+   {
+    "delay": 2,
+    "lossPct": 0.88
+   },
+   {
+    "delay": 3,
+    "lossPct": 0.97
+   },
+   {
+    "delay": 4,
+    "lossPct": 1.32
+   },
+   {
+    "delay": 5,
+    "lossPct": 1.55
+   },
+   {
+    "delay": 6,
+    "lossPct": 1.94
+   },
+   {
+    "delay": 7,
+    "lossPct": 2.28
+   },
+   {
+    "delay": 8,
+    "lossPct": 3.33
+   },
+   {
+    "delay": 9,
+    "lossPct": 3.86
+   },
+   {
+    "delay": 10,
+    "lossPct": 4.65
+   },
+   {
+    "delay": 11,
+    "lossPct": 6.12
+   },
+   {
+    "delay": 12,
+    "lossPct": 6.72
+   },
+   {
+    "delay": 13,
+    "lossPct": 7.34
+   },
+   {
+    "delay": 14,
+    "lossPct": 8.24
+   }
+  ],
+  "projection": {
+   "series": [
+    {
+     "day": 0,
+     "advice": 100,
+     "none": 25.7
+    },
+    {
+     "day": 1,
+     "advice": 97.4,
+     "none": 23
+    },
+    {
+     "day": 2,
+     "advice": 94.7,
+     "none": 20.4
+    },
+    {
+     "day": 3,
+     "advice": 92.1,
+     "none": 17.8
+    },
+    {
+     "day": 4,
+     "advice": 89.4,
+     "none": 15.1
+    },
+    {
+     "day": 5,
+     "advice": 86.8,
+     "none": 12.5
+    },
+    {
+     "day": 6,
+     "advice": 84.1,
+     "none": 9.8
+    },
+    {
+     "day": 7,
+     "advice": 81.5,
+     "none": 7.2
+    },
+    {
+     "day": 8,
+     "advice": 78.9,
+     "none": 4.6
+    },
+    {
+     "day": 9,
+     "advice": 76.2,
+     "none": 1.9
+    },
+    {
+     "day": 10,
+     "advice": 73.6,
+     "none": 0
+    },
+    {
+     "day": 11,
+     "advice": 70.9,
+     "none": 0
+    },
+    {
+     "day": 12,
+     "advice": 68.3,
+     "none": 0
+    },
+    {
+     "day": 13,
+     "advice": 65.6,
+     "none": 0
+    },
+    {
+     "day": 14,
+     "advice": 63,
+     "none": 0
+    }
+   ],
+   "stressThreshold": 36.9,
+   "taw": 207.00000000000003,
+   "raw": 130.6584
+  },
+  "fertigation": {
+   "stage": "Grand growth (early)",
+   "package": {
+    "n": 250,
+    "p": 100,
+    "k": 125
+   },
+   "weeklyNutrientsKg": {
+    "n": 5.3,
+    "p2o5": 1.4,
+    "k2o": 2.6
+   },
+   "weeklyProductsKg": {
+    "urea": 10.8,
+    "map_12_61_0": 2.3,
+    "mop": 4.4
+   },
+   "splitsPerWeek": 2,
+   "notes": [
+    "High organic carbon: nitrogen reduced by 10%.",
+    "Crop vigour below expected: add a foliar spray of 2% urea + micronutrient mix.",
+    "Irrigate first - never fertigate into dry soil (nutrient burn and losses)."
+   ]
+  },
+  "zone": {
+   "id": 0,
+   "name": "Zone A",
+   "description": "High vigour, drier soil, rich in organic carbon",
+   "size": 74,
+   "centroid": {
+    "ndvi": 0.6192953365891869,
+    "lai": 0.5504791049635307,
+    "soil_moisture": 0.21850776487866916,
+    "soil_ph": 6.4740827887000965,
+    "organic_carbon": 16.506307593423703,
+    "rainfall_mm": 622.5539434802182,
+    "temperature_c": 23.321435794404703,
+    "relative_humidity": 78.51106909804619
+   }
+  },
+  "explanation": {
+   "baseline": {
+    "ndvi": 0.584,
+    "lai": 0.6,
+    "soil_moisture": 0.2188,
+    "soil_ph": 6.3,
+    "organic_carbon": 10,
+    "temperature_c": 23.2666,
+    "relative_humidity": 78.4851,
+    "rainfall_mm": 657.2704,
+    "crop_age_days": 188.5,
+    "forecast_rain_mm": 0
+   },
+   "nextIrrigation": [
+    {
+     "feature": "soil_moisture",
+     "label": "Soil moisture",
+     "value": 0.18681603635349503,
+     "baseline": 0.2188,
+     "effect": -4.8
+    },
+    {
+     "feature": "temperature_c",
+     "label": "Temperature",
+     "value": 31.69476690354693,
+     "baseline": 23.2666,
+     "effect": -0.33
+    },
+    {
+     "feature": "relative_humidity",
+     "label": "Relative humidity",
+     "value": 57.08545684631996,
+     "baseline": 78.4851,
+     "effect": -0.1
+    },
+    {
+     "feature": "organic_carbon",
+     "label": "Organic carbon",
+     "value": 15,
+     "baseline": 10,
+     "effect": -0.05
+    },
+    {
+     "feature": "rainfall_mm",
+     "label": "Seasonal rainfall",
+     "value": 511.23469845205545,
+     "baseline": 657.2704,
+     "effect": -0.03
+    },
+    {
+     "feature": "lai",
+     "label": "Leaf Area Index",
+     "value": 0.55,
+     "baseline": 0.6,
+     "effect": -0.02
+    },
+    {
+     "feature": "ndvi",
+     "label": "NDVI (crop vigour)",
+     "value": 0.5786293836818991,
+     "baseline": 0.584,
+     "effect": 0
+    },
+    {
+     "feature": "soil_ph",
+     "label": "Soil pH",
+     "value": 6.3,
+     "baseline": 6.3,
+     "effect": 0
+    },
+    {
+     "feature": "crop_age_days",
+     "label": "Crop age",
+     "value": 160,
+     "baseline": 188.5,
+     "effect": 0
+    },
+    {
+     "feature": "forecast_rain_mm",
+     "label": "Forecast rain",
+     "value": 0,
+     "baseline": 0,
+     "effect": 0
+    }
+   ],
+   "waterStress": [
+    {
+     "feature": "soil_moisture",
+     "label": "Soil moisture",
+     "value": 0.18681603635349503,
+     "baseline": 0.2188,
+     "effect": 0.517
+    },
+    {
+     "feature": "organic_carbon",
+     "label": "Organic carbon",
+     "value": 15,
+     "baseline": 10,
+     "effect": 0.224
+    },
+    {
+     "feature": "temperature_c",
+     "label": "Temperature",
+     "value": 31.69476690354693,
+     "baseline": 23.2666,
+     "effect": 0.117
+    },
+    {
+     "feature": "relative_humidity",
+     "label": "Relative humidity",
+     "value": 57.08545684631996,
+     "baseline": 78.4851,
+     "effect": 0.075
+    },
+    {
+     "feature": "crop_age_days",
+     "label": "Crop age",
+     "value": 160,
+     "baseline": 188.5,
+     "effect": -0.024
+    },
+    {
+     "feature": "rainfall_mm",
+     "label": "Seasonal rainfall",
+     "value": 511.23469845205545,
+     "baseline": 657.2704,
+     "effect": -0.023
+    },
+    {
+     "feature": "lai",
+     "label": "Leaf Area Index",
+     "value": 0.55,
+     "baseline": 0.6,
+     "effect": -0.019
+    },
+    {
+     "feature": "ndvi",
+     "label": "NDVI (crop vigour)",
+     "value": 0.5786293836818991,
+     "baseline": 0.584,
+     "effect": 0
+    },
+    {
+     "feature": "soil_ph",
+     "label": "Soil pH",
+     "value": 6.3,
+     "baseline": 6.3,
+     "effect": 0
+    },
+    {
+     "feature": "forecast_rain_mm",
+     "label": "Forecast rain",
+     "value": 0,
+     "baseline": 0,
+     "effect": 0
+    }
+   ],
+   "reasons": [
+    "Soil moisture is lower than the regional median, which brings forward irrigation by 4.8 days.",
+    "Temperature is higher than the regional median, which brings forward irrigation by 0.3 days."
+   ]
+  },
+  "advisory": [
+   {
+    "key": "irrigation",
+    "text": "Start irrigating this morning: about 22.4 hours of pumping (1120 m\u00b3 of water)."
+   },
+   {
+    "key": "stress",
+    "text": "Water stress: Moderate (52% chance of moderate or severe stress)."
+   },
+   {
+    "key": "delay",
+    "text": "If irrigation is delayed by 5 days, expected yield loss is 1.55% (1.14 t of cane)."
+   },
+   {
+    "key": "yield",
+    "text": "Expected cane yield: 100.2 t/ha (73.7 t for this plot)."
+   },
+   {
+    "key": "fertigation",
+    "text": "Fertigation this week: 10.8 kg urea, 2.3 kg 12-61-0 and 4.4 kg potash (2 splits)."
+   },
+   {
+    "key": "disease",
+    "text": "Disease and pest risk is low."
+   }
+  ],
+  "lang": "en"
+ },
+ "latency_all_ms": 192,
+ "latency_detail_ms": 3.1
+}

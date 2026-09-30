@@ -21,6 +21,7 @@ SMA turns satellite, soil and weather data for every geofenced plot into plot-sp
 - [Project structure](#project-structure)
 - [Retraining the models](#retraining-the-models)
 - [REST API](#rest-api)
+- [Project report](#project-report)
 - [Presentation](#presentation)
 - [Limitations & roadmap](#limitations--roadmap)
 
@@ -209,6 +210,12 @@ All endpoints are under `/api`. The weather-scenario query parameters (`forecast
 Examples and request bodies are in [`docs/API.md`](docs/API.md).
 
 ---
+
+## Project report
+
+The Major Project-B report in the KJSIT format is in [`report/`](report/):
+[`SMA_Major_Project_Report.docx`](report/SMA_Major_Project_Report.docx) (Word, editable) and a PDF preview.
+See [`report/README.md`](report/README.md) for what to fill in before submission and how to rebuild it.
 
 ## Presentation
 

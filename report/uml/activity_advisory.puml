@@ -1,0 +1,28 @@
+@startuml
+!include common.iuml
+start
+:Receive plot ID + weather scenario + language;
+:Build features (apply temperature / humidity anomaly);
+if (dry days since satellite pass > 0?) then (yes)
+  :Deplete soil moisture by ETc x days / (1000 x Zr);
+endif
+:Predict days to irrigation (RF, mean and spread);
+:Predict ETc, depth, stress, yield, disease, loss(5 d);
+if (forecast rain >= 5 mm AND due within 2 days\nwithout rain AND rain delays the date?) then (yes)
+  :status = RAIN SKIP;
+else (no)
+  if (days to irrigation = 0?) then (yes)
+    :status = IRRIGATE TODAY;
+  elseif (days = 1?) then (yes)
+    :status = TOMORROW;
+  else
+    :status = IN N DAYS;
+  endif
+endif
+:Hydraulics: gross = net / efficiency;\nvolume = gross x area x 10; hours = volume / pump flow;
+:Fertigation plan by growth stage (NPK -> urea, 12-61-0, MOP);
+:Explain prediction (median substitution);
+:Render advisory text in EN / KN / HI / MR;
+:Return advisory JSON to UI / chatbot / SMS;
+stop
+@enduml

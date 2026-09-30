@@ -1,0 +1,102 @@
+{
+ "per_taluk": [
+  {
+   "taluk": "Krishnarajpet",
+   "test_plots": 48,
+   "rows": 576,
+   "mae_days": 0.585,
+   "r2_days": 0.974,
+   "stress_acc": 0.882
+  },
+  {
+   "taluk": "Maddur",
+   "test_plots": 18,
+   "rows": 216,
+   "mae_days": 0.63,
+   "r2_days": 0.972,
+   "stress_acc": 0.856
+  },
+  {
+   "taluk": "Malavalli",
+   "test_plots": 41,
+   "rows": 492,
+   "mae_days": 0.657,
+   "r2_days": 0.972,
+   "stress_acc": 0.882
+  },
+  {
+   "taluk": "Mandya",
+   "test_plots": 33,
+   "rows": 396,
+   "mae_days": 0.651,
+   "r2_days": 0.974,
+   "stress_acc": 0.884
+  },
+  {
+   "taluk": "Pandavpura",
+   "test_plots": 43,
+   "rows": 516,
+   "mae_days": 0.931,
+   "r2_days": 0.934,
+   "stress_acc": 0.86
+  },
+  {
+   "taluk": "Shrirangapattana",
+   "test_plots": 17,
+   "rows": 204,
+   "mae_days": 0.645,
+   "r2_days": 0.976,
+   "stress_acc": 0.917
+  }
+ ],
+ "learning_curve": [
+  {
+   "plots": 40,
+   "rows": 480,
+   "r2": 0.9017,
+   "mae": 1.1408
+  },
+  {
+   "plots": 80,
+   "rows": 960,
+   "r2": 0.9213,
+   "mae": 1.0468
+  },
+  {
+   "plots": 160,
+   "rows": 1920,
+   "r2": 0.9401,
+   "mae": 0.9005
+  },
+  {
+   "plots": 320,
+   "rows": 3840,
+   "r2": 0.9503,
+   "mae": 0.8067
+  },
+  {
+   "plots": 480,
+   "rows": 5760,
+   "r2": 0.957,
+   "mae": 0.7556
+  },
+  {
+   "plots": 640,
+   "rows": 7680,
+   "r2": 0.9621,
+   "mae": 0.7167
+  },
+  {
+   "plots": 800,
+   "rows": 9600,
+   "r2": 0.9646,
+   "mae": 0.6942
+  }
+ ],
+ "coverage": {
+  "within_1sd": 0.427,
+  "within_2sd": 0.774,
+  "within_1day": 0.789,
+  "mean_sd": 0.748
+ }
+}

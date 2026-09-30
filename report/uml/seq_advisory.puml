@@ -1,0 +1,33 @@
+@startuml
+!include common.iuml
+autonumber
+actor Farmer
+participant "Web UI\n(Farm Advisor)" as UI
+participant "Express API\n/api/farms/:id" as API
+participant "Advisory\nEngine" as ENG
+participant "Model Registry\n(Tree Ensembles)" as ML
+participant "Explain\nEngine" as EX
+participant "I18n" as T
+Farmer -> UI : enter plot ID, choose language
+UI -> API : GET /api/farms/MM-MD-0110?lang=kn&scenario...
+API -> API : validate & clamp scenario
+API -> ENG : farmAdvisory(farm, scenario, lang)
+ENG -> ENG : farmFeatures() - apply weather\nscenario, deplete soil moisture
+ENG -> ML : predict next_irrigation, water_requirement,\nirrigation_depth, water_stress, yield,\ndisease_risk, yield_loss
+ML --> ENG : predictions + tree spread
+ENG -> ENG : rain counterfactual, hydraulics,\nfertigation plan, 14-day projection
+ENG -> EX : explain(features)
+EX -> ML : re-predict with median substitution
+EX --> ENG : feature effects
+ENG -> T : render advisory lines (kn)
+T --> ENG : Kannada text
+ENG --> API : Advisory JSON
+API --> UI : 200 OK
+UI -> UI : render hero card, charts,\nfertigation, explanation
+UI --> Farmer : "Irrigate today - 22.4 h (1120 m3)"
+opt farmer disagrees
+  Farmer -> UI : Override (actual days, reason)
+  UI -> API : POST /api/feedback
+  API --> UI : 201 Created (logged for retraining)
+end
+@enduml
