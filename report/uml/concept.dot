@@ -1,0 +1,12 @@
+digraph C {
+  graph [rankdir=LR, fontname="Liberation Serif", dpi=170, nodesep=0.3, ranksep=0.45, pad=0.2];
+  node [fontname="Liberation Serif", fontsize=14, shape=box, style="rounded,filled", color="#1f6b49", fillcolor="#eef7f1", width=1.9, height=1.0];
+  edge [color="#1f6b49", penwidth=2, arrowsize=0.9];
+  A [label="SENSE\nsatellite, soil,\nweather data"];
+  B [label="PREDICT\n7 ML models\n(tree ensembles)", fillcolor="#dcefe3"];
+  C [label="DECIDE\nrain adjustment,\nfertigation, pump\nscheduling"];
+  D [label="ADVISE\nEN / KN / HI / MR\nweb, chatbot, SMS"];
+  E [label="LEARN\naccept / override\nfeedback"];
+  A -> B -> C -> D -> E;
+  E -> B [style=dashed, constraint=false, label="retrain", fontname="Liberation Serif", fontsize=12];
+}

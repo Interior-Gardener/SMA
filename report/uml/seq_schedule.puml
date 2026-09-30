@@ -1,0 +1,23 @@
+@startuml
+!include common.iuml
+autonumber
+actor "Field Supervisor" as S
+participant "Web UI\n(Pump Scheduler)" as UI
+participant "Express API\n/api/schedule" as API
+participant "Advisory\nEngine" as ENG
+participant "Pump\nScheduler" as SCH
+S -> UI : select village, power windows,\nfeeder capacity, horizon
+UI -> API : POST /api/schedule
+API -> ENG : summaries for village (cached per scenario)
+ENG --> API : due plots, hours, tonnes at risk, stress
+API -> SCH : schedule(summaries, windows, capacity, days)
+SCH -> SCH : build power slots per day
+SCH -> SCH : weight = urgency x (tonnes at risk + 0.5 x stress)
+SCH -> SCH : WSPT order (weight / duration)
+SCH -> SCH : pack jobs into lanes, split at window ends
+SCH -> SCH : FCFS rotation baseline with same packing
+SCH -> SCH : evaluate KPIs (loss, completions, energy)
+SCH --> API : optimised + FCFS plans
+API --> UI : JSON
+UI --> S : KPI comparison and Gantt timetable
+@enduml

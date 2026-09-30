@@ -1,0 +1,14 @@
+digraph TAX {
+  graph [rankdir=LR, fontname="Liberation Serif", dpi=170, nodesep=0.12, ranksep=0.6, pad=0.2];
+  node [fontname="Liberation Serif", fontsize=12, shape=box, style="rounded,filled", fillcolor="#eef7f1", color="#1f6b49"];
+  edge [color="#555555", arrowsize=0.6];
+  R [label="Smart irrigation &\ncrop decision support", fillcolor="#dcefe3", fontsize=13];
+  A [label="Agronomic / physical\nmodels"]; B [label="IoT sensor-based\nirrigation"]; C [label="Remote sensing\n& GIS"]; D [label="Machine learning\nin agriculture"]; E [label="Decision support,\nscheduling & advisory"];
+  R -> {A B C D E};
+  A1 [label="FAO-56 crop ET & water balance\n(Allen et al., 1998)"]; A2 [label="Temperature-based ET0\n(Hargreaves & Samani, 1985)"]; A3 [label="FAO-33 yield response to water\n(Doorenbos & Kassam, 1979)"]; A4 [label="Sugarcane water relations\n(Inman-Bamber & Smith, 2005)"];
+  B1 [label="IoT + ML smart irrigation\n(Goap et al., 2018)"]; B2 [label="SWAMP smart water platform\n(Kamienski et al., 2019)"];
+  C1 [label="NDVI (Rouse et al., 1974)"]; C2 [label="Google Earth Engine\n(Gorelick et al., 2017)"]; C3 [label="SMAP soil moisture\n(Entekhabi et al., 2010)"]; C4 [label="ESA WorldCover\n(Zanaga et al., 2021)"];
+  D1 [label="ML-in-agriculture reviews\n(Liakos 2018; Jha 2019;\nvan Klompenburg 2020)"]; D2 [label="Random Forest (Breiman, 2001)\nGradient Boosting (Friedman, 2001)"]; D3 [label="Trees on tabular data\n(Grinsztajn et al., 2022)"]; D4 [label="Theory-guided data science\n(Karpatne et al., 2017)"]; D5 [label="Explainability - SHAP\n(Lundberg & Lee, 2017)"];
+  E1 [label="Irrigation DSS\n(Navarro-Hellin et al., 2016)"]; E2 [label="Scheduling theory\n(Smith, 1956; Pinedo, 2016)"];
+  A -> {A1 A2 A3 A4}; B -> {B1 B2}; C -> {C1 C2 C3 C4}; D -> {D1 D2 D3 D4 D5}; E -> {E1 E2};
+}

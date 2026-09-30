@@ -1,0 +1,27 @@
+skinparam defaultFontName "Liberation Serif"
+skinparam defaultFontSize 13
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam ArrowColor #333333
+skinparam ActorBorderColor #1f6b49
+skinparam UsecaseBorderColor #1f6b49
+skinparam UsecaseBackgroundColor #eef7f1
+skinparam ClassBorderColor #1f6b49
+skinparam ClassBackgroundColor #f7fbf8
+skinparam ClassHeaderBackgroundColor #dcefe3
+skinparam ParticipantBorderColor #1f6b49
+skinparam ParticipantBackgroundColor #eef7f1
+skinparam SequenceLifeLineBorderColor #7a8a80
+skinparam StateBorderColor #1f6b49
+skinparam StateBackgroundColor #eef7f1
+skinparam ActivityBorderColor #1f6b49
+skinparam ActivityBackgroundColor #eef7f1
+skinparam ActivityDiamondBackgroundColor #fff6dc
+skinparam ComponentBorderColor #1f6b49
+skinparam ComponentBackgroundColor #eef7f1
+skinparam NodeBorderColor #1f6b49
+skinparam NodeBackgroundColor #f7fbf8
+skinparam PackageBorderColor #7a8a80
+skinparam NoteBackgroundColor #fffbe6
+skinparam NoteBorderColor #c9b46a
+skinparam dpi 170

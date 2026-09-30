@@ -1,0 +1,41 @@
+digraph UC {
+  graph [rankdir=LR, splines=true, nodesep=0.28, ranksep=1.1, fontname="Liberation Serif", dpi=170, pad=0.2];
+  node [fontname="Liberation Serif", fontsize=13];
+  edge [color="#333333", arrowsize=0.7];
+  subgraph left { rank=same;
+    F [shape=none, image="actor_F.png", label="", imagescale=true, width=1.3, height=1.45, fixedsize=true];
+    S [shape=none, image="actor_S.png", label="", imagescale=true, width=1.3, height=1.45, fixedsize=true];
+  }
+  subgraph cluster_sys { label="SMA - Smart Moisture Advisor"; fontsize=15; fontname="Liberation Serif Bold"; color="#7a8a80"; style=rounded;
+    node [shape=ellipse, style=filled, fillcolor="#eef7f1", color="#1f6b49", width=2.9];
+    U1 [label="View plot irrigation advisory"];
+    U2 [label="Choose language / read aloud"];
+    U3 [label="Ask Krishi Mitra chatbot"];
+    U4 [label="Accept or override advice"];
+    U5 [label="View region dashboard"];
+    U6 [label="Explore farm map layers"];
+    U8 [label="Optimise pump schedule"];
+    U7 [label="Set weather scenario"];
+    U9 [label="Run what-if simulation"];
+    U10 [label="View model insights"];
+    U11 [label="Retrain ML models"];
+    U12 [label="Update plot dataset"];
+    U0 [label="Generate predictions\n(7 ML models)", fillcolor="#dcefe3"];
+  }
+  subgraph right { rank=same;
+    A [shape=none, image="actor_A.png", label="", imagescale=true, width=1.3, height=1.45, fixedsize=true];
+    M [shape=none, image="actor_M.png", label="", imagescale=true, width=1.3, height=1.45, fixedsize=true];
+    D [shape=none, image="actor_D.png", label="", imagescale=true, width=1.3, height=1.45, fixedsize=true];
+  }
+  F -> {U1 U2 U3 U4} [arrowhead=none];
+  S -> {U4 U5 U6 U8} [arrowhead=none];
+  {U4 U7 U9 U10} -> A [arrowhead=none];
+  {U5 U8} -> M [arrowhead=none];
+  {U10 U11 U12} -> D [arrowhead=none];
+  U1 -> U0 [style=dashed, label="«include»", fontsize=10, constraint=false];
+  U5 -> U0 [style=dashed, label="«include»", fontsize=10, constraint=false];
+  U8 -> U0 [style=dashed, label="«include»", fontsize=10, constraint=false];
+  U9 -> U0 [style=dashed, label="«include»", fontsize=10, constraint=false];
+  U3 -> U1 [style=dashed, label="«include»", fontsize=10, constraint=false];
+  U2 -> U1 [style=dashed, label="«extend»", fontsize=10, constraint=false];
+}

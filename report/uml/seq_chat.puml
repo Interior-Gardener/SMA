@@ -1,0 +1,22 @@
+@startuml
+!include common.iuml
+autonumber
+actor Farmer
+participant "Chat UI" as UI
+participant "Express API\n/api/chat" as API
+participant "ChatBot" as BOT
+participant "Advisory\nEngine" as ENG
+participant "I18n" as T
+Farmer -> UI : "MM-MD-0110 ಗೆ ಯಾವಾಗ ನೀರು ಹಾಯಿಸಬೇಕು?"
+UI -> API : POST {message, scenario}
+API -> BOT : reply(message)
+BOT -> BOT : detectLanguage() -> kn
+BOT -> BOT : detectIntents() -> [irrigation]
+BOT -> BOT : extract plot ID (regex)
+BOT -> ENG : farmAdvisory(plot, scenario, kn)
+ENG --> BOT : advisory lines
+BOT -> T : summary template (kn)
+BOT --> API : messages filtered by intent
+API --> UI : JSON
+UI --> Farmer : Kannada answer
+@enduml

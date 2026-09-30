@@ -1,0 +1,47 @@
+@startuml
+!include common.iuml
+left to right direction
+actor Farmer as F
+actor "Field Supervisor" as S
+actor Agronomist as A
+actor "Factory / Cane\nDepartment" as M
+actor "Data Scientist /\nAdministrator" as D
+rectangle "SMA - Smart Moisture Advisor" {
+  usecase "View plot irrigation advisory" as UC1
+  usecase "Choose language /\nread advisory aloud" as UC2
+  usecase "Ask Krishi Mitra chatbot" as UC3
+  usecase "Accept or override advice" as UC4
+  usecase "View region dashboard" as UC5
+  usecase "Explore farm map layers" as UC6
+  usecase "Set weather scenario\n(rain forecast, dry spell)" as UC7
+  usecase "Optimise pump schedule" as UC8
+  usecase "Run what-if simulation" as UC9
+  usecase "View model insights\nand explanations" as UC10
+  usecase "Retrain ML models" as UC11
+  usecase "Update plot dataset" as UC12
+  usecase "Generate predictions\n(7 ML models)" as UC0
+}
+F --> UC1
+F --> UC2
+F --> UC3
+F --> UC4
+S --> UC5
+S --> UC6
+S --> UC8
+S --> UC4
+UC9 <-- A
+UC10 <-- A
+UC7 <-- A
+UC4 <-- A
+UC5 <-- M
+UC8 <-- M
+UC11 <-- D
+UC12 <-- D
+UC10 <-- D
+UC1 ..> UC0 : <<include>>
+UC5 ..> UC0 : <<include>>
+UC8 ..> UC0 : <<include>>
+UC9 ..> UC0 : <<include>>
+UC3 ..> UC1 : <<include>>
+UC2 ..> UC1 : <<extend>>
+@enduml

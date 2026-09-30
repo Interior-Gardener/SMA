@@ -1,0 +1,22 @@
+@startuml
+!include common.iuml
+[*] --> Monitoring : plot registered\n(satellite + soil data)
+state Monitoring : root zone above\nreadily-available threshold
+state "Due Soon" as Soon : 2-7 days to irrigation
+state "Due Today / Tomorrow" as Due : depletion near RAW
+state "Rain Skip" as Rain : forecast rain refills\nroot zone
+state "Water Stressed" as Stress : depletion beyond RAW\n(Ks < 1)
+state Irrigating : pump scheduled in\npower window
+state Refilled : root zone at\nfield capacity
+Monitoring --> Soon : ETc depletes soil
+Soon --> Due : depletion continues
+Due --> Rain : forecast >= 5 mm moves\nirrigation date later
+Rain --> Monitoring : rain received
+Rain --> Due : forecast fails
+Due --> Irrigating : advisory accepted /\nslot allocated
+Due --> Stress : irrigation delayed
+Stress --> Irrigating : high priority (WSPT)
+Irrigating --> Refilled : volume delivered
+Refilled --> Monitoring
+Monitoring --> [*] : harvest
+@enduml

@@ -1,0 +1,44 @@
+@startuml
+!include common.iuml
+package "Offline training (Python)" {
+  [agronomy.py\nFAO-56 / FAO-33 labels] as AG
+  [train.py\nscikit-learn] as TR
+}
+database "models/*.json\nmetrics.json" as MODELS
+database "IrrigationAdvisory\nDataset.csv" as DATA
+database "feedback.jsonl" as FB
+package "Node.js server" {
+  [Express REST API\n(app.js)] as API
+  [Data loader\n(farms.js)] as LOADER
+  [Tree-ensemble inference\n(treeEnsemble.js)] as INF
+  [Advisory engine] as ADV
+  [Pump scheduler] as SCH
+  [Explain engine] as EXP
+  [Insights builder] as INS
+  [I18n + Chatbot] as CHAT
+}
+package "Browser (SPA)" {
+  [Overview / Map / Advisor /\nSimulator / Scheduler /\nInsights / Chat pages] as UI
+  [Chart.js] as CJ
+  [Leaflet] as LF
+}
+DATA --> TR
+AG --> TR
+TR --> MODELS
+DATA --> LOADER
+MODELS --> INF
+LOADER --> ADV
+INF --> ADV
+ADV --> SCH
+ADV --> EXP
+ADV --> INS
+ADV --> CHAT
+API --> ADV
+API --> SCH
+API --> INS
+API --> CHAT
+API --> FB
+UI --> API : HTTP/JSON
+UI --> CJ
+UI --> LF
+@enduml

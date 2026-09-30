@@ -1,0 +1,12 @@
+{
+  "name": "sma-report",
+  "private": true,
+  "description": "Builds the Major Project-B report (DOCX) for SMA",
+  "scripts": {
+    "figures": "python3 make_figures.py",
+    "build": "node build_report.js"
+  },
+  "dependencies": {
+    "docx": "^9.0.0"
+  }
+}

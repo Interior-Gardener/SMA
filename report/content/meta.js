@@ -1,0 +1,37 @@
+module.exports = {
+  title: 'Smart Moisture Advisor (SMA): An AI-Driven Irrigation Advisory System for Sugarcane',
+  students: [
+    { name: 'Kartik Verma', roll: 'Roll No. ________' },
+    { name: 'Kushal Soni', roll: 'Roll No. ________' },
+  ],
+  guide: 'Dr. Shyamal Virnodkar',
+  year: '2026-27',
+  abstract: [
+    'Sugarcane is among the most water-intensive crops in India, yet irrigation is usually scheduled from habit rather than from the crop\'s actual water need, causing water, energy and fertiliser waste or moisture stress and yield loss. For a sugar-factory network of 18,000–25,000 farmers, plot-level monitoring by field staff alone is impractical. This project presents the Smart Moisture Advisor (SMA), an AI-driven irrigation advisory system developed for the KJS-AGR-01 use case of K. J. Somaiya Institute of Technology with KIAAR and Godavari Biorefineries Ltd.',
+    'SMA uses 1,000 geofenced plots in Mandya district, Karnataka, with satellite-derived NDVI, LAI and soil moisture, soil pH, organic carbon and seasonal climate. As the data contain no irrigation or yield labels, a physics-informed approach is adopted: each plot is expanded into twelve seasonal scenarios labelled with the FAO-56 crop water balance and FAO-33 yield response plus field-realistic noise. Seven tree-ensemble models (Random Forest and Gradient Boosting) predict the next irrigation date with uncertainty, crop water requirement, irrigation depth, water-stress probability, cane yield, yield loss due to delayed irrigation and disease/pest risk, and a K-Means model groups plots into management zones. On plots never seen during training, the regression models achieve R² of 0.89–0.98 (next-irrigation error 0.69 days) and the classifiers 87–88% accuracy, outperforming linear and logistic baselines.',
+    'The trained models are exported to JSON and served natively by a Node.js/Express application whose predictions match scikit-learn exactly. A decision-support engine converts predictions into rainfall-adjusted irrigation advice, pump run-times, fertigation doses and explanations, and a Weighted-Shortest-Processing-Time scheduler allocates pumps within limited power windows. A web dashboard with farm maps, a what-if simulator and a multilingual (English, Kannada, Hindi, Marathi) chatbot delivers the advice. Under normal conditions the recommended schedule uses about 38% less water than fixed eight-day irrigation, and rain-aware advice postpones 894 irrigations when 40 mm of rain is forecast.',
+  ],
+  keywords: 'Smart irrigation, sugarcane, machine learning, physics-informed learning, FAO-56, Random Forest, Gradient Boosting, decision support system, pump scheduling, multilingual advisory',
+  abbreviations: [
+    ['AI', 'Artificial Intelligence'], ['API', 'Application Programming Interface'], ['CSV', 'Comma-Separated Values'],
+    ['DFD', 'Data Flow Diagram'], ['DPDP', 'Digital Personal Data Protection (Act, 2023)'], ['DSS', 'Decision Support System'],
+    ['ET', 'Evapotranspiration'], ['ET0', 'Reference Evapotranspiration'], ['ETc', 'Crop Evapotranspiration (crop water requirement)'],
+    ['FAO', 'Food and Agriculture Organization of the United Nations'], ['FC', 'Field Capacity'], ['FCFS', 'First-Come, First-Served'],
+    ['GBL', 'Godavari Biorefineries Ltd.'], ['GBM', 'Gradient Boosting Machine'], ['GIS', 'Geographic Information System'],
+    ['HTTP', 'HyperText Transfer Protocol'], ['IMD', 'India Meteorological Department'], ['IoT', 'Internet of Things'],
+    ['JSON', 'JavaScript Object Notation'], ['Kc', 'Crop Coefficient'], ['KIAAR', 'K. J. Somaiya Institute of Applied Agricultural Research'],
+    ['Ks', 'Water-Stress Coefficient'], ['Ky', 'Yield Response Factor'], ['LAI', 'Leaf Area Index'], ['LLM', 'Large Language Model'],
+    ['LOC', 'Lines of Code'], ['MAD', 'Median Absolute Deviation'], ['MAE', 'Mean Absolute Error'], ['ML', 'Machine Learning'],
+    ['NDVI', 'Normalized Difference Vegetation Index'], ['NPK', 'Nitrogen, Phosphorus, Potassium'], ['OC', 'Organic Carbon'],
+    ['PWP', 'Permanent Wilting Point'], ['R²', 'Coefficient of Determination'], ['RAW', 'Readily Available Water'],
+    ['REST', 'Representational State Transfer'], ['RF', 'Random Forest'], ['SMA', 'Smart Moisture Advisor'],
+    ['SMS', 'Short Message Service'], ['SPA', 'Single-Page Application'], ['STEPS', 'Somaiya Technology for Efficient Plot Survey'],
+    ['TAW', 'Total Available Water'], ['UI', 'User Interface'], ['UML', 'Unified Modeling Language'],
+    ['WSPT', 'Weighted Shortest Processing Time'],
+  ],
+  placeholders: {
+    papers: ['[No paper has been published from this work at the time of submission.', 'Attach the published / communicated paper here, if any.]'],
+    certificates: ['[Attach paper publication certificates, conference attendance', 'or competition participation certificates here, if any.]'],
+    plagiarism: ['[Attach the first few pages of the plagiarism report here.]'],
+  },
+};

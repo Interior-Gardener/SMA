@@ -1,0 +1,30 @@
+@startuml
+!include common.iuml
+start
+:Load IrrigationAdvisoryDataset.csv (1,000 plots);
+:Impute missing NDVI with village median;
+:Drop constant columns (area, district, sampling);
+:Augment: 12 seasonal scenarios per plot\n(crop age, heat, dry spell, rain forecast);
+:Label with agronomy engine\n(FAO-56 water balance, FAO-33 yield response);
+:Add field-realistic label noise;
+:GroupShuffleSplit by plot (80% train / 20% test);
+fork
+  :Train RF regressor\n(next irrigation);
+fork again
+  :Train GBM regressors\n(ETc, depth, yield);
+fork again
+  :Train RF classifiers\n(water stress, disease risk);
+fork again
+  :Build delay-augmented set\nand train GBM (yield loss);
+end fork
+:Evaluate on unseen plots\nvs linear / logistic baselines;
+:K-Means (k=4) management zones on real plots;
+:Export trees and zones to JSON;
+:Write metrics.json and test fixtures;
+if (Node parity tests pass?) then (yes)
+  :Serve models from Node.js API;
+else (no)
+  :Investigate export / feature order;
+endif
+stop
+@enduml

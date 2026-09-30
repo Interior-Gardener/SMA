@@ -1,0 +1,18 @@
+digraph DFD0 {
+  graph [rankdir=LR, fontname="Liberation Serif", dpi=170, nodesep=0.6, ranksep=1.3, pad=0.2];
+  node [fontname="Liberation Serif", fontsize=13];
+  edge [fontname="Liberation Serif", fontsize=11, color="#333333", arrowsize=0.8];
+  SAT [shape=box, style=filled, fillcolor="#f3f5f4", label="Satellite / GIS\ndata source"];
+  WX  [shape=box, style=filled, fillcolor="#f3f5f4", label="Weather forecast\n(scenario input)"];
+  FAR [shape=box, style=filled, fillcolor="#f3f5f4", label="Farmer"];
+  SUP [shape=box, style=filled, fillcolor="#f3f5f4", label="Field supervisor /\nAgronomist"];
+  FAC [shape=box, style=filled, fillcolor="#f3f5f4", label="Sugar factory /\nCane department"];
+  P0 [shape=circle, style=filled, fillcolor="#dcefe3", color="#1f6b49", width=2.2, fixedsize=true, label="0\nSMA Irrigation\nAdvisory System"];
+  SAT -> P0 [label="NDVI, LAI, soil moisture,\nsoil pH, organic carbon,\nplot polygons"];
+  WX -> P0 [label="rain forecast,\ntemperature / humidity"];
+  FAR -> P0 [label="plot ID, language,\nquestions, feedback"];
+  SUP -> P0 [label="scenario, power windows,\nfeeder capacity, overrides"];
+  P0 -> FAR [label="irrigation & fertigation\nadvisory (EN/KN/HI/MR)"];
+  P0 -> SUP [label="dashboard, maps,\npump timetable, alerts"];
+  P0 -> FAC [label="water demand calendar,\nyield estimates"];
+}
