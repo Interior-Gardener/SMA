@@ -13,8 +13,8 @@ const LANGS = {
 
 const T = {
   en: {
-    irrigate_today: 'Irrigate today morning for {hours} hours ({volume} m³ of water).',
-    irrigate_tomorrow: 'Irrigate tomorrow morning for {hours} hours ({volume} m³ of water).',
+    irrigate_today: 'Start irrigating this morning: about {hours} hours of pumping ({volume} m³ of water).',
+    irrigate_tomorrow: 'Start irrigating tomorrow morning: about {hours} hours of pumping ({volume} m³ of water).',
     irrigate_in: 'Next irrigation in {days} days (on {date}) - about {hours} hours ({volume} m³).',
     rain_skip: 'Rain is expected ({rain} mm in 3 days) - do not irrigate now. Next irrigation around {date}.',
     drip_daily: 'Run the drip system for {hours} hours every day ({volume} m³/day).',

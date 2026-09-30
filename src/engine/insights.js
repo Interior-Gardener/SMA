@@ -6,11 +6,11 @@ const { ZONES } = require('./advisory');
 const RAW_FEATURES = [
   ['ndvi', 'NDVI'],
   ['lai', 'LAI'],
-  ['soil_moisture', 'Soil moisture'],
+  ['soil_moisture', 'Soil moist.'],
   ['soil_ph', 'Soil pH'],
-  ['organic_carbon', 'Organic C'],
+  ['organic_carbon', 'Org. C'],
   ['rainfall_mm', 'Rainfall'],
-  ['temperature_c', 'Temperature'],
+  ['temperature_c', 'Temp.'],
   ['relative_humidity', 'Humidity'],
 ];
 

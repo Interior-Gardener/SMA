@@ -62,6 +62,10 @@ function farmFeatures(farm, scenario) {
   return x;
 }
 
+/** Features exactly as observed by satellite (used for management zones). */
+const NEUTRAL = { forecastRain: 0, tempAnomaly: 0, rhAnomaly: 0, daysSinceObs: 0 };
+const observedFeatures = (farm) => farmFeatures(farm, NEUTRAL);
+
 /**
  * Ordinal median of a class-probability vector: the first class at which the
  * cumulative probability reaches 50%. For ordered classes (None < Mild <
@@ -176,7 +180,7 @@ function summarize(farm, scenario) {
     stage: agro.growthStage(farm.crop_age_days).name,
     ndvi: round(farm.ndvi, 3),
     soilMoisture: round(farm.soil_moisture, 4),
-    zone: assignZone(x),
+    zone: assignZone(observedFeatures(farm)),
     quality: farm.quality,
     ...core,
     alerts: alertsFor(core),
@@ -210,7 +214,7 @@ function advisoryText(core, ctx, lang) {
 /**
  * Full advisory for one set of inputs (a real plot or a what-if scenario).
  */
-function fullAdvisory(x, { areaHa, method, pumpFlow, lang = 'en', today = new Date(), meta = {} }) {
+function fullAdvisory(x, { areaHa, method, pumpFlow, lang = 'en', today = new Date(), meta = {}, zoneInput = x }) {
   const core = predictCore(x, { areaHa, method, pumpFlow });
   const age = x.crop_age_days;
   const stage = agro.growthStage(age);
@@ -232,7 +236,7 @@ function fullAdvisory(x, { areaHa, method, pumpFlow, lang = 'en', today = new Da
     age, oc: x.organic_carbon, ph: x.soil_ph, ndvi: x.ndvi, areaHa, stressClass: core.stressClass,
   });
   const date = new Date(today.getTime() + core.dueInDays * 86400000);
-  const zone = ZONES[assignZone(x)];
+  const zone = ZONES[assignZone(zoneInput)];
 
   return {
     ...meta,
@@ -264,6 +268,7 @@ function farmAdvisory(farm, scenario, lang) {
     method: scenario.method,
     pumpFlow: scenario.pumpFlow,
     lang,
+    zoneInput: observedFeatures(farm),
     meta: {
       id: farm.id, district: farm.district, taluk: farm.taluk, village: farm.village,
       polygon: farm.polygon, centroid: farm.centroid, quality: farm.quality,

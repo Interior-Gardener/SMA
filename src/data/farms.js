@@ -87,19 +87,28 @@ function loadFarms(file = DATA_FILE) {
     }
   }
 
-  // Robust outlier flags (modified z-score > 3.5) - "noisy sensor" detection.
+  // Robust outlier flags - "noisy sensor" detection. Each plot is compared
+  // with the other plots of its own village (neighbours share soil and
+  // weather), using the modified z-score of Iglewicz & Hoaglin. When most
+  // values are identical the MAD is 0, so the mean absolute deviation is used.
   const checked = ['ndvi', 'lai', 'soil_moisture', 'soil_ph', 'organic_carbon'];
-  const outlierCounts = {};
-  for (const key of checked) {
-    const vals = farms.map((f) => f[key]);
-    const med = median(vals);
-    const mad = median(vals.map((v) => Math.abs(v - med))) || 1e-9;
-    outlierCounts[key] = 0;
-    for (const f of farms) {
-      const z = (0.6745 * (f[key] - med)) / mad;
-      if (Math.abs(z) > 3.5) {
-        f.quality.push(`${key} unusual for the region (robust z = ${z.toFixed(1)})`);
-        outlierCounts[key] += 1;
+  const outlierCounts = Object.fromEntries(checked.map((k) => [k, 0]));
+  const villages = {};
+  for (const f of farms) (villages[f.village] ||= []).push(f);
+  for (const group of Object.values(villages)) {
+    for (const key of checked) {
+      const vals = group.map((f) => f[key]);
+      const med = median(vals);
+      const mad = median(vals.map((v) => Math.abs(v - med)));
+      const meanAd = vals.reduce((sum, v) => sum + Math.abs(v - med), 0) / vals.length;
+      const scale = mad > 0 ? mad / 0.6745 : meanAd * 1.2533;
+      if (!(scale > 0)) continue;
+      for (const f of group) {
+        const z = (f[key] - med) / scale;
+        if (Math.abs(z) > 3.5) {
+          f.quality.push(`${key.replace('_', ' ')} unusual for ${f.village} (robust z = ${z.toFixed(1)}) - verify sensor`);
+          outlierCounts[key] += 1;
+        }
       }
     }
   }
