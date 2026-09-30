@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SMA · Smart Moisture Advisor</title>
+  <meta name="description" content="AI irrigation advisory for sugarcane - KJS-AGR-01">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path d='M16 3C16 3 6 14 6 20a10 10 0 0 0 20 0C26 14 16 3 16 3z' fill='%231f8a58'/></svg>">
+  <link rel="stylesheet" href="/vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<div class="app">
+  <!-- ============================== Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path d="M16 3S6 14 6 20a10 10 0 0 0 20 0C26 14 16 3 16 3z" fill="#5fd49a"/><path d="M11 21a5 5 0 0 0 5 5" stroke="#0e3b27" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+      <div>
+        <div class="brand-name">SMA</div>
+        <div class="brand-sub">Smart Moisture Advisor</div>
+      </div>
+    </div>
+    <nav class="nav" id="nav">
+      <a href="#overview" data-page="overview"><span class="ic">▦</span>Overview</a>
+      <a href="#map" data-page="map"><span class="ic">◈</span>Farm Map</a>
+      <a href="#advisor" data-page="advisor"><span class="ic">✦</span>Farm Advisor</a>
+      <a href="#simulator" data-page="simulator"><span class="ic">⚗</span>What-If Simulator</a>
+      <a href="#scheduler" data-page="scheduler"><span class="ic">⏱</span>Pump Scheduler</a>
+      <a href="#insights" data-page="insights"><span class="ic">◔</span>Model Insights</a>
+      <a href="#chat" data-page="chat"><span class="ic">✉</span>Krishi Mitra</a>
+      <a href="#about" data-page="about"><span class="ic">ⓘ</span>About &amp; Governance</a>
+    </nav>
+    <div class="sidebar-foot">
+      <div>KJS-AGR-01 · Sugarcane</div>
+      <div>Mandya, Karnataka</div>
+      <div class="muted">Kartik Verma · Kushal Soni</div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <!-- ============================== Top bar -->
+    <header class="topbar">
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      <div class="topbar-title">
+        <h1 id="pageTitle">Overview</h1>
+        <div class="muted small" id="pageSub">Region-wide irrigation situation</div>
+      </div>
+      <div class="topbar-actions">
+        <label class="select-wrap" title="Advisory language">
+          <span class="sr-only">Language</span>
+          <select id="langSelect">
+            <option value="en">English</option>
+            <option value="kn">ಕನ್ನಡ</option>
+            <option value="hi">हिंदी</option>
+            <option value="mr">मराठी</option>
+          </select>
+        </label>
+        <button class="icon-btn" id="themeBtn" title="Toggle dark mode" aria-label="Toggle dark mode">☾</button>
+      </div>
+    </header>
+
+    <!-- ============================== Scenario bar -->
+    <section class="scenario" id="scenarioBar" aria-label="Weather scenario">
+      <div class="scenario-left">
+        <span class="scenario-label">Weather scenario</span>
+        <div class="chips" id="presetChips"></div>
+      </div>
+      <button class="btn ghost small" id="scenarioToggle" aria-expanded="false">Adjust ▾</button>
+      <div class="scenario-panel" id="scenarioPanel" hidden>
+        <label>Forecast rain (next 3 days) <output id="o_forecastRain"></output>
+          <input type="range" id="s_forecastRain" min="0" max="80" step="5"></label>
+        <label>Temperature anomaly <output id="o_tempAnomaly"></output>
+          <input type="range" id="s_tempAnomaly" min="-4" max="12" step="1"></label>
+        <label>Humidity anomaly <output id="o_rhAnomaly"></output>
+          <input type="range" id="s_rhAnomaly" min="-30" max="20" step="2"></label>
+        <label>Dry days since satellite pass <output id="o_daysSinceObs"></output>
+          <input type="range" id="s_daysSinceObs" min="0" max="14" step="1"></label>
+        <label>Irrigation method
+          <select id="s_method">
+            <option value="flood">Flood (55%)</option>
+            <option value="furrow">Furrow (65%)</option>
+            <option value="sprinkler">Sprinkler (75%)</option>
+            <option value="drip">Drip (90%)</option>
+          </select></label>
+        <label>Pump flow <output id="o_pumpFlow"></output>
+          <input type="range" id="s_pumpFlow" min="10" max="120" step="5"></label>
+      </div>
+      <div class="scenario-desc muted small" id="scenarioDesc"></div>
+    </section>
+
+    <!-- ============================== Pages -->
+    <div class="pages">
+
+      <!-- OVERVIEW -->
+      <section class="page" data-page="overview">
+        <div class="kpis" id="kpis"></div>
+        <div class="grid g-2-1">
+          <div class="card">
+            <div class="card-head"><h3>Irrigation calendar - next 14 days</h3><span class="muted small">plots due per day</span></div>
+            <div class="chart-box h260"><canvas id="calendarChart"></canvas></div>
+          </div>
+          <div class="card">
+            <div class="card-head"><h3>Water stress across plots</h3></div>
+            <div id="stressBars"></div>
+            <div class="divider"></div>
+            <div class="card-head"><h3>Disease &amp; pest risk</h3></div>
+            <div id="riskBars"></div>
+          </div>
+        </div>
+        <div class="grid g-1-1">
+          <div class="card">
+            <div class="card-head"><h3>Weekly water: SMA vs fixed-interval practice</h3><span class="muted small">m³ per taluk</span></div>
+            <div class="chart-box h280"><canvas id="waterChart"></canvas></div>
+          </div>
+          <div class="card">
+            <div class="card-head"><h3>Priority plots</h3><span class="muted small">highest stress &amp; cane at risk</span></div>
+            <div class="table-wrap"><table class="table" id="priorityTable"></table></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head"><h3>Taluk summary</h3><button class="btn ghost small" id="talukTableToggle">Show villages</button></div>
+          <div class="table-wrap"><table class="table" id="talukTable"></table></div>
+        </div>
+      </section>
+
+      <!-- MAP -->
+      <section class="page" data-page="map" hidden>
+        <div class="map-toolbar card">
+          <label>Colour plots by
+            <select id="mapLayer">
+              <option value="status">Irrigation due</option>
+              <option value="stress">Water stress</option>
+              <option value="ndvi">NDVI (crop vigour)</option>
+              <option value="soilMoisture">Soil moisture</option>
+              <option value="zone">Management zone</option>
+              <option value="risk">Disease &amp; pest risk</option>
+            </select></label>
+          <label>Taluk
+            <select id="mapTaluk"><option value="">All taluks</option></select></label>
+          <label>Basemap
+            <select id="mapBase"><option value="sat">Satellite</option><option value="osm">Street map</option></select></label>
+          <div class="legend" id="mapLegend"></div>
+        </div>
+        <div class="map-wrap card">
+          <div id="map"></div>
+          <aside class="map-panel" id="mapPanel"><p class="muted">Click a plot to see its advisory.</p></aside>
+        </div>
+      </section>
+
+      <!-- ADVISOR -->
+      <section class="page" data-page="advisor" hidden>
+        <div class="card advisor-search">
+          <label for="farmSearch">Plot ID</label>
+          <input id="farmSearch" list="farmList" placeholder="e.g. MM-MD-0110" autocomplete="off">
+          <datalist id="farmList"></datalist>
+          <button class="btn" id="farmGo">Get advisory</button>
+          <button class="btn ghost" id="farmRandom">Most urgent plot</button>
+          <label class="age-override">Crop age <output id="o_cropAge"></output>
+            <input type="range" id="cropAge" min="0" max="365" step="5"></label>
+        </div>
+        <div id="advisorBody"></div>
+      </section>
+
+      <!-- SIMULATOR -->
+      <section class="page" data-page="simulator" hidden>
+        <div class="grid g-1-2">
+          <div class="card">
+            <div class="card-head"><h3>Field conditions</h3></div>
+            <div class="chips wrap" id="simPresets"></div>
+            <div id="simInputs" class="sim-inputs"></div>
+          </div>
+          <div id="simOutput"></div>
+        </div>
+      </section>
+
+      <!-- SCHEDULER -->
+      <section class="page" data-page="scheduler" hidden>
+        <div class="card sched-controls">
+          <label>Taluk <select id="schTaluk"></select></label>
+          <label>Village <select id="schVillage"></select></label>
+          <label>Power window 1 <span class="time-pair"><input type="time" id="w1s" value="06:00"> - <input type="time" id="w1e" value="10:00"></span></label>
+          <label>Power window 2 <span class="time-pair"><input type="time" id="w2s" value="17:00"> - <input type="time" id="w2e" value="20:00"></span></label>
+          <label>Feeder capacity (pumps at once) <input type="number" id="schCap" min="1" max="100" value="20"></label>
+          <label>Horizon (days) <input type="number" id="schDays" min="1" max="4" value="3"></label>
+          <button class="btn" id="schRun">Optimise schedule</button>
+        </div>
+        <div id="schOut"></div>
+      </section>
+
+      <!-- INSIGHTS -->
+      <section class="page" data-page="insights" hidden>
+        <div class="card pipeline" id="pipeline"></div>
+        <div class="model-cards" id="modelCards"></div>
+        <div class="grid g-1-1">
+          <div class="card">
+            <div class="card-head"><h3>What drives each model?</h3>
+              <select id="impModel"></select></div>
+            <div class="chart-box h300"><canvas id="impChart"></canvas></div>
+          </div>
+          <div class="card">
+            <div class="card-head"><h3 id="evalTitle">Predicted vs actual (held-out plots)</h3></div>
+            <div class="chart-box h300" id="evalBox"><canvas id="evalChart"></canvas></div>
+          </div>
+        </div>
+        <div class="grid g-1-1">
+          <div class="card">
+            <div class="card-head"><h3>Feature correlations (raw dataset)</h3></div>
+            <div class="table-wrap" id="corrTable"></div>
+          </div>
+          <div class="card">
+            <div class="card-head"><h3>Management zones (K-Means)</h3></div>
+            <div id="zonesBox"></div>
+          </div>
+        </div>
+        <div class="grid g-1-1">
+          <div class="card">
+            <div class="card-head"><h3>NDVI distribution</h3></div>
+            <div class="chart-box h240"><canvas id="ndviHist"></canvas></div>
+          </div>
+          <div class="card">
+            <div class="card-head"><h3>Data quality &amp; human feedback</h3></div>
+            <div id="qualityBox"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHAT -->
+      <section class="page" data-page="chat" hidden>
+        <div class="card chat">
+          <div class="chat-log" id="chatLog" aria-live="polite"></div>
+          <div class="chips wrap" id="chatSuggestions"></div>
+          <form class="chat-form" id="chatForm">
+            <input id="chatInput" placeholder="Ask in English, ಕನ್ನಡ, हिंदी or मराठी…" autocomplete="off">
+            <button class="btn" type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="page" data-page="about" hidden>
+        <div id="aboutBody"></div>
+      </section>
+    </div>
+  </main>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="/vendor/chart.js/chart.umd.min.js"></script>
+<script src="/vendor/leaflet/leaflet.js"></script>
+<script type="module" src="/js/main.js"></script>
+</body>
+</html>

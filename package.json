@@ -1,0 +1,34 @@
+{
+  "name": "sma-smart-moisture-advisor",
+  "version": "1.0.0",
+  "description": "SMA - Smart Moisture Advisor: AI irrigation advisory system for sugarcane (KJS-AGR-01)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test test/*.test.js",
+    "train": "python3 ml/train.py",
+    "screenshots": "node presentation/take_screenshots.js"
+  },
+  "keywords": [
+    "irrigation",
+    "sugarcane",
+    "machine-learning",
+    "agriculture",
+    "advisory"
+  ],
+  "authors": [
+    "Kartik Verma",
+    "Kushal Soni"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "chart.js": "^4.5.1",
+    "csv-parse": "^7.0.3",
+    "express": "^5.2.1",
+    "leaflet": "^1.9.4"
+  }
+}
