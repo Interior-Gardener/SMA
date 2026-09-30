@@ -1,0 +1,6613 @@
+{
+ "models": {
+  "next_irrigation": {
+   "title": "Next Irrigation (days)",
+   "task": "regression",
+   "algorithm": "Random Forest",
+   "test": {
+    "r2": 0.9646,
+    "mae": 0.6942
+   },
+   "baseline": {
+    "algorithm": "Linear Regression",
+    "r2": 0.7444,
+    "mae": 2.5796
+   },
+   "importance": [
+    {
+     "feature": "soil_moisture",
+     "label": "Soil moisture",
+     "importance": 0.8492
+    },
+    {
+     "feature": "relative_humidity",
+     "label": "Relative humidity",
+     "importance": 0.0443
+    },
+    {
+     "feature": "temperature_c",
+     "label": "Temperature",
+     "importance": 0.0363
+    },
+    {
+     "feature": "forecast_rain_mm",
+     "label": "Forecast rain (3 days)",
+     "importance": 0.0287
+    },
+    {
+     "feature": "ndvi",
+     "label": "NDVI (crop vigour)",
+     "importance": 0.0212
+    },
+    {
+     "feature": "crop_age_days",
+     "label": "Crop age",
+     "importance": 0.0127
+    },
+    {
+     "feature": "organic_carbon",
+     "label": "Organic carbon",
+     "importance": 0.005
+    },
+    {
+     "feature": "lai",
+     "label": "Leaf Area Index",
+     "importance": 0.0014
+    },
+    {
+     "feature": "soil_ph",
+     "label": "Soil pH",
+     "importance": 0.0005
+    },
+    {
+     "feature": "rainfall_mm",
+     "label": "Seasonal rainfall",
+     "importance": 0.0005
+    }
+   ],
+   "sample": [
+    {
+     "actual": 14.664,
+     "predicted": 14.729
+    },
+    {
+     "actual": 12.268,
+     "predicted": 11.139
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.806
+    },
+    {
+     "actual": 14.683,
+     "predicted": 14.765
+    },
+    {
+     "actual": 0.043,
+     "predicted": 0.27
+    },
+    {
+     "actual": 0.866,
+     "predicted": 2.867
+    },
+    {
+     "actual": 4.191,
+     "predicted": 7.171
+    },
+    {
+     "actual": 6.338,
+     "predicted": 9.724
+    },
+    {
+     "actual": 0.719,
+     "predicted": 0.358
+    },
+    {
+     "actual": 0.188,
+     "predicted": 0.215
+    },
+    {
+     "actual": 5.603,
+     "predicted": 4.449
+    },
+    {
+     "actual": 0.193,
+     "predicted": 0.284
+    },
+    {
+     "actual": 10.102,
+     "predicted": 11.353
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.683
+    },
+    {
+     "actual": 11.883,
+     "predicted": 13.189
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.78
+    },
+    {
+     "actual": 14.006,
+     "predicted": 13.96
+    },
+    {
+     "actual": 14.19,
+     "predicted": 14.777
+    },
+    {
+     "actual": 14.587,
+     "predicted": 14.78
+    },
+    {
+     "actual": 14.167,
+     "predicted": 14.796
+    },
+    {
+     "actual": 14.85,
+     "predicted": 14.612
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.793
+    },
+    {
+     "actual": 14.889,
+     "predicted": 14.795
+    },
+    {
+     "actual": 6.373,
+     "predicted": 6.29
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.643
+    },
+    {
+     "actual": 1.611,
+     "predicted": 1.345
+    },
+    {
+     "actual": 14.771,
+     "predicted": 11.117
+    },
+    {
+     "actual": 0.294,
+     "predicted": 0.494
+    },
+    {
+     "actual": 13.445,
+     "predicted": 10.833
+    },
+    {
+     "actual": 0.259,
+     "predicted": 0.232
+    },
+    {
+     "actual": 15.0,
+     "predicted": 12.993
+    },
+    {
+     "actual": 13.579,
+     "predicted": 14.879
+    },
+    {
+     "actual": 14.283,
+     "predicted": 14.718
+    },
+    {
+     "actual": 9.357,
+     "predicted": 10.09
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.436
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.806
+    },
+    {
+     "actual": 3.445,
+     "predicted": 3.494
+    },
+    {
+     "actual": 14.88,
+     "predicted": 14.737
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.054
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.74
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.745
+    },
+    {
+     "actual": 1.118,
+     "predicted": 0.218
+    },
+    {
+     "actual": 6.303,
+     "predicted": 6.681
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.199
+    },
+    {
+     "actual": 8.424,
+     "predicted": 7.237
+    },
+    {
+     "actual": 7.604,
+     "predicted": 8.343
+    },
+    {
+     "actual": 0.312,
+     "predicted": 0.179
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.213
+    },
+    {
+     "actual": 15.0,
+     "predicted": 8.742
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.246
+    },
+    {
+     "actual": 9.01,
+     "predicted": 8.422
+    },
+    {
+     "actual": 14.039,
+     "predicted": 14.777
+    },
+    {
+     "actual": 13.854,
+     "predicted": 14.774
+    },
+    {
+     "actual": 0.668,
+     "predicted": 0.26
+    },
+    {
+     "actual": 12.796,
+     "predicted": 11.966
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.36
+    },
+    {
+     "actual": 8.743,
+     "predicted": 6.051
+    },
+    {
+     "actual": 14.791,
+     "predicted": 14.776
+    },
+    {
+     "actual": 14.755,
+     "predicted": 14.79
+    },
+    {
+     "actual": 0.152,
+     "predicted": 0.21
+    },
+    {
+     "actual": 2.402,
+     "predicted": 1.41
+    },
+    {
+     "actual": 14.316,
+     "predicted": 14.828
+    },
+    {
+     "actual": 6.539,
+     "predicted": 9.193
+    },
+    {
+     "actual": 9.782,
+     "predicted": 8.841
+    },
+    {
+     "actual": 6.407,
+     "predicted": 7.519
+    },
+    {
+     "actual": 4.671,
+     "predicted": 5.295
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.78
+    },
+    {
+     "actual": 5.746,
+     "predicted": 6.481
+    },
+    {
+     "actual": 1.982,
+     "predicted": 3.687
+    },
+    {
+     "actual": 6.325,
+     "predicted": 4.891
+    },
+    {
+     "actual": 3.626,
+     "predicted": 4.411
+    },
+    {
+     "actual": 14.775,
+     "predicted": 14.805
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.695
+    },
+    {
+     "actual": 8.419,
+     "predicted": 5.045
+    },
+    {
+     "actual": 11.891,
+     "predicted": 11.422
+    },
+    {
+     "actual": 15.0,
+     "predicted": 12.882
+    },
+    {
+     "actual": 0.486,
+     "predicted": 0.192
+    },
+    {
+     "actual": 0.368,
+     "predicted": 0.281
+    },
+    {
+     "actual": 14.635,
+     "predicted": 14.77
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.776
+    },
+    {
+     "actual": 14.872,
+     "predicted": 14.753
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.784
+    },
+    {
+     "actual": 14.327,
+     "predicted": 14.793
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.858
+    },
+    {
+     "actual": 14.793,
+     "predicted": 14.82
+    },
+    {
+     "actual": 10.634,
+     "predicted": 9.2
+    },
+    {
+     "actual": 14.922,
+     "predicted": 14.524
+    },
+    {
+     "actual": 1.186,
+     "predicted": 0.222
+    },
+    {
+     "actual": 7.476,
+     "predicted": 8.548
+    },
+    {
+     "actual": 5.64,
+     "predicted": 5.919
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.638
+    },
+    {
+     "actual": 0.626,
+     "predicted": 0.218
+    },
+    {
+     "actual": 14.209,
+     "predicted": 14.781
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.962
+    },
+    {
+     "actual": 7.23,
+     "predicted": 8.732
+    },
+    {
+     "actual": 14.194,
+     "predicted": 14.587
+    },
+    {
+     "actual": 4.639,
+     "predicted": 4.802
+    },
+    {
+     "actual": 5.986,
+     "predicted": 5.401
+    },
+    {
+     "actual": 3.712,
+     "predicted": 6.295
+    },
+    {
+     "actual": 0.299,
+     "predicted": 0.213
+    },
+    {
+     "actual": 7.143,
+     "predicted": 6.653
+    },
+    {
+     "actual": 14.434,
+     "predicted": 14.727
+    },
+    {
+     "actual": 14.551,
+     "predicted": 14.694
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.796
+    },
+    {
+     "actual": 6.9,
+     "predicted": 6.427
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.797
+    },
+    {
+     "actual": 14.818,
+     "predicted": 14.785
+    },
+    {
+     "actual": 0.0,
+     "predicted": 1.664
+    },
+    {
+     "actual": 11.251,
+     "predicted": 12.883
+    },
+    {
+     "actual": 14.262,
+     "predicted": 14.814
+    },
+    {
+     "actual": 14.682,
+     "predicted": 14.782
+    },
+    {
+     "actual": 0.726,
+     "predicted": 0.172
+    },
+    {
+     "actual": 12.14,
+     "predicted": 12.204
+    },
+    {
+     "actual": 0.0,
+     "predicted": 2.388
+    },
+    {
+     "actual": 4.188,
+     "predicted": 4.722
+    },
+    {
+     "actual": 0.911,
+     "predicted": 0.269
+    },
+    {
+     "actual": 13.663,
+     "predicted": 14.754
+    },
+    {
+     "actual": 0.014,
+     "predicted": 0.197
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.69
+    },
+    {
+     "actual": 7.108,
+     "predicted": 1.992
+    },
+    {
+     "actual": 14.0,
+     "predicted": 14.777
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.738
+    },
+    {
+     "actual": 14.937,
+     "predicted": 14.799
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.752
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.226
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.277
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.124
+    },
+    {
+     "actual": 13.807,
+     "predicted": 14.792
+    },
+    {
+     "actual": 10.473,
+     "predicted": 10.517
+    },
+    {
+     "actual": 1.785,
+     "predicted": 2.095
+    },
+    {
+     "actual": 6.973,
+     "predicted": 7.377
+    },
+    {
+     "actual": 13.581,
+     "predicted": 12.419
+    },
+    {
+     "actual": 9.051,
+     "predicted": 6.031
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.751
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.176
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.796
+    },
+    {
+     "actual": 7.222,
+     "predicted": 7.577
+    },
+    {
+     "actual": 3.575,
+     "predicted": 3.764
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.222
+    },
+    {
+     "actual": 1.01,
+     "predicted": 0.175
+    },
+    {
+     "actual": 14.807,
+     "predicted": 14.763
+    },
+    {
+     "actual": 0.0,
+     "predicted": 1.005
+    },
+    {
+     "actual": 14.542,
+     "predicted": 14.858
+    },
+    {
+     "actual": 14.395,
+     "predicted": 13.088
+    },
+    {
+     "actual": 7.974,
+     "predicted": 9.218
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.506
+    },
+    {
+     "actual": 0.229,
+     "predicted": 0.406
+    },
+    {
+     "actual": 10.275,
+     "predicted": 5.715
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.807
+    },
+    {
+     "actual": 14.804,
+     "predicted": 14.789
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.79
+    },
+    {
+     "actual": 14.881,
+     "predicted": 14.754
+    },
+    {
+     "actual": 14.689,
+     "predicted": 14.817
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.786
+    },
+    {
+     "actual": 14.953,
+     "predicted": 14.77
+    },
+    {
+     "actual": 3.858,
+     "predicted": 4.526
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.79
+    },
+    {
+     "actual": 12.684,
+     "predicted": 13.556
+    },
+    {
+     "actual": 9.07,
+     "predicted": 8.811
+    },
+    {
+     "actual": 14.51,
+     "predicted": 14.784
+    },
+    {
+     "actual": 14.724,
+     "predicted": 14.756
+    },
+    {
+     "actual": 14.653,
+     "predicted": 14.831
+    },
+    {
+     "actual": 8.124,
+     "predicted": 10.644
+    },
+    {
+     "actual": 14.641,
+     "predicted": 14.848
+    },
+    {
+     "actual": 14.622,
+     "predicted": 14.806
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.726
+    },
+    {
+     "actual": 3.122,
+     "predicted": 4.521
+    },
+    {
+     "actual": 6.514,
+     "predicted": 6.318
+    },
+    {
+     "actual": 15.0,
+     "predicted": 13.964
+    },
+    {
+     "actual": 5.325,
+     "predicted": 6.394
+    },
+    {
+     "actual": 0.759,
+     "predicted": 0.242
+    },
+    {
+     "actual": 14.8,
+     "predicted": 14.751
+    },
+    {
+     "actual": 14.556,
+     "predicted": 14.847
+    },
+    {
+     "actual": 10.666,
+     "predicted": 9.553
+    },
+    {
+     "actual": 5.058,
+     "predicted": 3.89
+    },
+    {
+     "actual": 15.0,
+     "predicted": 12.744
+    },
+    {
+     "actual": 12.228,
+     "predicted": 7.107
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.702
+    },
+    {
+     "actual": 9.777,
+     "predicted": 10.579
+    },
+    {
+     "actual": 14.179,
+     "predicted": 14.788
+    },
+    {
+     "actual": 12.21,
+     "predicted": 9.56
+    },
+    {
+     "actual": 14.653,
+     "predicted": 14.805
+    },
+    {
+     "actual": 3.137,
+     "predicted": 3.336
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.516
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.87
+    },
+    {
+     "actual": 15.0,
+     "predicted": 12.721
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.168
+    },
+    {
+     "actual": 0.626,
+     "predicted": 0.246
+    },
+    {
+     "actual": 0.088,
+     "predicted": 0.237
+    },
+    {
+     "actual": 11.386,
+     "predicted": 11.787
+    },
+    {
+     "actual": 4.673,
+     "predicted": 3.551
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.241
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.319
+    },
+    {
+     "actual": 10.874,
+     "predicted": 3.416
+    },
+    {
+     "actual": 1.462,
+     "predicted": 0.962
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.484
+    },
+    {
+     "actual": 15.0,
+     "predicted": 12.458
+    },
+    {
+     "actual": 13.581,
+     "predicted": 14.023
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.865
+    },
+    {
+     "actual": 2.314,
+     "predicted": 1.49
+    },
+    {
+     "actual": 0.258,
+     "predicted": 0.245
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.209
+    },
+    {
+     "actual": 13.146,
+     "predicted": 11.916
+    },
+    {
+     "actual": 0.139,
+     "predicted": 0.626
+    },
+    {
+     "actual": 0.25,
+     "predicted": 0.44
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.818
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.834
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.425
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.199
+    },
+    {
+     "actual": 10.426,
+     "predicted": 9.499
+    },
+    {
+     "actual": 7.663,
+     "predicted": 5.127
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.748
+    },
+    {
+     "actual": 14.824,
+     "predicted": 14.784
+    },
+    {
+     "actual": 0.786,
+     "predicted": 0.215
+    },
+    {
+     "actual": 15.0,
+     "predicted": 13.952
+    },
+    {
+     "actual": 14.937,
+     "predicted": 11.341
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.807
+    },
+    {
+     "actual": 0.813,
+     "predicted": 0.27
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.261
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.13
+    },
+    {
+     "actual": 14.096,
+     "predicted": 14.788
+    },
+    {
+     "actual": 14.742,
+     "predicted": 14.816
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.787
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.754
+    },
+    {
+     "actual": 14.273,
+     "predicted": 14.803
+    },
+    {
+     "actual": 3.433,
+     "predicted": 2.592
+    },
+    {
+     "actual": 14.733,
+     "predicted": 14.816
+    },
+    {
+     "actual": 0.436,
+     "predicted": 0.247
+    },
+    {
+     "actual": 3.59,
+     "predicted": 3.451
+    },
+    {
+     "actual": 10.845,
+     "predicted": 11.6
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.171
+    },
+    {
+     "actual": 0.628,
+     "predicted": 0.205
+    },
+    {
+     "actual": 0.227,
+     "predicted": 0.767
+    },
+    {
+     "actual": 14.785,
+     "predicted": 14.298
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.635
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.19
+    },
+    {
+     "actual": 6.554,
+     "predicted": 7.188
+    },
+    {
+     "actual": 14.532,
+     "predicted": 14.76
+    },
+    {
+     "actual": 7.096,
+     "predicted": 7.042
+    },
+    {
+     "actual": 14.824,
+     "predicted": 14.784
+    },
+    {
+     "actual": 0.71,
+     "predicted": 0.271
+    },
+    {
+     "actual": 14.401,
+     "predicted": 14.825
+    },
+    {
+     "actual": 14.491,
+     "predicted": 14.777
+    },
+    {
+     "actual": 1.937,
+     "predicted": 2.413
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.183
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.267
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.205
+    },
+    {
+     "actual": 14.655,
+     "predicted": 14.79
+    },
+    {
+     "actual": 13.75,
+     "predicted": 14.819
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.28
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.21
+    },
+    {
+     "actual": 1.031,
+     "predicted": 2.226
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.805
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.245
+    },
+    {
+     "actual": 1.224,
+     "predicted": 1.909
+    },
+    {
+     "actual": 8.883,
+     "predicted": 11.046
+    },
+    {
+     "actual": 14.999,
+     "predicted": 13.858
+    },
+    {
+     "actual": 14.157,
+     "predicted": 14.799
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.231
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.259
+    },
+    {
+     "actual": 14.921,
+     "predicted": 14.66
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.822
+    },
+    {
+     "actual": 14.698,
+     "predicted": 14.384
+    },
+    {
+     "actual": 13.196,
+     "predicted": 13.867
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.79
+    },
+    {
+     "actual": 10.022,
+     "predicted": 10.211
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.188
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.266
+    },
+    {
+     "actual": 12.001,
+     "predicted": 11.646
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.809
+    },
+    {
+     "actual": 2.698,
+     "predicted": 2.793
+    },
+    {
+     "actual": 14.535,
+     "predicted": 11.209
+    },
+    {
+     "actual": 14.642,
+     "predicted": 14.752
+    },
+    {
+     "actual": 10.523,
+     "predicted": 10.939
+    },
+    {
+     "actual": 14.9,
+     "predicted": 14.752
+    },
+    {
+     "actual": 15.0,
+     "predicted": 13.912
+    },
+    {
+     "actual": 8.95,
+     "predicted": 9.914
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.804
+    },
+    {
+     "actual": 15.0,
+     "predicted": 13.694
+    },
+    {
+     "actual": 9.365,
+     "predicted": 9.949
+    },
+    {
+     "actual": 11.301,
+     "predicted": 13.095
+    },
+    {
+     "actual": 6.249,
+     "predicted": 9.172
+    },
+    {
+     "actual": 5.671,
+     "predicted": 5.574
+    },
+    {
+     "actual": 13.182,
+     "predicted": 12.985
+    },
+    {
+     "actual": 11.388,
+     "predicted": 10.739
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.478
+    },
+    {
+     "actual": 5.821,
+     "predicted": 5.185
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.801
+    },
+    {
+     "actual": 14.777,
+     "predicted": 14.764
+    },
+    {
+     "actual": 14.805,
+     "predicted": 14.788
+    },
+    {
+     "actual": 14.297,
+     "predicted": 14.785
+    },
+    {
+     "actual": 14.883,
+     "predicted": 14.789
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.615
+    },
+    {
+     "actual": 15.0,
+     "predicted": 14.759
+    },
+    {
+     "actual": 8.044,
+     "predicted": 7.594
+    },
+    {
+     "actual": 14.957,
+     "predicted": 14.803
+    },
+    {
+     "actual": 7.547,
+     "predicted": 6.974
+    },
+    {
+     "actual": 1.027,
+     "predicted": 1.352
+    },
+    {
+     "actual": 0.225,
+     "predicted": 0.291
+    },
+    {
+     "actual": 0.083,
+     "predicted": 0.33
+    }
+   ]
+  },
+  "water_requirement": {
+   "title": "Crop Water Requirement (mm/day)",
+   "task": "regression",
+   "algorithm": "Gradient Boosting",
+   "test": {
+    "r2": 0.9768,
+    "mae": 0.1689
+   },
+   "baseline": {
+    "algorithm": "Linear Regression",
+    "r2": 0.8843,
+    "mae": 0.403
+   },
+   "importance": [
+    {
+     "feature": "crop_age_days",
+     "label": "Crop age",
+     "importance": 0.4659
+    },
+    {
+     "feature": "temperature_c",
+     "label": "Temperature",
+     "importance": 0.2409
+    },
+    {
+     "feature": "relative_humidity",
+     "label": "Relative humidity",
+     "importance": 0.1736
+    },
+    {
+     "feature": "ndvi",
+     "label": "NDVI (crop vigour)",
+     "importance": 0.1184
+    },
+    {
+     "feature": "lai",
+     "label": "Leaf Area Index",
+     "importance": 0.0004
+    },
+    {
+     "feature": "organic_carbon",
+     "label": "Organic carbon",
+     "importance": 0.0003
+    },
+    {
+     "feature": "rainfall_mm",
+     "label": "Seasonal rainfall",
+     "importance": 0.0002
+    },
+    {
+     "feature": "soil_moisture",
+     "label": "Soil moisture",
+     "importance": 0.0001
+    },
+    {
+     "feature": "soil_ph",
+     "label": "Soil pH",
+     "importance": 0.0001
+    },
+    {
+     "feature": "forecast_rain_mm",
+     "label": "Forecast rain (3 days)",
+     "importance": 0.0001
+    }
+   ],
+   "sample": [
+    {
+     "actual": 7.022,
+     "predicted": 6.808
+    },
+    {
+     "actual": 3.717,
+     "predicted": 3.576
+    },
+    {
+     "actual": 4.494,
+     "predicted": 4.548
+    },
+    {
+     "actual": 2.213,
+     "predicted": 2.04
+    },
+    {
+     "actual": 7.703,
+     "predicted": 7.339
+    },
+    {
+     "actual": 2.411,
+     "predicted": 2.685
+    },
+    {
+     "actual": 4.166,
+     "predicted": 5.001
+    },
+    {
+     "actual": 4.196,
+     "predicted": 4.082
+    },
+    {
+     "actual": 4.204,
+     "predicted": 4.393
+    },
+    {
+     "actual": 3.999,
+     "predicted": 4.163
+    },
+    {
+     "actual": 3.448,
+     "predicted": 3.314
+    },
+    {
+     "actual": 3.168,
+     "predicted": 3.021
+    },
+    {
+     "actual": 5.217,
+     "predicted": 5.283
+    },
+    {
+     "actual": 5.502,
+     "predicted": 5.344
+    },
+    {
+     "actual": 3.805,
+     "predicted": 3.741
+    },
+    {
+     "actual": 7.169,
+     "predicted": 6.724
+    },
+    {
+     "actual": 1.493,
+     "predicted": 1.472
+    },
+    {
+     "actual": 4.585,
+     "predicted": 4.127
+    },
+    {
+     "actual": 2.355,
+     "predicted": 2.275
+    },
+    {
+     "actual": 2.277,
+     "predicted": 2.191
+    },
+    {
+     "actual": 3.307,
+     "predicted": 3.325
+    },
+    {
+     "actual": 3.353,
+     "predicted": 3.359
+    },
+    {
+     "actual": 4.45,
+     "predicted": 4.443
+    },
+    {
+     "actual": 6.474,
+     "predicted": 6.418
+    },
+    {
+     "actual": 1.743,
+     "predicted": 1.865
+    },
+    {
+     "actual": 3.138,
+     "predicted": 3.475
+    },
+    {
+     "actual": 1.817,
+     "predicted": 1.782
+    },
+    {
+     "actual": 3.415,
+     "predicted": 3.686
+    },
+    {
+     "actual": 1.898,
+     "predicted": 1.747
+    },
+    {
+     "actual": 3.578,
+     "predicted": 3.498
+    },
+    {
+     "actual": 5.715,
+     "predicted": 5.388
+    },
+    {
+     "actual": 3.121,
+     "predicted": 3.152
+    },
+    {
+     "actual": 3.371,
+     "predicted": 3.228
+    },
+    {
+     "actual": 6.139,
+     "predicted": 5.944
+    },
+    {
+     "actual": 4.199,
+     "predicted": 4.369
+    },
+    {
+     "actual": 3.012,
+     "predicted": 3.028
+    },
+    {
+     "actual": 6.334,
+     "predicted": 6.017
+    },
+    {
+     "actual": 2.157,
+     "predicted": 2.15
+    },
+    {
+     "actual": 2.158,
+     "predicted": 2.041
+    },
+    {
+     "actual": 6.434,
+     "predicted": 6.674
+    },
+    {
+     "actual": 6.032,
+     "predicted": 6.06
+    },
+    {
+     "actual": 1.608,
+     "predicted": 1.454
+    },
+    {
+     "actual": 1.802,
+     "predicted": 1.694
+    },
+    {
+     "actual": 5.309,
+     "predicted": 5.629
+    },
+    {
+     "actual": 2.398,
+     "predicted": 2.38
+    },
+    {
+     "actual": 4.823,
+     "predicted": 4.707
+    },
+    {
+     "actual": 4.405,
+     "predicted": 4.079
+    },
+    {
+     "actual": 1.706,
+     "predicted": 1.723
+    },
+    {
+     "actual": 4.582,
+     "predicted": 4.298
+    },
+    {
+     "actual": 1.796,
+     "predicted": 1.906
+    },
+    {
+     "actual": 3.869,
+     "predicted": 3.906
+    },
+    {
+     "actual": 1.972,
+     "predicted": 1.914
+    },
+    {
+     "actual": 1.47,
+     "predicted": 1.51
+    },
+    {
+     "actual": 1.309,
+     "predicted": 1.397
+    },
+    {
+     "actual": 2.522,
+     "predicted": 2.461
+    },
+    {
+     "actual": 2.096,
+     "predicted": 2.092
+    },
+    {
+     "actual": 1.359,
+     "predicted": 1.517
+    },
+    {
+     "actual": 3.766,
+     "predicted": 3.627
+    },
+    {
+     "actual": 5.761,
+     "predicted": 5.623
+    },
+    {
+     "actual": 4.068,
+     "predicted": 4.461
+    },
+    {
+     "actual": 3.443,
+     "predicted": 3.269
+    },
+    {
+     "actual": 1.856,
+     "predicted": 1.806
+    },
+    {
+     "actual": 5.713,
+     "predicted": 5.586
+    },
+    {
+     "actual": 4.404,
+     "predicted": 4.372
+    },
+    {
+     "actual": 4.504,
+     "predicted": 4.493
+    },
+    {
+     "actual": 4.564,
+     "predicted": 4.247
+    },
+    {
+     "actual": 3.528,
+     "predicted": 3.688
+    },
+    {
+     "actual": 5.659,
+     "predicted": 5.726
+    },
+    {
+     "actual": 4.274,
+     "predicted": 3.845
+    },
+    {
+     "actual": 1.872,
+     "predicted": 1.885
+    },
+    {
+     "actual": 5.555,
+     "predicted": 5.355
+    },
+    {
+     "actual": 4.184,
+     "predicted": 4.535
+    },
+    {
+     "actual": 1.494,
+     "predicted": 1.583
+    },
+    {
+     "actual": 5.033,
+     "predicted": 5.147
+    },
+    {
+     "actual": 2.268,
+     "predicted": 2.199
+    },
+    {
+     "actual": 4.095,
+     "predicted": 4.378
+    },
+    {
+     "actual": 2.0,
+     "predicted": 2.062
+    },
+    {
+     "actual": 5.507,
+     "predicted": 5.214
+    },
+    {
+     "actual": 3.536,
+     "predicted": 3.366
+    },
+    {
+     "actual": 6.49,
+     "predicted": 6.372
+    },
+    {
+     "actual": 6.048,
+     "predicted": 5.97
+    },
+    {
+     "actual": 4.877,
+     "predicted": 4.666
+    },
+    {
+     "actual": 2.696,
+     "predicted": 2.567
+    },
+    {
+     "actual": 2.465,
+     "predicted": 2.508
+    },
+    {
+     "actual": 2.571,
+     "predicted": 2.774
+    },
+    {
+     "actual": 2.235,
+     "predicted": 2.366
+    },
+    {
+     "actual": 1.527,
+     "predicted": 1.515
+    },
+    {
+     "actual": 2.275,
+     "predicted": 2.328
+    },
+    {
+     "actual": 6.919,
+     "predicted": 7.212
+    },
+    {
+     "actual": 6.965,
+     "predicted": 6.418
+    },
+    {
+     "actual": 6.715,
+     "predicted": 6.588
+    },
+    {
+     "actual": 4.02,
+     "predicted": 3.955
+    },
+    {
+     "actual": 4.771,
+     "predicted": 4.687
+    },
+    {
+     "actual": 3.564,
+     "predicted": 3.426
+    },
+    {
+     "actual": 6.56,
+     "predicted": 6.249
+    },
+    {
+     "actual": 3.266,
+     "predicted": 3.095
+    },
+    {
+     "actual": 5.111,
+     "predicted": 5.48
+    },
+    {
+     "actual": 5.541,
+     "predicted": 5.688
+    },
+    {
+     "actual": 5.402,
+     "predicted": 5.682
+    },
+    {
+     "actual": 6.242,
+     "predicted": 5.907
+    },
+    {
+     "actual": 4.459,
+     "predicted": 4.754
+    },
+    {
+     "actual": 4.105,
+     "predicted": 4.55
+    },
+    {
+     "actual": 4.176,
+     "predicted": 4.143
+    },
+    {
+     "actual": 4.685,
+     "predicted": 4.536
+    },
+    {
+     "actual": 6.091,
+     "predicted": 6.047
+    },
+    {
+     "actual": 3.058,
+     "predicted": 3.194
+    },
+    {
+     "actual": 3.456,
+     "predicted": 3.303
+    },
+    {
+     "actual": 6.774,
+     "predicted": 6.635
+    },
+    {
+     "actual": 4.421,
+     "predicted": 4.266
+    },
+    {
+     "actual": 3.965,
+     "predicted": 4.151
+    },
+    {
+     "actual": 1.308,
+     "predicted": 1.36
+    },
+    {
+     "actual": 3.718,
+     "predicted": 3.585
+    },
+    {
+     "actual": 4.455,
+     "predicted": 4.03
+    },
+    {
+     "actual": 4.82,
+     "predicted": 4.419
+    },
+    {
+     "actual": 3.316,
+     "predicted": 3.149
+    },
+    {
+     "actual": 3.69,
+     "predicted": 3.799
+    },
+    {
+     "actual": 2.489,
+     "predicted": 2.228
+    },
+    {
+     "actual": 3.679,
+     "predicted": 3.513
+    },
+    {
+     "actual": 4.393,
+     "predicted": 4.242
+    },
+    {
+     "actual": 2.291,
+     "predicted": 2.187
+    },
+    {
+     "actual": 3.054,
+     "predicted": 2.976
+    },
+    {
+     "actual": 5.383,
+     "predicted": 5.147
+    },
+    {
+     "actual": 3.257,
+     "predicted": 3.56
+    },
+    {
+     "actual": 3.738,
+     "predicted": 3.638
+    },
+    {
+     "actual": 2.183,
+     "predicted": 2.239
+    },
+    {
+     "actual": 5.802,
+     "predicted": 6.097
+    },
+    {
+     "actual": 6.58,
+     "predicted": 6.332
+    },
+    {
+     "actual": 1.422,
+     "predicted": 1.458
+    },
+    {
+     "actual": 3.944,
+     "predicted": 3.886
+    },
+    {
+     "actual": 4.108,
+     "predicted": 4.488
+    },
+    {
+     "actual": 4.854,
+     "predicted": 5.436
+    },
+    {
+     "actual": 2.223,
+     "predicted": 2.684
+    },
+    {
+     "actual": 5.158,
+     "predicted": 4.946
+    },
+    {
+     "actual": 5.286,
+     "predicted": 5.348
+    },
+    {
+     "actual": 5.055,
+     "predicted": 4.983
+    },
+    {
+     "actual": 1.612,
+     "predicted": 1.578
+    },
+    {
+     "actual": 4.015,
+     "predicted": 4.108
+    },
+    {
+     "actual": 5.77,
+     "predicted": 5.67
+    },
+    {
+     "actual": 3.648,
+     "predicted": 3.711
+    },
+    {
+     "actual": 5.068,
+     "predicted": 5.392
+    },
+    {
+     "actual": 2.578,
+     "predicted": 2.767
+    },
+    {
+     "actual": 4.699,
+     "predicted": 4.491
+    },
+    {
+     "actual": 1.29,
+     "predicted": 1.368
+    },
+    {
+     "actual": 2.508,
+     "predicted": 2.6
+    },
+    {
+     "actual": 3.896,
+     "predicted": 3.906
+    },
+    {
+     "actual": 3.898,
+     "predicted": 4.127
+    },
+    {
+     "actual": 6.461,
+     "predicted": 6.428
+    },
+    {
+     "actual": 3.025,
+     "predicted": 2.898
+    },
+    {
+     "actual": 3.923,
+     "predicted": 3.602
+    },
+    {
+     "actual": 5.582,
+     "predicted": 5.459
+    },
+    {
+     "actual": 3.633,
+     "predicted": 3.558
+    },
+    {
+     "actual": 4.445,
+     "predicted": 4.414
+    },
+    {
+     "actual": 4.145,
+     "predicted": 4.102
+    },
+    {
+     "actual": 3.133,
+     "predicted": 3.249
+    },
+    {
+     "actual": 3.979,
+     "predicted": 3.905
+    },
+    {
+     "actual": 6.274,
+     "predicted": 5.855
+    },
+    {
+     "actual": 2.092,
+     "predicted": 2.219
+    },
+    {
+     "actual": 4.176,
+     "predicted": 3.944
+    },
+    {
+     "actual": 3.836,
+     "predicted": 3.709
+    },
+    {
+     "actual": 4.367,
+     "predicted": 4.194
+    },
+    {
+     "actual": 5.865,
+     "predicted": 5.595
+    },
+    {
+     "actual": 2.649,
+     "predicted": 2.87
+    },
+    {
+     "actual": 1.895,
+     "predicted": 1.861
+    },
+    {
+     "actual": 2.846,
+     "predicted": 2.871
+    },
+    {
+     "actual": 4.217,
+     "predicted": 4.18
+    },
+    {
+     "actual": 1.963,
+     "predicted": 2.075
+    },
+    {
+     "actual": 4.532,
+     "predicted": 4.788
+    },
+    {
+     "actual": 4.984,
+     "predicted": 5.015
+    },
+    {
+     "actual": 2.391,
+     "predicted": 2.4
+    },
+    {
+     "actual": 5.287,
+     "predicted": 5.352
+    },
+    {
+     "actual": 3.475,
+     "predicted": 3.604
+    },
+    {
+     "actual": 5.815,
+     "predicted": 5.819
+    },
+    {
+     "actual": 1.678,
+     "predicted": 1.625
+    },
+    {
+     "actual": 2.008,
+     "predicted": 2.101
+    },
+    {
+     "actual": 6.439,
+     "predicted": 6.65
+    },
+    {
+     "actual": 1.249,
+     "predicted": 1.428
+    },
+    {
+     "actual": 2.094,
+     "predicted": 2.182
+    },
+    {
+     "actual": 5.931,
+     "predicted": 5.643
+    },
+    {
+     "actual": 4.714,
+     "predicted": 4.716
+    },
+    {
+     "actual": 4.049,
+     "predicted": 4.006
+    },
+    {
+     "actual": 3.482,
+     "predicted": 3.23
+    },
+    {
+     "actual": 4.684,
+     "predicted": 4.427
+    },
+    {
+     "actual": 5.177,
+     "predicted": 5.334
+    },
+    {
+     "actual": 3.991,
+     "predicted": 4.234
+    },
+    {
+     "actual": 2.808,
+     "predicted": 3.012
+    },
+    {
+     "actual": 1.466,
+     "predicted": 1.386
+    },
+    {
+     "actual": 5.263,
+     "predicted": 5.3
+    },
+    {
+     "actual": 4.215,
+     "predicted": 3.996
+    },
+    {
+     "actual": 3.342,
+     "predicted": 3.053
+    },
+    {
+     "actual": 3.212,
+     "predicted": 3.032
+    },
+    {
+     "actual": 3.054,
+     "predicted": 3.482
+    },
+    {
+     "actual": 4.408,
+     "predicted": 4.108
+    },
+    {
+     "actual": 4.644,
+     "predicted": 5.141
+    },
+    {
+     "actual": 2.513,
+     "predicted": 2.515
+    },
+    {
+     "actual": 3.628,
+     "predicted": 3.865
+    },
+    {
+     "actual": 5.954,
+     "predicted": 5.95
+    },
+    {
+     "actual": 1.84,
+     "predicted": 1.818
+    },
+    {
+     "actual": 4.842,
+     "predicted": 4.903
+    },
+    {
+     "actual": 2.59,
+     "predicted": 2.685
+    },
+    {
+     "actual": 5.708,
+     "predicted": 5.893
+    },
+    {
+     "actual": 3.695,
+     "predicted": 3.894
+    },
+    {
+     "actual": 3.682,
+     "predicted": 3.728
+    },
+    {
+     "actual": 1.595,
+     "predicted": 1.677
+    },
+    {
+     "actual": 6.316,
+     "predicted": 6.185
+    },
+    {
+     "actual": 4.983,
+     "predicted": 4.702
+    },
+    {
+     "actual": 4.591,
+     "predicted": 4.346
+    },
+    {
+     "actual": 2.418,
+     "predicted": 2.52
+    },
+    {
+     "actual": 4.011,
+     "predicted": 4.195
+    },
+    {
+     "actual": 5.171,
+     "predicted": 4.827
+    },
+    {
+     "actual": 2.625,
+     "predicted": 2.858
+    },
+    {
+     "actual": 1.268,
+     "predicted": 1.319
+    },
+    {
+     "actual": 1.957,
+     "predicted": 1.889
+    },
+    {
+     "actual": 2.906,
+     "predicted": 2.975
+    },
+    {
+     "actual": 4.126,
+     "predicted": 3.89
+    },
+    {
+     "actual": 3.587,
+     "predicted": 3.674
+    },
+    {
+     "actual": 2.251,
+     "predicted": 2.352
+    },
+    {
+     "actual": 1.492,
+     "predicted": 1.475
+    },
+    {
+     "actual": 6.059,
+     "predicted": 5.8
+    },
+    {
+     "actual": 3.888,
+     "predicted": 3.978
+    },
+    {
+     "actual": 6.172,
+     "predicted": 6.105
+    },
+    {
+     "actual": 3.266,
+     "predicted": 3.173
+    },
+    {
+     "actual": 2.951,
+     "predicted": 3.076
+    },
+    {
+     "actual": 4.025,
+     "predicted": 3.793
+    },
+    {
+     "actual": 2.585,
+     "predicted": 2.742
+    },
+    {
+     "actual": 4.031,
+     "predicted": 3.879
+    },
+    {
+     "actual": 5.275,
+     "predicted": 5.492
+    },
+    {
+     "actual": 2.589,
+     "predicted": 2.629
+    },
+    {
+     "actual": 4.874,
+     "predicted": 4.508
+    },
+    {
+     "actual": 3.673,
+     "predicted": 3.577
+    },
+    {
+     "actual": 4.02,
+     "predicted": 4.185
+    },
+    {
+     "actual": 6.174,
+     "predicted": 6.159
+    },
+    {
+     "actual": 4.967,
+     "predicted": 5.295
+    },
+    {
+     "actual": 3.307,
+     "predicted": 3.42
+    },
+    {
+     "actual": 2.802,
+     "predicted": 2.87
+    },
+    {
+     "actual": 3.356,
+     "predicted": 3.519
+    },
+    {
+     "actual": 6.051,
+     "predicted": 5.595
+    },
+    {
+     "actual": 3.559,
+     "predicted": 3.703
+    },
+    {
+     "actual": 5.773,
+     "predicted": 5.781
+    },
+    {
+     "actual": 4.268,
+     "predicted": 4.241
+    },
+    {
+     "actual": 2.136,
+     "predicted": 2.106
+    },
+    {
+     "actual": 1.806,
+     "predicted": 1.763
+    },
+    {
+     "actual": 3.643,
+     "predicted": 3.792
+    },
+    {
+     "actual": 3.364,
+     "predicted": 3.219
+    },
+    {
+     "actual": 3.614,
+     "predicted": 3.567
+    },
+    {
+     "actual": 4.309,
+     "predicted": 4.193
+    },
+    {
+     "actual": 5.222,
+     "predicted": 5.044
+    },
+    {
+     "actual": 2.928,
+     "predicted": 2.968
+    },
+    {
+     "actual": 3.622,
+     "predicted": 3.669
+    },
+    {
+     "actual": 4.405,
+     "predicted": 4.69
+    },
+    {
+     "actual": 5.959,
+     "predicted": 6.058
+    },
+    {
+     "actual": 3.128,
+     "predicted": 3.108
+    },
+    {
+     "actual": 5.223,
+     "predicted": 5.394
+    },
+    {
+     "actual": 4.532,
+     "predicted": 4.566
+    },
+    {
+     "actual": 3.705,
+     "predicted": 3.827
+    },
+    {
+     "actual": 5.215,
+     "predicted": 5.547
+    },
+    {
+     "actual": 5.783,
+     "predicted": 5.583
+    },
+    {
+     "actual": 5.054,
+     "predicted": 4.881
+    },
+    {
+     "actual": 6.316,
+     "predicted": 6.158
+    },
+    {
+     "actual": 5.183,
+     "predicted": 5.223
+    },
+    {
+     "actual": 4.357,
+     "predicted": 4.318
+    },
+    {
+     "actual": 4.511,
+     "predicted": 4.624
+    },
+    {
+     "actual": 2.971,
+     "predicted": 3.207
+    },
+    {
+     "actual": 2.411,
+     "predicted": 2.711
+    },
+    {
+     "actual": 3.795,
+     "predicted": 3.73
+    },
+    {
+     "actual": 3.207,
+     "predicted": 3.439
+    },
+    {
+     "actual": 5.896,
+     "predicted": 6.37
+    },
+    {
+     "actual": 5.394,
+     "predicted": 5.377
+    },
+    {
+     "actual": 4.399,
+     "predicted": 4.357
+    },
+    {
+     "actual": 1.628,
+     "predicted": 1.601
+    },
+    {
+     "actual": 2.449,
+     "predicted": 2.47
+    },
+    {
+     "actual": 3.855,
+     "predicted": 3.689
+    },
+    {
+     "actual": 3.415,
+     "predicted": 3.436
+    },
+    {
+     "actual": 2.652,
+     "predicted": 2.597
+    },
+    {
+     "actual": 3.672,
+     "predicted": 3.548
+    },
+    {
+     "actual": 3.083,
+     "predicted": 3.182
+    },
+    {
+     "actual": 2.224,
+     "predicted": 2.259
+    },
+    {
+     "actual": 3.821,
+     "predicted": 3.854
+    },
+    {
+     "actual": 3.062,
+     "predicted": 2.942
+    },
+    {
+     "actual": 1.738,
+     "predicted": 1.698
+    },
+    {
+     "actual": 5.815,
+     "predicted": 5.789
+    },
+    {
+     "actual": 2.894,
+     "predicted": 2.719
+    },
+    {
+     "actual": 6.514,
+     "predicted": 6.265
+    },
+    {
+     "actual": 4.788,
+     "predicted": 4.632
+    },
+    {
+     "actual": 3.466,
+     "predicted": 3.473
+    },
+    {
+     "actual": 3.994,
+     "predicted": 3.614
+    },
+    {
+     "actual": 7.245,
+     "predicted": 6.715
+    },
+    {
+     "actual": 5.442,
+     "predicted": 5.946
+    },
+    {
+     "actual": 4.807,
+     "predicted": 5.102
+    },
+    {
+     "actual": 2.724,
+     "predicted": 2.497
+    },
+    {
+     "actual": 3.676,
+     "predicted": 3.452
+    },
+    {
+     "actual": 4.728,
+     "predicted": 4.469
+    },
+    {
+     "actual": 4.374,
+     "predicted": 4.36
+    },
+    {
+     "actual": 3.924,
+     "predicted": 4.269
+    },
+    {
+     "actual": 1.313,
+     "predicted": 1.319
+    },
+    {
+     "actual": 4.457,
+     "predicted": 4.325
+    },
+    {
+     "actual": 3.355,
+     "predicted": 3.382
+    },
+    {
+     "actual": 2.39,
+     "predicted": 2.568
+    },
+    {
+     "actual": 4.637,
+     "predicted": 4.566
+    },
+    {
+     "actual": 2.473,
+     "predicted": 2.506
+    },
+    {
+     "actual": 4.54,
+     "predicted": 5.258
+    }
+   ]
+  },
+  "irrigation_depth": {
+   "title": "Irrigation Depth (mm)",
+   "task": "regression",
+   "algorithm": "Gradient Boosting",
+   "test": {
+    "r2": 0.9745,
+    "mae": 1.7471
+   },
+   "baseline": {
+    "algorithm": "Linear Regression",
+    "r2": 0.6206,
+    "mae": 6.6688
+   },
+   "importance": [
+    {
+     "feature": "crop_age_days",
+     "label": "Crop age",
+     "importance": 0.9643
+    },
+    {
+     "feature": "soil_moisture",
+     "label": "Soil moisture",
+     "importance": 0.0236
+    },
+    {
+     "feature": "forecast_rain_mm",
+     "label": "Forecast rain (3 days)",
+     "importance": 0.0041
+    },
+    {
+     "feature": "relative_humidity",
+     "label": "Relative humidity",
+     "importance": 0.0027
+    },
+    {
+     "feature": "organic_carbon",
+     "label": "Organic carbon",
+     "importance": 0.0019
+    },
+    {
+     "feature": "temperature_c",
+     "label": "Temperature",
+     "importance": 0.0016
+    },
+    {
+     "feature": "lai",
+     "label": "Leaf Area Index",
+     "importance": 0.0007
+    },
+    {
+     "feature": "ndvi",
+     "label": "NDVI (crop vigour)",
+     "importance": 0.0006
+    },
+    {
+     "feature": "rainfall_mm",
+     "label": "Seasonal rainfall",
+     "importance": 0.0003
+    },
+    {
+     "feature": "soil_ph",
+     "label": "Soil pH",
+     "importance": 0.0002
+    }
+   ],
+   "sample": [
+    {
+     "actual": 100.0,
+     "predicted": 97.796
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.969
+    },
+    {
+     "actual": 97.6,
+     "predicted": 98.51
+    },
+    {
+     "actual": 94.312,
+     "predicted": 98.257
+    },
+    {
+     "actual": 97.458,
+     "predicted": 98.834
+    },
+    {
+     "actual": 53.182,
+     "predicted": 61.57
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.998
+    },
+    {
+     "actual": 100.0,
+     "predicted": 99.183
+    },
+    {
+     "actual": 100.0,
+     "predicted": 99.053
+    },
+    {
+     "actual": 94.932,
+     "predicted": 99.012
+    },
+    {
+     "actual": 100.0,
+     "predicted": 99.015
+    },
+    {
+     "actual": 98.116,
+     "predicted": 99.052
+    },
+    {
+     "actual": 96.697,
+     "predicted": 98.196
+    },
+    {
+     "actual": 99.903,
+     "predicted": 98.749
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.739
+    },
+    {
+     "actual": 98.924,
+     "predicted": 98.653
+    },
+    {
+     "actual": 69.008,
+     "predicted": 68.582
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.777
+    },
+    {
+     "actual": 96.712,
+     "predicted": 96.559
+    },
+    {
+     "actual": 47.544,
+     "predicted": 48.789
+    },
+    {
+     "actual": 97.929,
+     "predicted": 98.797
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.633
+    },
+    {
+     "actual": 95.875,
+     "predicted": 98.868
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.148
+    },
+    {
+     "actual": 39.873,
+     "predicted": 42.917
+    },
+    {
+     "actual": 93.366,
+     "predicted": 95.234
+    },
+    {
+     "actual": 78.152,
+     "predicted": 75.419
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.784
+    },
+    {
+     "actual": 74.364,
+     "predicted": 73.836
+    },
+    {
+     "actual": 92.857,
+     "predicted": 98.929
+    },
+    {
+     "actual": 96.579,
+     "predicted": 98.746
+    },
+    {
+     "actual": 99.607,
+     "predicted": 98.927
+    },
+    {
+     "actual": 90.807,
+     "predicted": 86.45
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.669
+    },
+    {
+     "actual": 98.388,
+     "predicted": 98.807
+    },
+    {
+     "actual": 94.821,
+     "predicted": 98.769
+    },
+    {
+     "actual": 95.607,
+     "predicted": 98.657
+    },
+    {
+     "actual": 93.266,
+     "predicted": 98.355
+    },
+    {
+     "actual": 98.41,
+     "predicted": 98.779
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.657
+    },
+    {
+     "actual": 96.518,
+     "predicted": 98.74
+    },
+    {
+     "actual": 74.494,
+     "predicted": 68.329
+    },
+    {
+     "actual": 59.978,
+     "predicted": 57.976
+    },
+    {
+     "actual": 95.032,
+     "predicted": 98.902
+    },
+    {
+     "actual": 76.633,
+     "predicted": 76.388
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.756
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.868
+    },
+    {
+     "actual": 89.916,
+     "predicted": 90.174
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.971
+    },
+    {
+     "actual": 100.0,
+     "predicted": 99.421
+    },
+    {
+     "actual": 96.639,
+     "predicted": 98.294
+    },
+    {
+     "actual": 84.069,
+     "predicted": 82.245
+    },
+    {
+     "actual": 74.437,
+     "predicted": 70.526
+    },
+    {
+     "actual": 56.842,
+     "predicted": 54.598
+    },
+    {
+     "actual": 48.981,
+     "predicted": 53.363
+    },
+    {
+     "actual": 92.118,
+     "predicted": 86.975
+    },
+    {
+     "actual": 51.677,
+     "predicted": 52.382
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.632
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.774
+    },
+    {
+     "actual": 96.775,
+     "predicted": 98.842
+    },
+    {
+     "actual": 94.453,
+     "predicted": 98.9
+    },
+    {
+     "actual": 74.021,
+     "predicted": 77.072
+    },
+    {
+     "actual": 98.279,
+     "predicted": 98.729
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.693
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.811
+    },
+    {
+     "actual": 99.075,
+     "predicted": 98.735
+    },
+    {
+     "actual": 99.172,
+     "predicted": 98.846
+    },
+    {
+     "actual": 99.833,
+     "predicted": 98.748
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.716
+    },
+    {
+     "actual": 81.635,
+     "predicted": 75.721
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.742
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.729
+    },
+    {
+     "actual": 71.809,
+     "predicted": 65.2
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.87
+    },
+    {
+     "actual": 62.707,
+     "predicted": 60.904
+    },
+    {
+     "actual": 99.763,
+     "predicted": 98.665
+    },
+    {
+     "actual": 91.813,
+     "predicted": 93.904
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.744
+    },
+    {
+     "actual": 99.043,
+     "predicted": 98.616
+    },
+    {
+     "actual": 97.065,
+     "predicted": 98.779
+    },
+    {
+     "actual": 95.923,
+     "predicted": 98.728
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.705
+    },
+    {
+     "actual": 99.1,
+     "predicted": 98.791
+    },
+    {
+     "actual": 97.47,
+     "predicted": 98.065
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.831
+    },
+    {
+     "actual": 72.902,
+     "predicted": 71.528
+    },
+    {
+     "actual": 71.808,
+     "predicted": 73.084
+    },
+    {
+     "actual": 80.326,
+     "predicted": 81.538
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.527
+    },
+    {
+     "actual": 99.012,
+     "predicted": 98.696
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.696
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.889
+    },
+    {
+     "actual": 94.548,
+     "predicted": 98.767
+    },
+    {
+     "actual": 94.868,
+     "predicted": 98.793
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.675
+    },
+    {
+     "actual": 97.508,
+     "predicted": 98.352
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.746
+    },
+    {
+     "actual": 97.546,
+     "predicted": 98.935
+    },
+    {
+     "actual": 98.315,
+     "predicted": 98.739
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.809
+    },
+    {
+     "actual": 95.887,
+     "predicted": 98.665
+    },
+    {
+     "actual": 99.016,
+     "predicted": 98.695
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.746
+    },
+    {
+     "actual": 99.92,
+     "predicted": 98.744
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.706
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.665
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.674
+    },
+    {
+     "actual": 98.482,
+     "predicted": 98.649
+    },
+    {
+     "actual": 99.552,
+     "predicted": 98.788
+    },
+    {
+     "actual": 96.017,
+     "predicted": 98.505
+    },
+    {
+     "actual": 40.842,
+     "predicted": 45.058
+    },
+    {
+     "actual": 99.762,
+     "predicted": 98.817
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.708
+    },
+    {
+     "actual": 99.079,
+     "predicted": 98.781
+    },
+    {
+     "actual": 74.162,
+     "predicted": 76.238
+    },
+    {
+     "actual": 99.292,
+     "predicted": 99.121
+    },
+    {
+     "actual": 70.63,
+     "predicted": 70.779
+    },
+    {
+     "actual": 98.409,
+     "predicted": 98.92
+    },
+    {
+     "actual": 99.996,
+     "predicted": 98.825
+    },
+    {
+     "actual": 94.428,
+     "predicted": 98.957
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.791
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.811
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.815
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.766
+    },
+    {
+     "actual": 94.582,
+     "predicted": 94.042
+    },
+    {
+     "actual": 98.636,
+     "predicted": 98.65
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.888
+    },
+    {
+     "actual": 62.018,
+     "predicted": 60.904
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.825
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.807
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.772
+    },
+    {
+     "actual": 82.745,
+     "predicted": 77.383
+    },
+    {
+     "actual": 99.743,
+     "predicted": 98.504
+    },
+    {
+     "actual": 98.638,
+     "predicted": 98.731
+    },
+    {
+     "actual": 99.208,
+     "predicted": 98.92
+    },
+    {
+     "actual": 62.852,
+     "predicted": 63.073
+    },
+    {
+     "actual": 99.343,
+     "predicted": 98.703
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.709
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.902
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.873
+    },
+    {
+     "actual": 45.819,
+     "predicted": 46.464
+    },
+    {
+     "actual": 97.067,
+     "predicted": 98.737
+    },
+    {
+     "actual": 53.425,
+     "predicted": 53.343
+    },
+    {
+     "actual": 66.306,
+     "predicted": 65.993
+    },
+    {
+     "actual": 96.002,
+     "predicted": 98.713
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.705
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.794
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.498
+    },
+    {
+     "actual": 98.416,
+     "predicted": 98.78
+    },
+    {
+     "actual": 98.345,
+     "predicted": 98.772
+    },
+    {
+     "actual": 100.0,
+     "predicted": 97.704
+    },
+    {
+     "actual": 95.157,
+     "predicted": 98.799
+    },
+    {
+     "actual": 89.819,
+     "predicted": 93.401
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.52
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.742
+    },
+    {
+     "actual": 99.398,
+     "predicted": 98.794
+    },
+    {
+     "actual": 63.987,
+     "predicted": 66.362
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.736
+    },
+    {
+     "actual": 96.99,
+     "predicted": 96.802
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.754
+    },
+    {
+     "actual": 100.0,
+     "predicted": 99.195
+    },
+    {
+     "actual": 98.031,
+     "predicted": 98.899
+    },
+    {
+     "actual": 39.346,
+     "predicted": 39.61
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.922
+    },
+    {
+     "actual": 98.12,
+     "predicted": 98.682
+    },
+    {
+     "actual": 86.095,
+     "predicted": 83.671
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.684
+    },
+    {
+     "actual": 99.171,
+     "predicted": 98.8
+    },
+    {
+     "actual": 59.628,
+     "predicted": 66.458
+    },
+    {
+     "actual": 96.508,
+     "predicted": 98.638
+    },
+    {
+     "actual": 99.893,
+     "predicted": 98.869
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.639
+    },
+    {
+     "actual": 66.348,
+     "predicted": 68.14
+    },
+    {
+     "actual": 97.688,
+     "predicted": 92.761
+    },
+    {
+     "actual": 95.664,
+     "predicted": 98.543
+    },
+    {
+     "actual": 44.315,
+     "predicted": 47.173
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.968
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.758
+    },
+    {
+     "actual": 96.08,
+     "predicted": 98.699
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.766
+    },
+    {
+     "actual": 77.746,
+     "predicted": 77.521
+    },
+    {
+     "actual": 98.804,
+     "predicted": 98.728
+    },
+    {
+     "actual": 97.222,
+     "predicted": 98.772
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.938
+    },
+    {
+     "actual": 100.0,
+     "predicted": 97.507
+    },
+    {
+     "actual": 66.702,
+     "predicted": 66.927
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.895
+    },
+    {
+     "actual": 96.466,
+     "predicted": 98.973
+    },
+    {
+     "actual": 97.573,
+     "predicted": 99.428
+    },
+    {
+     "actual": 97.362,
+     "predicted": 88.934
+    },
+    {
+     "actual": 84.466,
+     "predicted": 82.655
+    },
+    {
+     "actual": 95.669,
+     "predicted": 98.943
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.741
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.789
+    },
+    {
+     "actual": 98.64,
+     "predicted": 98.734
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.73
+    },
+    {
+     "actual": 65.431,
+     "predicted": 64.317
+    },
+    {
+     "actual": 98.451,
+     "predicted": 98.756
+    },
+    {
+     "actual": 99.656,
+     "predicted": 98.855
+    },
+    {
+     "actual": 98.528,
+     "predicted": 98.492
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.833
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.87
+    },
+    {
+     "actual": 55.9,
+     "predicted": 52.471
+    },
+    {
+     "actual": 94.834,
+     "predicted": 98.329
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.195
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.565
+    },
+    {
+     "actual": 94.462,
+     "predicted": 94.637
+    },
+    {
+     "actual": 91.339,
+     "predicted": 87.34
+    },
+    {
+     "actual": 98.636,
+     "predicted": 98.786
+    },
+    {
+     "actual": 65.381,
+     "predicted": 69.339
+    },
+    {
+     "actual": 64.813,
+     "predicted": 63.734
+    },
+    {
+     "actual": 85.323,
+     "predicted": 87.508
+    },
+    {
+     "actual": 86.9,
+     "predicted": 83.706
+    },
+    {
+     "actual": 93.535,
+     "predicted": 98.896
+    },
+    {
+     "actual": 98.964,
+     "predicted": 98.618
+    },
+    {
+     "actual": 93.719,
+     "predicted": 98.866
+    },
+    {
+     "actual": 79.553,
+     "predicted": 77.783
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.78
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.782
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.899
+    },
+    {
+     "actual": 96.176,
+     "predicted": 98.689
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.676
+    },
+    {
+     "actual": 99.951,
+     "predicted": 98.759
+    },
+    {
+     "actual": 87.943,
+     "predicted": 88.318
+    },
+    {
+     "actual": 86.275,
+     "predicted": 89.367
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.662
+    },
+    {
+     "actual": 95.791,
+     "predicted": 98.525
+    },
+    {
+     "actual": 99.97,
+     "predicted": 98.916
+    },
+    {
+     "actual": 74.052,
+     "predicted": 80.293
+    },
+    {
+     "actual": 99.331,
+     "predicted": 98.736
+    },
+    {
+     "actual": 99.631,
+     "predicted": 98.858
+    },
+    {
+     "actual": 97.446,
+     "predicted": 98.775
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.971
+    },
+    {
+     "actual": 51.958,
+     "predicted": 54.11
+    },
+    {
+     "actual": 94.558,
+     "predicted": 93.618
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.819
+    },
+    {
+     "actual": 75.635,
+     "predicted": 86.665
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.736
+    },
+    {
+     "actual": 82.59,
+     "predicted": 88.395
+    },
+    {
+     "actual": 70.867,
+     "predicted": 66.34
+    },
+    {
+     "actual": 64.837,
+     "predicted": 64.007
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.815
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.672
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.793
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.889
+    },
+    {
+     "actual": 99.156,
+     "predicted": 98.818
+    },
+    {
+     "actual": 100.0,
+     "predicted": 99.183
+    },
+    {
+     "actual": 97.957,
+     "predicted": 98.707
+    },
+    {
+     "actual": 99.39,
+     "predicted": 98.686
+    },
+    {
+     "actual": 99.464,
+     "predicted": 98.723
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.878
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.732
+    },
+    {
+     "actual": 95.369,
+     "predicted": 99.021
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.932
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.823
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.666
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.864
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.512
+    },
+    {
+     "actual": 92.116,
+     "predicted": 98.998
+    },
+    {
+     "actual": 98.441,
+     "predicted": 99.071
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.971
+    },
+    {
+     "actual": 96.523,
+     "predicted": 98.914
+    },
+    {
+     "actual": 97.853,
+     "predicted": 99.276
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.932
+    },
+    {
+     "actual": 98.641,
+     "predicted": 98.759
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.364
+    },
+    {
+     "actual": 100.0,
+     "predicted": 97.567
+    },
+    {
+     "actual": 95.518,
+     "predicted": 98.833
+    },
+    {
+     "actual": 48.07,
+     "predicted": 48.279
+    },
+    {
+     "actual": 84.931,
+     "predicted": 78.904
+    },
+    {
+     "actual": 84.939,
+     "predicted": 87.219
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.733
+    },
+    {
+     "actual": 92.151,
+     "predicted": 95.192
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.879
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.748
+    },
+    {
+     "actual": 97.736,
+     "predicted": 98.911
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.727
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.363
+    },
+    {
+     "actual": 74.037,
+     "predicted": 76.204
+    },
+    {
+     "actual": 99.967,
+     "predicted": 98.734
+    },
+    {
+     "actual": 98.811,
+     "predicted": 98.631
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.761
+    },
+    {
+     "actual": 87.408,
+     "predicted": 92.725
+    },
+    {
+     "actual": 97.173,
+     "predicted": 98.852
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.795
+    },
+    {
+     "actual": 95.979,
+     "predicted": 98.671
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.633
+    },
+    {
+     "actual": 98.487,
+     "predicted": 98.624
+    },
+    {
+     "actual": 86.494,
+     "predicted": 89.075
+    },
+    {
+     "actual": 83.665,
+     "predicted": 81.219
+    },
+    {
+     "actual": 99.259,
+     "predicted": 98.651
+    },
+    {
+     "actual": 100.0,
+     "predicted": 97.761
+    },
+    {
+     "actual": 99.053,
+     "predicted": 98.806
+    },
+    {
+     "actual": 75.658,
+     "predicted": 77.955
+    },
+    {
+     "actual": 98.668,
+     "predicted": 98.756
+    },
+    {
+     "actual": 99.322,
+     "predicted": 98.805
+    },
+    {
+     "actual": 98.554,
+     "predicted": 97.575
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.229
+    },
+    {
+     "actual": 100.0,
+     "predicted": 98.952
+    },
+    {
+     "actual": 94.044,
+     "predicted": 97.668
+    }
+   ]
+  },
+  "yield": {
+   "title": "Cane Yield (t/ha)",
+   "task": "regression",
+   "algorithm": "Gradient Boosting",
+   "test": {
+    "r2": 0.8918,
+    "mae": 3.355
+   },
+   "baseline": {
+    "algorithm": "Linear Regression",
+    "r2": 0.5709,
+    "mae": 6.8148
+   },
+   "importance": [
+    {
+     "feature": "soil_moisture",
+     "label": "Soil moisture",
+     "importance": 0.4418
+    },
+    {
+     "feature": "ndvi",
+     "label": "NDVI (crop vigour)",
+     "importance": 0.2921
+    },
+    {
+     "feature": "crop_age_days",
+     "label": "Crop age",
+     "importance": 0.1321
+    },
+    {
+     "feature": "soil_ph",
+     "label": "Soil pH",
+     "importance": 0.068
+    },
+    {
+     "feature": "temperature_c",
+     "label": "Temperature",
+     "importance": 0.0235
+    },
+    {
+     "feature": "rainfall_mm",
+     "label": "Seasonal rainfall",
+     "importance": 0.0214
+    },
+    {
+     "feature": "organic_carbon",
+     "label": "Organic carbon",
+     "importance": 0.0171
+    },
+    {
+     "feature": "lai",
+     "label": "Leaf Area Index",
+     "importance": 0.0022
+    },
+    {
+     "feature": "relative_humidity",
+     "label": "Relative humidity",
+     "importance": 0.0014
+    },
+    {
+     "feature": "forecast_rain_mm",
+     "label": "Forecast rain (3 days)",
+     "importance": 0.0004
+    }
+   ],
+   "sample": [
+    {
+     "actual": 108.693,
+     "predicted": 112.964
+    },
+    {
+     "actual": 106.588,
+     "predicted": 110.616
+    },
+    {
+     "actual": 119.287,
+     "predicted": 117.082
+    },
+    {
+     "actual": 109.959,
+     "predicted": 109.144
+    },
+    {
+     "actual": 91.492,
+     "predicted": 95.735
+    },
+    {
+     "actual": 106.788,
+     "predicted": 108.2
+    },
+    {
+     "actual": 115.461,
+     "predicted": 110.705
+    },
+    {
+     "actual": 118.965,
+     "predicted": 119.406
+    },
+    {
+     "actual": 90.007,
+     "predicted": 100.769
+    },
+    {
+     "actual": 92.515,
+     "predicted": 85.177
+    },
+    {
+     "actual": 116.54,
+     "predicted": 110.524
+    },
+    {
+     "actual": 94.075,
+     "predicted": 94.015
+    },
+    {
+     "actual": 117.737,
+     "predicted": 114.049
+    },
+    {
+     "actual": 122.047,
+     "predicted": 119.993
+    },
+    {
+     "actual": 110.617,
+     "predicted": 109.86
+    },
+    {
+     "actual": 112.774,
+     "predicted": 113.367
+    },
+    {
+     "actual": 110.712,
+     "predicted": 113.939
+    },
+    {
+     "actual": 119.468,
+     "predicted": 118.264
+    },
+    {
+     "actual": 113.686,
+     "predicted": 113.045
+    },
+    {
+     "actual": 119.665,
+     "predicted": 115.597
+    },
+    {
+     "actual": 115.782,
+     "predicted": 113.832
+    },
+    {
+     "actual": 112.993,
+     "predicted": 112.272
+    },
+    {
+     "actual": 123.813,
+     "predicted": 118.458
+    },
+    {
+     "actual": 110.273,
+     "predicted": 114.985
+    },
+    {
+     "actual": 116.645,
+     "predicted": 112.134
+    },
+    {
+     "actual": 115.038,
+     "predicted": 112.819
+    },
+    {
+     "actual": 108.846,
+     "predicted": 106.781
+    },
+    {
+     "actual": 106.487,
+     "predicted": 100.026
+    },
+    {
+     "actual": 115.264,
+     "predicted": 110.175
+    },
+    {
+     "actual": 81.481,
+     "predicted": 82.058
+    },
+    {
+     "actual": 101.853,
+     "predicted": 105.193
+    },
+    {
+     "actual": 110.347,
+     "predicted": 101.791
+    },
+    {
+     "actual": 99.068,
+     "predicted": 104.038
+    },
+    {
+     "actual": 113.985,
+     "predicted": 111.907
+    },
+    {
+     "actual": 106.635,
+     "predicted": 106.19
+    },
+    {
+     "actual": 99.536,
+     "predicted": 100.073
+    },
+    {
+     "actual": 113.958,
+     "predicted": 115.895
+    },
+    {
+     "actual": 106.784,
+     "predicted": 106.315
+    },
+    {
+     "actual": 101.106,
+     "predicted": 106.836
+    },
+    {
+     "actual": 116.785,
+     "predicted": 117.617
+    },
+    {
+     "actual": 119.899,
+     "predicted": 113.407
+    },
+    {
+     "actual": 96.923,
+     "predicted": 96.246
+    },
+    {
+     "actual": 114.759,
+     "predicted": 109.488
+    },
+    {
+     "actual": 89.027,
+     "predicted": 88.631
+    },
+    {
+     "actual": 114.948,
+     "predicted": 113.666
+    },
+    {
+     "actual": 120.671,
+     "predicted": 116.103
+    },
+    {
+     "actual": 85.352,
+     "predicted": 95.098
+    },
+    {
+     "actual": 94.488,
+     "predicted": 94.679
+    },
+    {
+     "actual": 110.345,
+     "predicted": 111.067
+    },
+    {
+     "actual": 90.332,
+     "predicted": 87.847
+    },
+    {
+     "actual": 112.019,
+     "predicted": 115.682
+    },
+    {
+     "actual": 116.846,
+     "predicted": 112.514
+    },
+    {
+     "actual": 100.7,
+     "predicted": 102.42
+    },
+    {
+     "actual": 84.276,
+     "predicted": 83.739
+    },
+    {
+     "actual": 113.478,
+     "predicted": 105.549
+    },
+    {
+     "actual": 113.017,
+     "predicted": 110.345
+    },
+    {
+     "actual": 103.382,
+     "predicted": 101.659
+    },
+    {
+     "actual": 108.94,
+     "predicted": 106.009
+    },
+    {
+     "actual": 111.688,
+     "predicted": 114.802
+    },
+    {
+     "actual": 95.546,
+     "predicted": 94.38
+    },
+    {
+     "actual": 82.426,
+     "predicted": 86.571
+    },
+    {
+     "actual": 97.321,
+     "predicted": 93.352
+    },
+    {
+     "actual": 85.76,
+     "predicted": 90.769
+    },
+    {
+     "actual": 97.29,
+     "predicted": 96.258
+    },
+    {
+     "actual": 96.489,
+     "predicted": 94.829
+    },
+    {
+     "actual": 96.87,
+     "predicted": 97.787
+    },
+    {
+     "actual": 87.132,
+     "predicted": 87.045
+    },
+    {
+     "actual": 96.992,
+     "predicted": 100.659
+    },
+    {
+     "actual": 87.818,
+     "predicted": 92.483
+    },
+    {
+     "actual": 89.814,
+     "predicted": 91.704
+    },
+    {
+     "actual": 88.541,
+     "predicted": 89.879
+    },
+    {
+     "actual": 101.174,
+     "predicted": 101.161
+    },
+    {
+     "actual": 105.183,
+     "predicted": 108.968
+    },
+    {
+     "actual": 107.551,
+     "predicted": 107.015
+    },
+    {
+     "actual": 107.497,
+     "predicted": 106.114
+    },
+    {
+     "actual": 118.709,
+     "predicted": 111.602
+    },
+    {
+     "actual": 80.629,
+     "predicted": 83.65
+    },
+    {
+     "actual": 88.964,
+     "predicted": 93.029
+    },
+    {
+     "actual": 111.202,
+     "predicted": 106.494
+    },
+    {
+     "actual": 92.728,
+     "predicted": 89.493
+    },
+    {
+     "actual": 103.487,
+     "predicted": 107.023
+    },
+    {
+     "actual": 109.426,
+     "predicted": 107.103
+    },
+    {
+     "actual": 105.198,
+     "predicted": 104.887
+    },
+    {
+     "actual": 100.177,
+     "predicted": 100.117
+    },
+    {
+     "actual": 104.181,
+     "predicted": 109.252
+    },
+    {
+     "actual": 113.634,
+     "predicted": 113.908
+    },
+    {
+     "actual": 107.106,
+     "predicted": 114.37
+    },
+    {
+     "actual": 99.185,
+     "predicted": 90.895
+    },
+    {
+     "actual": 115.552,
+     "predicted": 110.024
+    },
+    {
+     "actual": 113.93,
+     "predicted": 115.86
+    },
+    {
+     "actual": 105.287,
+     "predicted": 105.758
+    },
+    {
+     "actual": 92.408,
+     "predicted": 92.539
+    },
+    {
+     "actual": 110.506,
+     "predicted": 109.053
+    },
+    {
+     "actual": 109.711,
+     "predicted": 107.769
+    },
+    {
+     "actual": 113.113,
+     "predicted": 113.895
+    },
+    {
+     "actual": 109.467,
+     "predicted": 116.771
+    },
+    {
+     "actual": 112.26,
+     "predicted": 114.263
+    },
+    {
+     "actual": 114.968,
+     "predicted": 109.066
+    },
+    {
+     "actual": 113.392,
+     "predicted": 108.76
+    },
+    {
+     "actual": 82.489,
+     "predicted": 84.55
+    },
+    {
+     "actual": 105.914,
+     "predicted": 110.721
+    },
+    {
+     "actual": 115.323,
+     "predicted": 108.432
+    },
+    {
+     "actual": 106.802,
+     "predicted": 109.068
+    },
+    {
+     "actual": 113.462,
+     "predicted": 116.273
+    },
+    {
+     "actual": 116.209,
+     "predicted": 115.258
+    },
+    {
+     "actual": 105.465,
+     "predicted": 111.545
+    },
+    {
+     "actual": 115.63,
+     "predicted": 112.369
+    },
+    {
+     "actual": 108.624,
+     "predicted": 111.431
+    },
+    {
+     "actual": 108.519,
+     "predicted": 103.099
+    },
+    {
+     "actual": 107.488,
+     "predicted": 108.684
+    },
+    {
+     "actual": 104.262,
+     "predicted": 105.058
+    },
+    {
+     "actual": 100.577,
+     "predicted": 94.051
+    },
+    {
+     "actual": 106.186,
+     "predicted": 109.846
+    },
+    {
+     "actual": 104.813,
+     "predicted": 101.209
+    },
+    {
+     "actual": 105.923,
+     "predicted": 105.644
+    },
+    {
+     "actual": 83.279,
+     "predicted": 84.212
+    },
+    {
+     "actual": 96.625,
+     "predicted": 101.418
+    },
+    {
+     "actual": 80.907,
+     "predicted": 82.007
+    },
+    {
+     "actual": 108.74,
+     "predicted": 108.467
+    },
+    {
+     "actual": 99.135,
+     "predicted": 96.32
+    },
+    {
+     "actual": 107.063,
+     "predicted": 109.977
+    },
+    {
+     "actual": 109.905,
+     "predicted": 109.105
+    },
+    {
+     "actual": 118.81,
+     "predicted": 111.567
+    },
+    {
+     "actual": 111.364,
+     "predicted": 110.604
+    },
+    {
+     "actual": 89.214,
+     "predicted": 90.831
+    },
+    {
+     "actual": 103.577,
+     "predicted": 105.853
+    },
+    {
+     "actual": 86.34,
+     "predicted": 90.363
+    },
+    {
+     "actual": 109.597,
+     "predicted": 108.524
+    },
+    {
+     "actual": 111.286,
+     "predicted": 113.228
+    },
+    {
+     "actual": 106.271,
+     "predicted": 108.728
+    },
+    {
+     "actual": 111.956,
+     "predicted": 110.261
+    },
+    {
+     "actual": 114.82,
+     "predicted": 116.0
+    },
+    {
+     "actual": 100.87,
+     "predicted": 105.337
+    },
+    {
+     "actual": 112.678,
+     "predicted": 109.514
+    },
+    {
+     "actual": 79.937,
+     "predicted": 85.877
+    },
+    {
+     "actual": 107.776,
+     "predicted": 105.299
+    },
+    {
+     "actual": 112.623,
+     "predicted": 106.986
+    },
+    {
+     "actual": 113.72,
+     "predicted": 112.243
+    },
+    {
+     "actual": 96.31,
+     "predicted": 91.825
+    },
+    {
+     "actual": 95.341,
+     "predicted": 97.912
+    },
+    {
+     "actual": 108.74,
+     "predicted": 115.665
+    },
+    {
+     "actual": 104.46,
+     "predicted": 97.807
+    },
+    {
+     "actual": 104.848,
+     "predicted": 105.764
+    },
+    {
+     "actual": 115.548,
+     "predicted": 117.59
+    },
+    {
+     "actual": 108.77,
+     "predicted": 112.377
+    },
+    {
+     "actual": 101.762,
+     "predicted": 102.592
+    },
+    {
+     "actual": 112.132,
+     "predicted": 110.906
+    },
+    {
+     "actual": 103.97,
+     "predicted": 99.899
+    },
+    {
+     "actual": 109.341,
+     "predicted": 107.51
+    },
+    {
+     "actual": 115.322,
+     "predicted": 110.986
+    },
+    {
+     "actual": 106.518,
+     "predicted": 111.717
+    },
+    {
+     "actual": 110.157,
+     "predicted": 112.179
+    },
+    {
+     "actual": 94.557,
+     "predicted": 104.109
+    },
+    {
+     "actual": 110.289,
+     "predicted": 108.9
+    },
+    {
+     "actual": 106.592,
+     "predicted": 106.338
+    },
+    {
+     "actual": 111.08,
+     "predicted": 112.287
+    },
+    {
+     "actual": 103.675,
+     "predicted": 109.342
+    },
+    {
+     "actual": 110.58,
+     "predicted": 110.8
+    },
+    {
+     "actual": 110.289,
+     "predicted": 106.592
+    },
+    {
+     "actual": 107.436,
+     "predicted": 107.544
+    },
+    {
+     "actual": 114.635,
+     "predicted": 108.365
+    },
+    {
+     "actual": 99.071,
+     "predicted": 101.409
+    },
+    {
+     "actual": 99.081,
+     "predicted": 95.581
+    },
+    {
+     "actual": 95.857,
+     "predicted": 103.314
+    },
+    {
+     "actual": 106.769,
+     "predicted": 107.362
+    },
+    {
+     "actual": 102.746,
+     "predicted": 107.228
+    },
+    {
+     "actual": 108.382,
+     "predicted": 106.577
+    },
+    {
+     "actual": 107.912,
+     "predicted": 106.694
+    },
+    {
+     "actual": 110.65,
+     "predicted": 114.107
+    },
+    {
+     "actual": 102.678,
+     "predicted": 103.96
+    },
+    {
+     "actual": 105.632,
+     "predicted": 102.288
+    },
+    {
+     "actual": 96.372,
+     "predicted": 108.296
+    },
+    {
+     "actual": 108.725,
+     "predicted": 112.831
+    },
+    {
+     "actual": 98.538,
+     "predicted": 109.139
+    },
+    {
+     "actual": 104.694,
+     "predicted": 107.482
+    },
+    {
+     "actual": 105.693,
+     "predicted": 105.843
+    },
+    {
+     "actual": 108.112,
+     "predicted": 104.356
+    },
+    {
+     "actual": 97.036,
+     "predicted": 102.29
+    },
+    {
+     "actual": 113.348,
+     "predicted": 113.032
+    },
+    {
+     "actual": 112.006,
+     "predicted": 113.081
+    },
+    {
+     "actual": 98.226,
+     "predicted": 102.982
+    },
+    {
+     "actual": 102.178,
+     "predicted": 101.637
+    },
+    {
+     "actual": 110.832,
+     "predicted": 104.301
+    },
+    {
+     "actual": 86.367,
+     "predicted": 94.106
+    },
+    {
+     "actual": 104.598,
+     "predicted": 106.814
+    },
+    {
+     "actual": 95.857,
+     "predicted": 97.572
+    },
+    {
+     "actual": 84.397,
+     "predicted": 79.811
+    },
+    {
+     "actual": 75.194,
+     "predicted": 77.544
+    },
+    {
+     "actual": 80.872,
+     "predicted": 81.846
+    },
+    {
+     "actual": 103.659,
+     "predicted": 108.857
+    },
+    {
+     "actual": 110.188,
+     "predicted": 110.597
+    },
+    {
+     "actual": 74.676,
+     "predicted": 77.759
+    },
+    {
+     "actual": 96.339,
+     "predicted": 97.664
+    },
+    {
+     "actual": 104.059,
+     "predicted": 101.221
+    },
+    {
+     "actual": 100.435,
+     "predicted": 105.872
+    },
+    {
+     "actual": 107.251,
+     "predicted": 102.569
+    },
+    {
+     "actual": 105.794,
+     "predicted": 105.604
+    },
+    {
+     "actual": 105.673,
+     "predicted": 108.136
+    },
+    {
+     "actual": 109.48,
+     "predicted": 107.762
+    },
+    {
+     "actual": 97.908,
+     "predicted": 105.409
+    },
+    {
+     "actual": 86.063,
+     "predicted": 88.187
+    },
+    {
+     "actual": 86.196,
+     "predicted": 85.306
+    },
+    {
+     "actual": 108.96,
+     "predicted": 105.101
+    },
+    {
+     "actual": 97.81,
+     "predicted": 96.391
+    },
+    {
+     "actual": 100.719,
+     "predicted": 98.971
+    },
+    {
+     "actual": 114.658,
+     "predicted": 110.138
+    },
+    {
+     "actual": 106.73,
+     "predicted": 107.292
+    },
+    {
+     "actual": 102.718,
+     "predicted": 103.97
+    },
+    {
+     "actual": 97.911,
+     "predicted": 97.227
+    },
+    {
+     "actual": 108.922,
+     "predicted": 105.768
+    },
+    {
+     "actual": 99.899,
+     "predicted": 93.825
+    },
+    {
+     "actual": 93.491,
+     "predicted": 103.128
+    },
+    {
+     "actual": 117.261,
+     "predicted": 114.957
+    },
+    {
+     "actual": 87.331,
+     "predicted": 88.877
+    },
+    {
+     "actual": 109.588,
+     "predicted": 108.531
+    },
+    {
+     "actual": 95.464,
+     "predicted": 100.881
+    },
+    {
+     "actual": 100.381,
+     "predicted": 98.963
+    },
+    {
+     "actual": 96.869,
+     "predicted": 98.989
+    },
+    {
+     "actual": 95.888,
+     "predicted": 86.144
+    },
+    {
+     "actual": 82.042,
+     "predicted": 76.342
+    },
+    {
+     "actual": 97.371,
+     "predicted": 100.368
+    },
+    {
+     "actual": 105.129,
+     "predicted": 103.22
+    },
+    {
+     "actual": 107.279,
+     "predicted": 109.875
+    },
+    {
+     "actual": 97.79,
+     "predicted": 103.181
+    },
+    {
+     "actual": 100.736,
+     "predicted": 103.939
+    },
+    {
+     "actual": 97.315,
+     "predicted": 95.574
+    },
+    {
+     "actual": 95.298,
+     "predicted": 99.881
+    },
+    {
+     "actual": 82.876,
+     "predicted": 86.424
+    },
+    {
+     "actual": 111.772,
+     "predicted": 114.48
+    },
+    {
+     "actual": 126.59,
+     "predicted": 118.991
+    },
+    {
+     "actual": 94.281,
+     "predicted": 91.391
+    },
+    {
+     "actual": 86.161,
+     "predicted": 91.432
+    },
+    {
+     "actual": 90.034,
+     "predicted": 92.213
+    },
+    {
+     "actual": 111.654,
+     "predicted": 118.377
+    },
+    {
+     "actual": 116.224,
+     "predicted": 118.836
+    },
+    {
+     "actual": 97.133,
+     "predicted": 93.978
+    },
+    {
+     "actual": 120.594,
+     "predicted": 116.11
+    },
+    {
+     "actual": 113.129,
+     "predicted": 115.205
+    },
+    {
+     "actual": 116.069,
+     "predicted": 114.177
+    },
+    {
+     "actual": 118.342,
+     "predicted": 118.838
+    },
+    {
+     "actual": 94.675,
+     "predicted": 89.603
+    },
+    {
+     "actual": 112.719,
+     "predicted": 113.585
+    },
+    {
+     "actual": 113.845,
+     "predicted": 111.945
+    },
+    {
+     "actual": 109.861,
+     "predicted": 111.281
+    },
+    {
+     "actual": 93.739,
+     "predicted": 98.736
+    },
+    {
+     "actual": 95.005,
+     "predicted": 91.825
+    },
+    {
+     "actual": 88.41,
+     "predicted": 89.546
+    },
+    {
+     "actual": 107.7,
+     "predicted": 112.285
+    },
+    {
+     "actual": 112.107,
+     "predicted": 110.864
+    },
+    {
+     "actual": 115.772,
+     "predicted": 107.198
+    },
+    {
+     "actual": 90.526,
+     "predicted": 100.928
+    },
+    {
+     "actual": 117.108,
+     "predicted": 110.213
+    },
+    {
+     "actual": 67.995,
+     "predicted": 75.412
+    },
+    {
+     "actual": 81.152,
+     "predicted": 86.633
+    },
+    {
+     "actual": 94.032,
+     "predicted": 87.585
+    },
+    {
+     "actual": 82.933,
+     "predicted": 87.989
+    },
+    {
+     "actual": 92.588,
+     "predicted": 92.223
+    },
+    {
+     "actual": 89.523,
+     "predicted": 87.226
+    },
+    {
+     "actual": 76.215,
+     "predicted": 72.602
+    },
+    {
+     "actual": 73.586,
+     "predicted": 77.609
+    },
+    {
+     "actual": 86.106,
+     "predicted": 84.671
+    },
+    {
+     "actual": 96.669,
+     "predicted": 89.844
+    },
+    {
+     "actual": 98.456,
+     "predicted": 94.673
+    },
+    {
+     "actual": 86.076,
+     "predicted": 87.57
+    },
+    {
+     "actual": 98.327,
+     "predicted": 101.173
+    },
+    {
+     "actual": 89.559,
+     "predicted": 93.049
+    },
+    {
+     "actual": 79.259,
+     "predicted": 90.424
+    },
+    {
+     "actual": 83.246,
+     "predicted": 80.848
+    },
+    {
+     "actual": 99.624,
+     "predicted": 96.879
+    },
+    {
+     "actual": 92.809,
+     "predicted": 94.825
+    },
+    {
+     "actual": 105.047,
+     "predicted": 108.899
+    },
+    {
+     "actual": 99.561,
+     "predicted": 99.365
+    },
+    {
+     "actual": 107.289,
+     "predicted": 103.926
+    },
+    {
+     "actual": 95.146,
+     "predicted": 93.451
+    },
+    {
+     "actual": 95.281,
+     "predicted": 93.61
+    },
+    {
+     "actual": 96.669,
+     "predicted": 97.203
+    },
+    {
+     "actual": 115.541,
+     "predicted": 113.66
+    },
+    {
+     "actual": 102.595,
+     "predicted": 110.09
+    },
+    {
+     "actual": 115.509,
+     "predicted": 112.054
+    },
+    {
+     "actual": 104.735,
+     "predicted": 112.643
+    },
+    {
+     "actual": 115.714,
+     "predicted": 112.013
+    },
+    {
+     "actual": 105.213,
+     "predicted": 104.771
+    },
+    {
+     "actual": 119.214,
+     "predicted": 115.292
+    },
+    {
+     "actual": 105.112,
+     "predicted": 107.622
+    },
+    {
+     "actual": 104.921,
+     "predicted": 111.922
+    },
+    {
+     "actual": 100.808,
+     "predicted": 102.398
+    },
+    {
+     "actual": 108.557,
+     "predicted": 109.384
+    },
+    {
+     "actual": 106.655,
+     "predicted": 108.455
+    },
+    {
+     "actual": 113.038,
+     "predicted": 112.495
+    },
+    {
+     "actual": 120.984,
+     "predicted": 118.428
+    },
+    {
+     "actual": 128.01,
+     "predicted": 119.819
+    },
+    {
+     "actual": 108.52,
+     "predicted": 115.673
+    },
+    {
+     "actual": 125.179,
+     "predicted": 120.352
+    },
+    {
+     "actual": 109.015,
+     "predicted": 106.76
+    },
+    {
+     "actual": 107.575,
+     "predicted": 107.92
+    },
+    {
+     "actual": 112.726,
+     "predicted": 109.216
+    },
+    {
+     "actual": 117.856,
+     "predicted": 112.586
+    },
+    {
+     "actual": 86.461,
+     "predicted": 89.737
+    },
+    {
+     "actual": 85.714,
+     "predicted": 88.117
+    },
+    {
+     "actual": 95.182,
+     "predicted": 94.799
+    }
+   ]
+  },
+  "water_stress": {
+   "title": "Water Stress Probability",
+   "task": "classification",
+   "algorithm": "Random Forest",
+   "classes": [
+    "None",
+    "Mild",
+    "Moderate",
+    "Severe"
+   ],
+   "test": {
+    "accuracy": 0.8783,
+    "f1_macro": 0.8172
+   },
+   "baseline": {
+    "algorithm": "Logistic Regression",
+    "accuracy": 0.8346,
+    "f1_macro": 0.7541
+   },
+   "confusion_matrix": [
+    [
+     1446,
+     75,
+     0,
+     0
+    ],
+    [
+     158,
+     249,
+     7,
+     0
+    ],
+    [
+     0,
+     32,
+     78,
+     6
+    ],
+    [
+     0,
+     0,
+     14,
+     335
+    ]
+   ],
+   "class_distribution": [
+    7528,
+    2065,
+    618,
+    1789
+   ],
+   "importance": [
+    {
+     "feature": "soil_moisture",
+     "label": "Soil moisture",
+     "importance": 0.7352
+    },
+    {
+     "feature": "ndvi",
+     "label": "NDVI (crop vigour)",
+     "importance": 0.0556
+    },
+    {
+     "feature": "temperature_c",
+     "label": "Temperature",
+     "importance": 0.0455
+    },
+    {
+     "feature": "crop_age_days",
+     "label": "Crop age",
+     "importance": 0.0402
+    },
+    {
+     "feature": "relative_humidity",
+     "label": "Relative humidity",
+     "importance": 0.0321
+    },
+    {
+     "feature": "lai",
+     "label": "Leaf Area Index",
+     "importance": 0.0258
+    },
+    {
+     "feature": "organic_carbon",
+     "label": "Organic carbon",
+     "importance": 0.0255
+    },
+    {
+     "feature": "soil_ph",
+     "label": "Soil pH",
+     "importance": 0.0159
+    },
+    {
+     "feature": "rainfall_mm",
+     "label": "Seasonal rainfall",
+     "importance": 0.0159
+    },
+    {
+     "feature": "forecast_rain_mm",
+     "label": "Forecast rain (3 days)",
+     "importance": 0.0082
+    }
+   ]
+  },
+  "disease_risk": {
+   "title": "Disease & Pest Risk",
+   "task": "classification",
+   "algorithm": "Random Forest",
+   "classes": [
+    "Low",
+    "Medium",
+    "High"
+   ],
+   "test": {
+    "accuracy": 0.8729,
+    "f1_macro": 0.7627
+   },
+   "baseline": {
+    "algorithm": "Logistic Regression",
+    "accuracy": 0.8196,
+    "f1_macro": 0.5142
+   },
+   "confusion_matrix": [
+    [
+     1758,
+     97,
+     0
+    ],
+    [
+     166,
+     287,
+     7
+    ],
+    [
+     1,
+     34,
+     50
+    ]
+   ],
+   "class_distribution": [
+    9383,
+    2274,
+    343
+   ],
+   "importance": [
+    {
+     "feature": "soil_moisture",
+     "label": "Soil moisture",
+     "importance": 0.4366
+    },
+    {
+     "feature": "relative_humidity",
+     "label": "Relative humidity",
+     "importance": 0.2596
+    },
+    {
+     "feature": "temperature_c",
+     "label": "Temperature",
+     "importance": 0.1126
+    },
+    {
+     "feature": "forecast_rain_mm",
+     "label": "Forecast rain (3 days)",
+     "importance": 0.0373
+    },
+    {
+     "feature": "crop_age_days",
+     "label": "Crop age",
+     "importance": 0.0354
+    },
+    {
+     "feature": "lai",
+     "label": "Leaf Area Index",
+     "importance": 0.0291
+    },
+    {
+     "feature": "ndvi",
+     "label": "NDVI (crop vigour)",
+     "importance": 0.0237
+    },
+    {
+     "feature": "organic_carbon",
+     "label": "Organic carbon",
+     "importance": 0.0231
+    },
+    {
+     "feature": "rainfall_mm",
+     "label": "Seasonal rainfall",
+     "importance": 0.0214
+    },
+    {
+     "feature": "soil_ph",
+     "label": "Soil pH",
+     "importance": 0.0213
+    }
+   ]
+  },
+  "yield_loss": {
+   "title": "Yield Loss from Delayed Irrigation (%)",
+   "task": "regression",
+   "algorithm": "Gradient Boosting",
+   "test": {
+    "r2": 0.9755,
+    "mae": 0.3566
+   },
+   "baseline": {
+    "algorithm": "Linear Regression",
+    "r2": 0.499,
+    "mae": 2.1371
+   },
+   "importance": [
+    {
+     "feature": "soil_moisture",
+     "label": "Soil moisture",
+     "importance": 0.4677
+    },
+    {
+     "feature": "delay_days",
+     "label": "Irrigation delay",
+     "importance": 0.3344
+    },
+    {
+     "feature": "crop_age_days",
+     "label": "Crop age",
+     "importance": 0.1318
+    },
+    {
+     "feature": "temperature_c",
+     "label": "Temperature",
+     "importance": 0.0297
+    },
+    {
+     "feature": "relative_humidity",
+     "label": "Relative humidity",
+     "importance": 0.016
+    },
+    {
+     "feature": "forecast_rain_mm",
+     "label": "Forecast rain (3 days)",
+     "importance": 0.0121
+    },
+    {
+     "feature": "ndvi",
+     "label": "NDVI (crop vigour)",
+     "importance": 0.0064
+    },
+    {
+     "feature": "organic_carbon",
+     "label": "Organic carbon",
+     "importance": 0.0013
+    },
+    {
+     "feature": "lai",
+     "label": "Leaf Area Index",
+     "importance": 0.0003
+    },
+    {
+     "feature": "soil_ph",
+     "label": "Soil pH",
+     "importance": 0.0001
+    },
+    {
+     "feature": "rainfall_mm",
+     "label": "Seasonal rainfall",
+     "importance": 0.0001
+    }
+   ],
+   "sample": [
+    {
+     "actual": 0.02,
+     "predicted": 0.101
+    },
+    {
+     "actual": 0.693,
+     "predicted": -0.06
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.023
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.056
+    },
+    {
+     "actual": 3.959,
+     "predicted": 2.938
+    },
+    {
+     "actual": 0.276,
+     "predicted": 0.532
+    },
+    {
+     "actual": 0.062,
+     "predicted": -0.126
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.544
+    },
+    {
+     "actual": 2.135,
+     "predicted": 1.961
+    },
+    {
+     "actual": 3.859,
+     "predicted": 3.699
+    },
+    {
+     "actual": 1.055,
+     "predicted": 1.591
+    },
+    {
+     "actual": 2.727,
+     "predicted": 3.405
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.241
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.019
+    },
+    {
+     "actual": 0.189,
+     "predicted": -0.02
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.124
+    },
+    {
+     "actual": 0.0,
+     "predicted": -2.843
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.032
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.033
+    },
+    {
+     "actual": 0.051,
+     "predicted": 0.078
+    },
+    {
+     "actual": 0.146,
+     "predicted": 0.422
+    },
+    {
+     "actual": 0.082,
+     "predicted": 0.013
+    },
+    {
+     "actual": 0.09,
+     "predicted": 0.039
+    },
+    {
+     "actual": 0.154,
+     "predicted": 0.042
+    },
+    {
+     "actual": 1.467,
+     "predicted": 1.076
+    },
+    {
+     "actual": 8.674,
+     "predicted": 9.125
+    },
+    {
+     "actual": 0.032,
+     "predicted": -0.092
+    },
+    {
+     "actual": 13.648,
+     "predicted": 13.192
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.009
+    },
+    {
+     "actual": 2.11,
+     "predicted": 1.858
+    },
+    {
+     "actual": 0.024,
+     "predicted": 0.006
+    },
+    {
+     "actual": 0.175,
+     "predicted": -0.04
+    },
+    {
+     "actual": 0.222,
+     "predicted": 0.015
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.016
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.076
+    },
+    {
+     "actual": 0.074,
+     "predicted": 0.314
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.266
+    },
+    {
+     "actual": 0.041,
+     "predicted": 0.124
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.215
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.021
+    },
+    {
+     "actual": 0.057,
+     "predicted": 0.005
+    },
+    {
+     "actual": 1.201,
+     "predicted": 1.733
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.255
+    },
+    {
+     "actual": 7.29,
+     "predicted": 6.327
+    },
+    {
+     "actual": 4.75,
+     "predicted": 4.174
+    },
+    {
+     "actual": 0.027,
+     "predicted": -0.054
+    },
+    {
+     "actual": 2.389,
+     "predicted": 2.849
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.044
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.333
+    },
+    {
+     "actual": 9.844,
+     "predicted": 10.536
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.139
+    },
+    {
+     "actual": 0.071,
+     "predicted": 0.026
+    },
+    {
+     "actual": 0.05,
+     "predicted": 0.017
+    },
+    {
+     "actual": 1.56,
+     "predicted": 1.69
+    },
+    {
+     "actual": 0.008,
+     "predicted": 0.053
+    },
+    {
+     "actual": 0.096,
+     "predicted": 0.4
+    },
+    {
+     "actual": 2.081,
+     "predicted": 2.303
+    },
+    {
+     "actual": 0.052,
+     "predicted": -0.016
+    },
+    {
+     "actual": 0.017,
+     "predicted": 0.133
+    },
+    {
+     "actual": 0.836,
+     "predicted": 0.906
+    },
+    {
+     "actual": 5.268,
+     "predicted": 6.761
+    },
+    {
+     "actual": 0.02,
+     "predicted": 0.04
+    },
+    {
+     "actual": 0.012,
+     "predicted": 0.262
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.075
+    },
+    {
+     "actual": 0.424,
+     "predicted": 0.917
+    },
+    {
+     "actual": 1.43,
+     "predicted": 1.447
+    },
+    {
+     "actual": 0.099,
+     "predicted": -0.352
+    },
+    {
+     "actual": 0.789,
+     "predicted": 0.881
+    },
+    {
+     "actual": 0.661,
+     "predicted": 1.064
+    },
+    {
+     "actual": 3.916,
+     "predicted": 4.712
+    },
+    {
+     "actual": 13.356,
+     "predicted": 11.223
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.001
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.035
+    },
+    {
+     "actual": 1.409,
+     "predicted": 3.826
+    },
+    {
+     "actual": 0.103,
+     "predicted": -0.046
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.026
+    },
+    {
+     "actual": 11.508,
+     "predicted": 10.717
+    },
+    {
+     "actual": 4.489,
+     "predicted": 5.134
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.039
+    },
+    {
+     "actual": 4.457,
+     "predicted": 6.022
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.0
+    },
+    {
+     "actual": 0.072,
+     "predicted": 0.07
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.054
+    },
+    {
+     "actual": 0.185,
+     "predicted": -0.089
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.039
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.011
+    },
+    {
+     "actual": 0.167,
+     "predicted": -0.265
+    },
+    {
+     "actual": 7.67,
+     "predicted": 7.798
+    },
+    {
+     "actual": 0.004,
+     "predicted": 0.166
+    },
+    {
+     "actual": 2.852,
+     "predicted": 1.774
+    },
+    {
+     "actual": 0.058,
+     "predicted": 0.846
+    },
+    {
+     "actual": 6.009,
+     "predicted": 6.051
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.036
+    },
+    {
+     "actual": 3.107,
+     "predicted": 2.251
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.273
+    },
+    {
+     "actual": 0.259,
+     "predicted": 0.439
+    },
+    {
+     "actual": 3.888,
+     "predicted": 3.028
+    },
+    {
+     "actual": 8.175,
+     "predicted": 7.381
+    },
+    {
+     "actual": 7.752,
+     "predicted": 8.852
+    },
+    {
+     "actual": 4.222,
+     "predicted": 3.743
+    },
+    {
+     "actual": 3.833,
+     "predicted": 3.367
+    },
+    {
+     "actual": 0.104,
+     "predicted": 0.712
+    },
+    {
+     "actual": 0.152,
+     "predicted": -0.007
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.012
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.283
+    },
+    {
+     "actual": 0.007,
+     "predicted": 0.092
+    },
+    {
+     "actual": 0.008,
+     "predicted": 0.027
+    },
+    {
+     "actual": 8.742,
+     "predicted": 9.476
+    },
+    {
+     "actual": 2.298,
+     "predicted": 3.347
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.038
+    },
+    {
+     "actual": 0.063,
+     "predicted": 0.11
+    },
+    {
+     "actual": 5.694,
+     "predicted": 6.153
+    },
+    {
+     "actual": 0.07,
+     "predicted": 0.108
+    },
+    {
+     "actual": 11.622,
+     "predicted": 10.387
+    },
+    {
+     "actual": 0.117,
+     "predicted": 0.351
+    },
+    {
+     "actual": 16.279,
+     "predicted": 13.989
+    },
+    {
+     "actual": 0.034,
+     "predicted": -0.063
+    },
+    {
+     "actual": 1.127,
+     "predicted": 1.099
+    },
+    {
+     "actual": 0.151,
+     "predicted": -0.256
+    },
+    {
+     "actual": 0.418,
+     "predicted": 0.842
+    },
+    {
+     "actual": 0.171,
+     "predicted": -0.091
+    },
+    {
+     "actual": 8.876,
+     "predicted": 8.449
+    },
+    {
+     "actual": 0.051,
+     "predicted": 0.063
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.045
+    },
+    {
+     "actual": 13.048,
+     "predicted": 13.115
+    },
+    {
+     "actual": 8.741,
+     "predicted": 9.091
+    },
+    {
+     "actual": 17.619,
+     "predicted": 16.612
+    },
+    {
+     "actual": 0.021,
+     "predicted": -0.054
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.101
+    },
+    {
+     "actual": 8.384,
+     "predicted": 6.442
+    },
+    {
+     "actual": 6.376,
+     "predicted": 5.421
+    },
+    {
+     "actual": 1.883,
+     "predicted": 1.968
+    },
+    {
+     "actual": 0.919,
+     "predicted": 1.79
+    },
+    {
+     "actual": 0.349,
+     "predicted": -0.021
+    },
+    {
+     "actual": 6.694,
+     "predicted": 5.75
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.093
+    },
+    {
+     "actual": 4.353,
+     "predicted": 4.148
+    },
+    {
+     "actual": 2.449,
+     "predicted": 2.583
+    },
+    {
+     "actual": 1.286,
+     "predicted": 1.547
+    },
+    {
+     "actual": 6.626,
+     "predicted": 5.739
+    },
+    {
+     "actual": 0.063,
+     "predicted": -0.084
+    },
+    {
+     "actual": 1.384,
+     "predicted": 1.153
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.396
+    },
+    {
+     "actual": 0.032,
+     "predicted": -0.21
+    },
+    {
+     "actual": 0.021,
+     "predicted": -0.228
+    },
+    {
+     "actual": 0.39,
+     "predicted": 0.848
+    },
+    {
+     "actual": 4.643,
+     "predicted": 4.004
+    },
+    {
+     "actual": 0.092,
+     "predicted": 0.239
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.018
+    },
+    {
+     "actual": 0.076,
+     "predicted": 0.037
+    },
+    {
+     "actual": 0.067,
+     "predicted": -0.015
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.002
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.191
+    },
+    {
+     "actual": 0.105,
+     "predicted": 0.009
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.011
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.266
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.012
+    },
+    {
+     "actual": 0.136,
+     "predicted": 1.234
+    },
+    {
+     "actual": 0.018,
+     "predicted": 0.088
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.044
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.163
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.294
+    },
+    {
+     "actual": 0.104,
+     "predicted": 0.23
+    },
+    {
+     "actual": 0.223,
+     "predicted": -0.198
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.045
+    },
+    {
+     "actual": 0.122,
+     "predicted": 0.058
+    },
+    {
+     "actual": 0.141,
+     "predicted": 0.251
+    },
+    {
+     "actual": 0.016,
+     "predicted": 0.023
+    },
+    {
+     "actual": 0.111,
+     "predicted": -0.019
+    },
+    {
+     "actual": 2.648,
+     "predicted": 3.217
+    },
+    {
+     "actual": 2.335,
+     "predicted": 2.116
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.094
+    },
+    {
+     "actual": 0.032,
+     "predicted": 0.028
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.44
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.29
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.135
+    },
+    {
+     "actual": 0.567,
+     "predicted": 1.614
+    },
+    {
+     "actual": 0.048,
+     "predicted": -0.032
+    },
+    {
+     "actual": 4.531,
+     "predicted": 3.208
+    },
+    {
+     "actual": 0.101,
+     "predicted": 0.029
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.03
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.04
+    },
+    {
+     "actual": 3.738,
+     "predicted": 2.171
+    },
+    {
+     "actual": 1.838,
+     "predicted": 2.205
+    },
+    {
+     "actual": 0.023,
+     "predicted": -0.027
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.195
+    },
+    {
+     "actual": 17.695,
+     "predicted": 17.589
+    },
+    {
+     "actual": 6.125,
+     "predicted": 6.077
+    },
+    {
+     "actual": 0.089,
+     "predicted": 0.197
+    },
+    {
+     "actual": 0.193,
+     "predicted": 0.475
+    },
+    {
+     "actual": 4.807,
+     "predicted": 4.054
+    },
+    {
+     "actual": 6.768,
+     "predicted": 6.314
+    },
+    {
+     "actual": 1.31,
+     "predicted": 1.248
+    },
+    {
+     "actual": 0.104,
+     "predicted": 0.934
+    },
+    {
+     "actual": 0.343,
+     "predicted": 0.464
+    },
+    {
+     "actual": 0.606,
+     "predicted": 0.943
+    },
+    {
+     "actual": 0.244,
+     "predicted": -0.069
+    },
+    {
+     "actual": 0.027,
+     "predicted": 0.064
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.502
+    },
+    {
+     "actual": 0.101,
+     "predicted": 0.684
+    },
+    {
+     "actual": 6.589,
+     "predicted": 5.652
+    },
+    {
+     "actual": 18.789,
+     "predicted": 19.821
+    },
+    {
+     "actual": 0.162,
+     "predicted": -0.055
+    },
+    {
+     "actual": 0.522,
+     "predicted": 0.333
+    },
+    {
+     "actual": 0.847,
+     "predicted": 0.802
+    },
+    {
+     "actual": 0.079,
+     "predicted": -0.009
+    },
+    {
+     "actual": 0.031,
+     "predicted": -0.004
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.025
+    },
+    {
+     "actual": 0.702,
+     "predicted": 1.25
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.223
+    },
+    {
+     "actual": 0.021,
+     "predicted": 1.277
+    },
+    {
+     "actual": 0.168,
+     "predicted": -0.17
+    },
+    {
+     "actual": 0.137,
+     "predicted": 0.029
+    },
+    {
+     "actual": 2.48,
+     "predicted": 3.019
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.592
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.291
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.0
+    },
+    {
+     "actual": 2.834,
+     "predicted": 1.714
+    },
+    {
+     "actual": 7.299,
+     "predicted": 8.701
+    },
+    {
+     "actual": 2.105,
+     "predicted": 1.983
+    },
+    {
+     "actual": 0.169,
+     "predicted": 0.035
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.059
+    },
+    {
+     "actual": 0.073,
+     "predicted": -0.023
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.017
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.034
+    },
+    {
+     "actual": 4.847,
+     "predicted": 4.604
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.124
+    },
+    {
+     "actual": 2.321,
+     "predicted": 1.951
+    },
+    {
+     "actual": 0.935,
+     "predicted": 1.216
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.002
+    },
+    {
+     "actual": 13.986,
+     "predicted": 15.497
+    },
+    {
+     "actual": 2.831,
+     "predicted": 2.877
+    },
+    {
+     "actual": 4.046,
+     "predicted": 3.404
+    },
+    {
+     "actual": 0.006,
+     "predicted": 0.063
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.102
+    },
+    {
+     "actual": 8.784,
+     "predicted": 7.873
+    },
+    {
+     "actual": 1.088,
+     "predicted": 0.502
+    },
+    {
+     "actual": 0.091,
+     "predicted": -0.047
+    },
+    {
+     "actual": 5.184,
+     "predicted": 5.66
+    },
+    {
+     "actual": 0.084,
+     "predicted": -0.002
+    },
+    {
+     "actual": 4.895,
+     "predicted": 4.743
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.088
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.083
+    },
+    {
+     "actual": 3.119,
+     "predicted": 3.291
+    },
+    {
+     "actual": 4.359,
+     "predicted": 4.96
+    },
+    {
+     "actual": 1.75,
+     "predicted": 2.069
+    },
+    {
+     "actual": 7.796,
+     "predicted": 6.921
+    },
+    {
+     "actual": 0.06,
+     "predicted": 0.028
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.03
+    },
+    {
+     "actual": 8.634,
+     "predicted": 8.022
+    },
+    {
+     "actual": 5.998,
+     "predicted": 5.601
+    },
+    {
+     "actual": 0.485,
+     "predicted": 0.534
+    },
+    {
+     "actual": 1.224,
+     "predicted": 1.553
+    },
+    {
+     "actual": 3.794,
+     "predicted": 3.89
+    },
+    {
+     "actual": 0.341,
+     "predicted": 0.7
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.218
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.103
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.061
+    },
+    {
+     "actual": 20.339,
+     "predicted": 20.398
+    },
+    {
+     "actual": 8.188,
+     "predicted": 7.892
+    },
+    {
+     "actual": 0.195,
+     "predicted": 0.186
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.064
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.092
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.009
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.026
+    },
+    {
+     "actual": 0.008,
+     "predicted": 0.208
+    },
+    {
+     "actual": 6.933,
+     "predicted": 6.437
+    },
+    {
+     "actual": 15.568,
+     "predicted": 15.866
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.048
+    },
+    {
+     "actual": 0.066,
+     "predicted": -0.181
+    },
+    {
+     "actual": 5.859,
+     "predicted": 4.807
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.014
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.151
+    },
+    {
+     "actual": 0.044,
+     "predicted": -0.059
+    },
+    {
+     "actual": 0.085,
+     "predicted": -0.11
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.169
+    },
+    {
+     "actual": 0.143,
+     "predicted": -0.035
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.03
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.131
+    },
+    {
+     "actual": 0.068,
+     "predicted": 0.537
+    },
+    {
+     "actual": 1.498,
+     "predicted": 2.803
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.313
+    },
+    {
+     "actual": 0.057,
+     "predicted": 0.499
+    },
+    {
+     "actual": 0.248,
+     "predicted": 1.407
+    },
+    {
+     "actual": 0.538,
+     "predicted": 1.11
+    },
+    {
+     "actual": 16.03,
+     "predicted": 15.263
+    },
+    {
+     "actual": 2.264,
+     "predicted": 1.814
+    },
+    {
+     "actual": 0.0,
+     "predicted": -0.043
+    },
+    {
+     "actual": 0.133,
+     "predicted": 0.017
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.328
+    },
+    {
+     "actual": 0.004,
+     "predicted": -0.018
+    },
+    {
+     "actual": 0.118,
+     "predicted": 0.011
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.066
+    },
+    {
+     "actual": 0.019,
+     "predicted": -0.058
+    },
+    {
+     "actual": 0.513,
+     "predicted": 1.219
+    },
+    {
+     "actual": 0.0,
+     "predicted": 0.045
+    },
+    {
+     "actual": 6.0,
+     "predicted": 5.631
+    },
+    {
+     "actual": 13.855,
+     "predicted": 11.425
+    },
+    {
+     "actual": 5.409,
+     "predicted": 4.849
+    },
+    {
+     "actual": 12.098,
+     "predicted": 12.336
+    }
+   ]
+  }
+ },
+ "dataset": {
+  "plots": 1000,
+  "district": "Mandya",
+  "taluks": 6,
+  "villages": 10,
+  "missing_ndvi_imputed": 6,
+  "scenarios": 12000,
+  "scenarios_per_plot": 12,
+  "train_rows": 9600,
+  "test_rows": 2400,
+  "yield_loss_rows": 36000,
+  "split": "GroupShuffleSplit by plot (80/20) - test plots never seen in training"
+ },
+ "features": [
+  {
+   "key": "ndvi",
+   "label": "NDVI (crop vigour)"
+  },
+  {
+   "key": "lai",
+   "label": "Leaf Area Index"
+  },
+  {
+   "key": "soil_moisture",
+   "label": "Soil moisture"
+  },
+  {
+   "key": "soil_ph",
+   "label": "Soil pH"
+  },
+  {
+   "key": "organic_carbon",
+   "label": "Organic carbon"
+  },
+  {
+   "key": "temperature_c",
+   "label": "Temperature"
+  },
+  {
+   "key": "relative_humidity",
+   "label": "Relative humidity"
+  },
+  {
+   "key": "rainfall_mm",
+   "label": "Seasonal rainfall"
+  },
+  {
+   "key": "crop_age_days",
+   "label": "Crop age"
+  },
+  {
+   "key": "forecast_rain_mm",
+   "label": "Forecast rain (3 days)"
+  }
+ ],
+ "model_sizes_bytes": {
+  "next_irrigation": 632607,
+  "water_requirement": 140419,
+  "irrigation_depth": 163843,
+  "yield": 175261,
+  "water_stress": 736750,
+  "disease_risk": 337654,
+  "yield_loss": 407136,
+  "zones": 1795
+ },
+ "trained_at": "2026-09-30 11:26:41",
+ "training_seconds": 75.3
+}
